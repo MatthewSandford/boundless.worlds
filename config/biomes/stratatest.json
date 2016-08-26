@@ -1,0 +1,599 @@
+{
+   "@collapsed" : false,
+   "@configType" : "BIOME",
+   "@name" : "Unnamed CustomBiome",
+   "@position" : [ 7450, 8012 ],
+   "@scroll" : [ 9086.275390625, 8404.890625, 0.5 ],
+   "@toggle-test" : false,
+   "@toggle-world" : true,
+   "@unlinked" : [],
+   "@version" : 9,
+   "biome" : {
+      "fun" : {
+         "@collapsed" : false,
+         "@name" : "Unnamed Biome",
+         "@position" : [ 7803, 8315 ],
+         "altitude" : {
+            "enabled" : true,
+            "value" : 0.5
+         },
+         "humidity" : {
+            "enabled" : true,
+            "value" : 0.5
+         },
+         "part" : {
+            "@collapsed" : false,
+            "@name" : "Unnamed Biome Part",
+            "@position" : [ 8211, 8046 ],
+            "@selector-open" : false,
+            "@toggle-caves" : true,
+            "@toggle-ccaves" : true,
+            "@toggle-csurface" : true,
+            "@toggle-cthreed" : false,
+            "@toggle-data" : true,
+            "@toggle-drop" : false,
+            "@toggle-heightmap" : true,
+            "@toggle-selector" : false,
+            "@toggle-stage" : true,
+            "@toggle-threed" : false,
+            "@toggle-visualise" : true,
+            "@x-name" : "x",
+            "@y-name" : "y",
+            "caveSurfaceShrink" : {
+               "enabled" : true,
+               "value" : 1
+            },
+            "caveThresholdBias" : {
+               "enabled" : true,
+               "value" : 0
+            },
+            "caves" : {
+               "@collapsed" : false,
+               "@name" : "Product 3D",
+               "@position" : [ 8568, 8203 ],
+               "frequency" : [ 1, 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Sum 3D",
+                        "@position" : [ 8905, 8027 ],
+                        "frequency" : [ 2, 2, 2 ],
+                        "terms" : [
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Distort 3D",
+                                 "@position" : [ 9221, 8011 ],
+                                 "base" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Worley 3D",
+                                    "@position" : [ 9526, 7889 ],
+                                    "cellCount" : 1,
+                                    "cellScale" : 0.69999998807907104,
+                                    "components" : [
+                                       {
+                                          "k" : 0,
+                                          "multiplier" : 1,
+                                          "power" : 2
+                                       }
+                                    ],
+                                    "frequency" : [ 1, 1, 1 ],
+                                    "offset" : [ 1144.9947509765625, 239.18220520019531, -93.105049133300781 ],
+                                    "offset-hash" : "3l1YE3UDq1foEM1P",
+                                    "type" : "worley"
+                                 },
+                                 "distortion" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Perlin 3D",
+                                    "@position" : [ 9526, 8190 ],
+                                    "frequency" : [ 0.15400001406669617, 0.15400001406669617, 0.15400001406669617 ],
+                                    "offset" : [ 1184.6439208984375, -91.466377258300781, -101.4222412109375 ],
+                                    "offset-hash" : "Ej6vehVyF7unuNvn",
+                                    "type" : "perlin"
+                                 },
+                                 "distortionScale" : [ 1, 1, 1 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "type" : "distort"
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           },
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Constant 3D",
+                                 "@position" : [ 9221, 8319 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "offset" : [ -250.53512573242188, 383.47433471679688, -55.92852783203125 ],
+                                 "offset-hash" : "GwBo0H6CRuKunMym",
+                                 "type" : "constant",
+                                 "value" : 1
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           }
+                        ],
+                        "type" : "sum"
+                     },
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Sum 3D",
+                        "@position" : [ 8905, 8471 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "terms" : [
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Perlin 3D",
+                                 "@position" : [ 9199, 8484 ],
+                                 "frequency" : [ 0.38900002837181091, 0.70000004768371582, 0.38900002837181091 ],
+                                 "offset" : [ -347.36248779296875, -315.38616943359375, -105.15473175048828 ],
+                                 "offset-hash" : "gTHnZLnN8GKKLe8r",
+                                 "type" : "perlin"
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           },
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Constant 3D",
+                                 "@position" : [ 9199, 8613 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "offset" : [ -256.71188354492188, 185.57232666015625, -347.16241455078125 ],
+                                 "offset-hash" : "jolP9S0Rk8Bwm8kg",
+                                 "type" : "constant",
+                                 "value" : 0.59800004959106445
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           }
+                        ],
+                        "type" : "sum"
+                     },
+                     "power" : 1
+                  }
+               ],
+               "type" : "product"
+            },
+            "caves_decorations" : null,
+            "caves_substrate" : null,
+            "distortion" : null,
+            "distortionStrength" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "drop" : null,
+            "dropMaxDepth" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "dropMaxGradient" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "dropMaxNoGravel" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "heightmap" : {
+               "@collapsed" : false,
+               "@name" : "Constant 2D",
+               "@position" : [ 8560, 7833 ],
+               "frequency" : [ 1, 1 ],
+               "offset" : [ 88.1666259765625, -273.65335083007813 ],
+               "offset-hash" : "RB5tiNiGIFbGiWqt",
+               "type" : "constant",
+               "value" : 0.98900002241134644
+            },
+            "heightmapMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "heightmapMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "parts" : [],
+            "shrink" : null,
+            "strata" : null,
+            "surface_decorations" : null,
+            "surface_substrate" : null,
+            "threeD" : null,
+            "threeDMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "threeDMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "threeDSurfaceMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "threeDSurfaceMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "threeDThresholdBias" : {
+               "enabled" : false,
+               "value" : -1
+            },
+            "threed_decorations" : null,
+            "threed_substrate" : null,
+            "x" : null,
+            "y" : null
+         },
+         "temperature" : {
+            "enabled" : true,
+            "value" : 0.5
+         },
+         "vegetation" : {
+            "enabled" : true,
+            "value" : 0.5
+         },
+         "weight" : 0.5
+      },
+      "links" : []
+   },
+   "generator" : {
+      "@version" : 6,
+      "biomeSize" : 24,
+      "lowerSea" : {
+         "level" : 16,
+         "liquidType" : "WATER"
+      },
+      "sea" : {
+         "level" : 64,
+         "liquidType" : "WATER"
+      }
+   },
+   "seed" : "I has a seed!",
+   "sharedConfig" : {
+      "blockColors" : {
+         "ASH_DEFAULT_BASE" : 1,
+         "CRYSTAL_GLEAM_BASE" : 13,
+         "FLORA_FLOWER_1" : 1,
+         "FLORA_FLOWER_2" : 1,
+         "FLORA_FLOWER_3" : 1,
+         "FLORA_FLOWER_4" : 1,
+         "FLORA_PLANT_FIBROUS" : 1,
+         "FLORA_PLANT_INKY" : 1,
+         "GRASS_BARBED_BASE" : 8,
+         "GRASS_GNARLED_BASE" : 7,
+         "GRASS_VERDANT_BASE" : 9,
+         "GRAVEL_DEFAULT_BASE" : 16,
+         "GROWTH_DEFAULT_BASE" : 1,
+         "MOULD_DEFAULT_BASE" : 1,
+         "MUD_DEFAULT_BASE" : 1,
+         "ROCK_IGNEOUS_BASE" : 4,
+         "ROCK_METAMORPHIC_BASE" : 5,
+         "ROCK_SEDIMENTARY_BASE" : 6,
+         "SAND_DEFAULT_BASE" : 16,
+         "SOIL_CLAY_BASE" : 1,
+         "SOIL_PEATY_BASE" : 3,
+         "SOIL_SILTY_BASE" : 2,
+         "SPONGE_DEFAULT_BASE" : 1,
+         "TANGLE_DEFAULT_BASE" : 1,
+         "THORNS_DEFAULT_BASE" : 1,
+         "WOOD_ANCIENT_TRUNK" : 10,
+         "WOOD_EXOTIC_LEAVES" : 15,
+         "WOOD_LUSH_LEAVES" : 13,
+         "WOOD_LUSTROUS_TRUNK" : 1,
+         "WOOD_TWISTED_TRUNK" : 11,
+         "WOOD_WAXY_LEAVES" : 14
+      },
+      "worldSize" : 288
+   },
+   "test" : {
+      "@collapsed" : false,
+      "@name" : "Reference Biome",
+      "@position" : [ 7803, 8951 ],
+      "embedded" : {
+         "@collapsed" : false,
+         "@configType" : "BIOME",
+         "@name" : "Unnamed CustomBiome",
+         "@position" : [ 7450, 8012 ],
+         "@toggle-test" : false,
+         "@toggle-world" : true,
+         "@version" : 9,
+         "biome" : {
+            "fun" : {
+               "@collapsed" : false,
+               "@name" : "Unnamed Biome",
+               "@position" : [ 7803, 8315 ],
+               "altitude" : {
+                  "enabled" : true,
+                  "value" : 0.5
+               },
+               "humidity" : {
+                  "enabled" : true,
+                  "value" : 0.5
+               },
+               "part" : {
+                  "@collapsed" : false,
+                  "@name" : "Unnamed Biome Part",
+                  "@position" : [ 8211, 8046 ],
+                  "@selector-open" : false,
+                  "@toggle-caves" : true,
+                  "@toggle-ccaves" : true,
+                  "@toggle-csurface" : true,
+                  "@toggle-cthreed" : false,
+                  "@toggle-data" : true,
+                  "@toggle-drop" : false,
+                  "@toggle-heightmap" : true,
+                  "@toggle-selector" : false,
+                  "@toggle-stage" : true,
+                  "@toggle-threed" : false,
+                  "@toggle-visualise" : true,
+                  "@x-name" : "x",
+                  "@y-name" : "y",
+                  "caveSurfaceShrink" : {
+                     "enabled" : true,
+                     "value" : 1
+                  },
+                  "caveThresholdBias" : {
+                     "enabled" : true,
+                     "value" : 0
+                  },
+                  "caves" : {
+                     "@collapsed" : false,
+                     "@name" : "Product 3D",
+                     "@position" : [ 8568, 8203 ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "terms" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Sum 3D",
+                              "@position" : [ 8905, 8027 ],
+                              "frequency" : [ 2, 2, 2 ],
+                              "terms" : [
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Distort 3D",
+                                       "@position" : [ 9221, 8011 ],
+                                       "base" : {
+                                          "@collapsed" : false,
+                                          "@name" : "Worley 3D",
+                                          "@position" : [ 9526, 7889 ],
+                                          "cellCount" : 1,
+                                          "cellScale" : 0.69999998807907104,
+                                          "components" : [
+                                             {
+                                                "k" : 0,
+                                                "multiplier" : 1,
+                                                "power" : 2
+                                             }
+                                          ],
+                                          "frequency" : [ 1, 1, 1 ],
+                                          "offset" : [ 1144.9947509765625, 239.18220520019531, -93.105049133300781 ],
+                                          "offset-hash" : "3l1YE3UDq1foEM1P",
+                                          "type" : "worley"
+                                       },
+                                       "distortion" : {
+                                          "@collapsed" : false,
+                                          "@name" : "Perlin 3D",
+                                          "@position" : [ 9526, 8190 ],
+                                          "frequency" : [ 0.15400001406669617, 0.15400001406669617, 0.15400001406669617 ],
+                                          "offset" : [ 1184.6439208984375, -91.466377258300781, -101.4222412109375 ],
+                                          "offset-hash" : "Ej6vehVyF7unuNvn",
+                                          "type" : "perlin"
+                                       },
+                                       "distortionScale" : [ 1, 1, 1 ],
+                                       "frequency" : [ 1, 1, 1 ],
+                                       "type" : "distort"
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 },
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Constant 3D",
+                                       "@position" : [ 9221, 8319 ],
+                                       "frequency" : [ 1, 1, 1 ],
+                                       "offset" : [ -250.53512573242188, 383.47433471679688, -55.92852783203125 ],
+                                       "offset-hash" : "GwBo0H6CRuKunMym",
+                                       "type" : "constant",
+                                       "value" : 1
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 }
+                              ],
+                              "type" : "sum"
+                           },
+                           "power" : 1
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Sum 3D",
+                              "@position" : [ 8905, 8471 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "terms" : [
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Perlin 3D",
+                                       "@position" : [ 9199, 8484 ],
+                                       "frequency" : [ 0.38900002837181091, 0.70000004768371582, 0.38900002837181091 ],
+                                       "offset" : [ -347.36248779296875, -315.38616943359375, -105.15473175048828 ],
+                                       "offset-hash" : "gTHnZLnN8GKKLe8r",
+                                       "type" : "perlin"
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 },
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Constant 3D",
+                                       "@position" : [ 9199, 8613 ],
+                                       "frequency" : [ 1, 1, 1 ],
+                                       "offset" : [ -256.71188354492188, 185.57232666015625, -347.16241455078125 ],
+                                       "offset-hash" : "jolP9S0Rk8Bwm8kg",
+                                       "type" : "constant",
+                                       "value" : 0.59800004959106445
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 }
+                              ],
+                              "type" : "sum"
+                           },
+                           "power" : 1
+                        }
+                     ],
+                     "type" : "product"
+                  },
+                  "caves_decorations" : null,
+                  "caves_substrate" : null,
+                  "distortion" : null,
+                  "distortionStrength" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "drop" : null,
+                  "dropMaxDepth" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "dropMaxGradient" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "dropMaxNoGravel" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "heightmap" : {
+                     "@collapsed" : false,
+                     "@name" : "Constant 2D",
+                     "@position" : [ 8560, 7833 ],
+                     "frequency" : [ 1, 1 ],
+                     "offset" : [ 88.1666259765625, -273.65335083007813 ],
+                     "offset-hash" : "RB5tiNiGIFbGiWqt",
+                     "type" : "constant",
+                     "value" : 0.98900002241134644
+                  },
+                  "heightmapMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "heightmapMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "parts" : [],
+                  "shrink" : null,
+                  "strata" : null,
+                  "surface_decorations" : null,
+                  "surface_substrate" : null,
+                  "threeD" : null,
+                  "threeDMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "threeDMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "threeDSurfaceMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "threeDSurfaceMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "threeDThresholdBias" : {
+                     "enabled" : false,
+                     "value" : -1
+                  },
+                  "threed_decorations" : null,
+                  "threed_substrate" : null,
+                  "x" : null,
+                  "y" : null
+               },
+               "temperature" : {
+                  "enabled" : true,
+                  "value" : 0.5
+               },
+               "vegetation" : {
+                  "enabled" : true,
+                  "value" : 0.5
+               },
+               "weight" : 0.5
+            },
+            "links" : []
+         },
+         "generator" : {
+            "@version" : 6,
+            "biomeSize" : 24,
+            "lowerSea" : {
+               "level" : 16,
+               "liquidType" : "WATER"
+            },
+            "sea" : {
+               "level" : 64,
+               "liquidType" : "WATER"
+            }
+         },
+         "seed" : "I has a seed!",
+         "sharedConfig" : {
+            "blockColors" : {
+               "ASH_DEFAULT_BASE" : 1,
+               "CRYSTAL_GLEAM_BASE" : 13,
+               "FLORA_FLOWER_1" : 1,
+               "FLORA_FLOWER_2" : 1,
+               "FLORA_FLOWER_3" : 1,
+               "FLORA_FLOWER_4" : 1,
+               "FLORA_PLANT_FIBROUS" : 1,
+               "FLORA_PLANT_INKY" : 1,
+               "GRASS_BARBED_BASE" : 8,
+               "GRASS_GNARLED_BASE" : 7,
+               "GRASS_VERDANT_BASE" : 9,
+               "GRAVEL_DEFAULT_BASE" : 16,
+               "GROWTH_DEFAULT_BASE" : 1,
+               "MOULD_DEFAULT_BASE" : 1,
+               "MUD_DEFAULT_BASE" : 1,
+               "ROCK_IGNEOUS_BASE" : 4,
+               "ROCK_METAMORPHIC_BASE" : 5,
+               "ROCK_SEDIMENTARY_BASE" : 6,
+               "SAND_DEFAULT_BASE" : 16,
+               "SOIL_CLAY_BASE" : 1,
+               "SOIL_PEATY_BASE" : 3,
+               "SOIL_SILTY_BASE" : 2,
+               "SPONGE_DEFAULT_BASE" : 1,
+               "TANGLE_DEFAULT_BASE" : 1,
+               "THORNS_DEFAULT_BASE" : 1,
+               "WOOD_ANCIENT_TRUNK" : 10,
+               "WOOD_EXOTIC_LEAVES" : 15,
+               "WOOD_LUSH_LEAVES" : 13,
+               "WOOD_LUSTROUS_TRUNK" : 1,
+               "WOOD_TWISTED_TRUNK" : 11,
+               "WOOD_WAXY_LEAVES" : 14
+            },
+            "worldSize" : 288
+         },
+         "test" : {
+            "@collapsed" : false,
+            "@name" : "Reference Biome",
+            "@position" : [ 7803, 8951 ],
+            "type" : "reference"
+         }
+      },
+      "links" : [],
+      "reference" : "",
+      "tick" : 0,
+      "type" : "reference"
+   }
+}

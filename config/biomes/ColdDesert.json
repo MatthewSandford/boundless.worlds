@@ -1,0 +1,1819 @@
+{
+   "@collapsed" : false,
+   "@configType" : "BIOME",
+   "@name" : "ColdDesert",
+   "@position" : [ 7557, 8064 ],
+   "@scroll" : [ 8865.154296875, 8266.7548828125, 0.75 ],
+   "@toggle-test" : false,
+   "@toggle-world" : true,
+   "@unlinked" : [],
+   "@version" : 9,
+   "biome" : {
+      "fun" : {
+         "@collapsed" : false,
+         "@name" : "ColdDesert",
+         "@position" : [ 8074, 8367 ],
+         "altitude" : {
+            "enabled" : true,
+            "value" : 0.5
+         },
+         "humidity" : {
+            "enabled" : true,
+            "value" : 0.29700002074241638
+         },
+         "part" : {
+            "@collapsed" : false,
+            "@name" : "ColdDesert",
+            "@position" : [ 8627, 7987 ],
+            "@selector-open" : false,
+            "@toggle-caves" : true,
+            "@toggle-ccaves" : true,
+            "@toggle-csurface" : true,
+            "@toggle-cthreed" : true,
+            "@toggle-data" : true,
+            "@toggle-drop" : false,
+            "@toggle-heightmap" : true,
+            "@toggle-selector" : false,
+            "@toggle-stage" : true,
+            "@toggle-threed" : false,
+            "@toggle-visualise" : true,
+            "@x-name" : "x",
+            "@y-name" : "y",
+            "caveSurfaceShrink" : {
+               "enabled" : true,
+               "value" : 1.6799999475479126
+            },
+            "caveThresholdBias" : {
+               "enabled" : true,
+               "value" : 0
+            },
+            "caves" : {
+               "@collapsed" : false,
+               "@name" : "Layered 3D",
+               "@position" : [ 9162, 7290 ],
+               "components" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "DistortedGrid",
+                        "@position" : [ 9461, 7245 ],
+                        "frequency" : [ 1.4240000247955322, 1.6430001258850098, 1.4240000247955322 ],
+                        "links" : [
+                           {
+                              "linkPath" : [
+                                 {
+                                    "index" : -1,
+                                    "name" : "noise3d"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "terms"
+                                 },
+                                 {
+                                    "index" : 0,
+                                    "name" : ""
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "distortion"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "frequency"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "@xz"
+                                 }
+                              ],
+                              "linkType" : "LT:CUSTOM_SLIDER",
+                              "sliderValue" : 0.64600002765655518
+                           },
+                           {
+                              "linkPath" : [
+                                 {
+                                    "index" : -1,
+                                    "name" : "noise3d"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "terms"
+                                 },
+                                 {
+                                    "index" : 0,
+                                    "name" : ""
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "distortion"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "frequency"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "@y"
+                                 }
+                              ],
+                              "linkType" : "LT:CUSTOM_SLIDER",
+                              "sliderValue" : 0.60700005292892456
+                           },
+                           {
+                              "linkPath" : [
+                                 {
+                                    "index" : -1,
+                                    "name" : "noise3d"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "terms"
+                                 },
+                                 {
+                                    "index" : 1,
+                                    "name" : ""
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "fun"
+                                 },
+                                 {
+                                    "index" : -1,
+                                    "name" : "value"
+                                 }
+                              ],
+                              "linkType" : "LT:CUSTOM_SLIDER",
+                              "sliderValue" : 0.7070000171661377
+                           }
+                        ],
+                        "offset" : [ 139.33932495117188, 58.779743194580078, -112.3780517578125 ],
+                        "offset-hash" : "56eGfGCPBly4guZs",
+                        "reference" : "noise3d/DistortGrid.json",
+                        "tick" : 0,
+                        "type" : "reference"
+                     },
+                     "y" : 78.921005249023438
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 3D",
+                        "@position" : [ 9461, 7443 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "offset" : [ 410.51065063476563, -63.815147399902344, -238.8133544921875 ],
+                        "offset-hash" : "Dhm6jtFqBahDx09m",
+                        "type" : "constant",
+                        "value" : 0
+                     },
+                     "y" : 134.97700500488281
+                  }
+               ],
+               "frequency" : [ 1, 1, 1 ],
+               "type" : "layered"
+            },
+            "caves_decorations" : null,
+            "caves_substrate" : null,
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Caves - Standard",
+               "@position" : [ 9162, 7116 ],
+               "frequency" : [ 0.35400000214576721, 0.56000000238418579, 0.35400000214576721 ],
+               "links" : [],
+               "offset" : [ 1011.6187133789063, -28.537572860717773, -354.69320678710938 ],
+               "offset-hash" : "KFej4bYWsYJBOj16",
+               "reference" : "noise3d/CavesStandard.json",
+               "tick" : 0,
+               "type" : "reference"
+            },
+            "distortionStrength" : {
+               "enabled" : true,
+               "value" : 40
+            },
+            "drop" : null,
+            "dropMaxDepth" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "dropMaxGradient" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "dropMaxNoGravel" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "heightmap" : {
+               "@collapsed" : false,
+               "@name" : "Sum 2D",
+               "@position" : [ 9162, 6559 ],
+               "frequency" : [ 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Distort 2D",
+                        "@position" : [ 9489, 6419 ],
+                        "base" : {
+                           "@collapsed" : false,
+                           "@name" : "Wave 2D",
+                           "@position" : [ 9781, 6366 ],
+                           "directions" : "xz",
+                           "frequency" : [ 0.01100000087171793, 0.01100000087171793 ],
+                           "offset" : [ 2.8137636184692383, -4.5376124382019043 ],
+                           "offset-hash" : "aQHHY2CMc0EocQEJ",
+                           "type" : "wave",
+                           "waveType" : "sine"
+                        },
+                        "distortion" : {
+                           "@collapsed" : false,
+                           "@name" : "Perlin 2D",
+                           "@position" : [ 9781, 6506 ],
+                           "frequency" : [ 0.58400005102157593, 0.58400005102157593 ],
+                           "offset" : [ 71.393913269042969, 339.96658325195313 ],
+                           "offset-hash" : "qumrXpX2zmfplTHN",
+                           "type" : "perlin"
+                        },
+                        "distortionScale" : [ 1, 1 ],
+                        "frequency" : [ 1, 1 ],
+                        "type" : "distort"
+                     },
+                     "multiplier" : 0.058000002056360245,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9489, 6612 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ -207.78515625, -127.05802154541016 ],
+                        "offset-hash" : "6LxpoRVq872Jvmwl",
+                        "type" : "constant",
+                        "value" : -0.31400001049041748
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Sum 2D",
+                        "@position" : [ 9489, 6787 ],
+                        "frequency" : [ 1.4450000524520874, 1.4450000524520874 ],
+                        "terms" : [
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Product 2D",
+                                 "@position" : [ 9790, 6774 ],
+                                 "frequency" : [ 1, 1 ],
+                                 "terms" : [
+                                    {
+                                       "fun" : {
+                                          "@collapsed" : false,
+                                          "@name" : "Distort 2D",
+                                          "@position" : [ 10082, 6794 ],
+                                          "base" : {
+                                             "@collapsed" : false,
+                                             "@name" : "Wave 2D",
+                                             "@position" : [ 10374, 6741 ],
+                                             "directions" : "x",
+                                             "frequency" : [ 0.23900000751018524, 0.23900000751018524 ],
+                                             "offset" : [ 2.8137636184692383, -4.5376124382019043 ],
+                                             "offset-hash" : "aQHHY2CMc0EocQEJ",
+                                             "type" : "wave",
+                                             "waveType" : "triangle"
+                                          },
+                                          "distortion" : {
+                                             "@collapsed" : false,
+                                             "@name" : "Perlin 2D",
+                                             "@position" : [ 10374, 6881 ],
+                                             "frequency" : [ 0.41500002145767212, 0.41500002145767212 ],
+                                             "offset" : [ 71.393913269042969, 339.96658325195313 ],
+                                             "offset-hash" : "qumrXpX2zmfplTHN",
+                                             "type" : "perlin"
+                                          },
+                                          "distortionScale" : [ 0.51600003242492676, 0.51600003242492676 ],
+                                          "frequency" : [ 1, 1 ],
+                                          "type" : "distort"
+                                       },
+                                       "power" : 1
+                                    }
+                                 ],
+                                 "type" : "product"
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           },
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Constant 2D",
+                                 "@position" : [ 9790, 6987 ],
+                                 "frequency" : [ 1, 1 ],
+                                 "offset" : [ -95.735099792480469, 392.55157470703125 ],
+                                 "offset-hash" : "R4BYWFH6s5vs7OgS",
+                                 "type" : "constant",
+                                 "value" : -0.52000004053115845
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           }
+                        ],
+                        "type" : "sum"
+                     },
+                     "multiplier" : -0.042000003159046173,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
+            "heightmapMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "heightmapMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "parts" : [],
+            "shrink" : null,
+            "strata" : {
+               "@collapsed" : false,
+               "@name" : "Standard Strata",
+               "@position" : [ 9162, 7595 ],
+               "strata" : [
+                  {
+                     "averageDepth" : 6,
+                     "averageY" : 58,
+                     "blockType" : "ROCK_SEDIMENTARY_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "replaceTypes" : [ "ICE_DEFAULT_BASE", "ROCK_METAMORPHIC_BASE" ],
+                     "yNoise" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9467, 7984 ],
+                        "frequency" : [ 0.73000001907348633, 0.73000001907348633 ],
+                        "offset" : [ -66.059356689453125, -262.4566650390625 ],
+                        "offset-hash" : "1N6kRlZm3PDnoP1Q",
+                        "type" : "perlin"
+                     },
+                     "yNoiseScale" : 8
+                  },
+                  {
+                     "averageDepth" : 6,
+                     "averageY" : 67,
+                     "blockType" : "SAND_DEFAULT_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "replaceTypes" : [ "ICE_DEFAULT_BASE", "ROCK_METAMORPHIC_BASE" ],
+                     "yNoise" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9467, 8090 ],
+                        "frequency" : [ 0.73000001907348633, 0.73000001907348633 ],
+                        "offset" : [ -66.059356689453125, -262.4566650390625 ],
+                        "offset-hash" : "1N6kRlZm3PDnoP1Q",
+                        "type" : "perlin"
+                     },
+                     "yNoiseScale" : 11
+                  },
+                  {
+                     "averageDepth" : 32,
+                     "averageY" : 81,
+                     "blockType" : "ROCK_SEDIMENTARY_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                     "yNoise" : null,
+                     "yNoiseScale" : 0
+                  },
+                  {
+                     "averageDepth" : 18,
+                     "averageY" : 26,
+                     "blockType" : "ROCK_IGNEOUS_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                     "yNoise" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9467, 8196 ],
+                        "frequency" : [ 2, 2 ],
+                        "offset" : [ 190.73167419433594, -364.02035522460938 ],
+                        "offset-hash" : "j5jlHWKRV1SnVJpc",
+                        "type" : "perlin"
+                     },
+                     "yNoiseScale" : 27
+                  },
+                  {
+                     "averageDepth" : 18,
+                     "averageY" : 15,
+                     "blockType" : "GRAVEL_DEFAULT_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                     "yNoise" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9467, 8302 ],
+                        "frequency" : [ 2, 2 ],
+                        "offset" : [ 146.72465515136719, 99.481727600097656 ],
+                        "offset-hash" : "JEdBBaQ5X5xKBJjT",
+                        "type" : "perlin"
+                     },
+                     "yNoiseScale" : 37
+                  }
+               ],
+               "type" : "standard"
+            },
+            "surface_decorations" : {
+               "@collapsed" : false,
+               "@name" : "Standard Decorations",
+               "@position" : [ 9162, 9069 ],
+               "@toggle-ceiling" : false,
+               "@toggle-floor" : true,
+               "ceiling" : [],
+               "floor" : [
+                  {
+                     "clearance" : 8,
+                     "constraintType" : [ "ICE_DEFAULT_BASE" ],
+                     "density" : -0.94999998807907104,
+                     "depth" : 8,
+                     "instance" : null,
+                     "maxGradient" : 5,
+                     "maxSize" : 0.5,
+                     "maxY" : 256,
+                     "minGradient" : 0,
+                     "minSize" : 0.5,
+                     "minY" : 0,
+                     "noise" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9493, 9297 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                        "offset-hash" : "XzSpopEPWh0C3EqX",
+                        "type" : "constant",
+                        "value" : -1
+                     },
+                     "placementType" : "FLORA_FLOWER_1",
+                     "sizeNoise" : null,
+                     "smooth" : false,
+                     "threshold" : 0
+                  },
+                  {
+                     "clearance" : 8,
+                     "constraintType" : [ "SAND_DEFAULT_BASE", "ICE_DEFAULT_BASE" ],
+                     "density" : -0.90999996662139893,
+                     "depth" : 8,
+                     "instance" : {
+                        "@collapsed" : false,
+                        "@name" : "Bush (deprecated)",
+                        "@position" : [ 9493, 9426 ],
+                        "blockType" : "WOOD_LUSH_LEAVES",
+                        "height" : 3.5,
+                        "maxScale" : 2,
+                        "minScale" : 0.5,
+                        "radius" : 1,
+                        "stemType" : "WOOD_LUSH_LEAVES",
+                        "taper" : 2,
+                        "type" : "bush"
+                     },
+                     "maxGradient" : 5,
+                     "maxSize" : 1,
+                     "maxY" : 256,
+                     "minGradient" : 0,
+                     "minSize" : 0,
+                     "minY" : 0,
+                     "noise" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9493, 9635 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                        "offset-hash" : "XzSpopEPWh0C3EqX",
+                        "type" : "constant",
+                        "value" : -1
+                     },
+                     "placementType" : "FLORA_FLOWER_1",
+                     "sizeNoise" : null,
+                     "smooth" : false,
+                     "threshold" : 0
+                  },
+                  {
+                     "clearance" : 8,
+                     "constraintType" : [ "ICE_DEFAULT_BASE", "SAND_DEFAULT_BASE" ],
+                     "density" : -0.87999999523162842,
+                     "depth" : 8,
+                     "instance" : {
+                        "@collapsed" : false,
+                        "@name" : "Bush (deprecated)",
+                        "@position" : [ 9493, 9764 ],
+                        "blockType" : "WOOD_LUSH_LEAVES",
+                        "height" : 6,
+                        "maxScale" : 2,
+                        "minScale" : 0.5,
+                        "radius" : 1.5,
+                        "stemType" : "WOOD_LUSH_LEAVES",
+                        "taper" : 2,
+                        "type" : "bush"
+                     },
+                     "maxGradient" : 5,
+                     "maxSize" : 0.5,
+                     "maxY" : 256,
+                     "minGradient" : 0,
+                     "minSize" : 0.5,
+                     "minY" : 0,
+                     "noise" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9493, 9973 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                        "offset-hash" : "XzSpopEPWh0C3EqX",
+                        "type" : "constant",
+                        "value" : -1
+                     },
+                     "placementType" : "FLORA_FLOWER_1",
+                     "sizeNoise" : null,
+                     "smooth" : false,
+                     "threshold" : 0
+                  }
+               ],
+               "type" : "standard"
+            },
+            "surface_substrate" : {
+               "@collapsed" : false,
+               "@name" : "Standard Substrate",
+               "@position" : [ 9162, 8797 ],
+               "strates" : [
+                  {
+                     "averageDepth" : 6,
+                     "blockType" : "ICE_DEFAULT_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 3,
+                     "maxGradient" : 5,
+                     "maxY" : 144,
+                     "metadata" : {
+                        "@toggle-metadata" : true,
+                        "maxGradient" : 5,
+                        "maxThreshold" : 1,
+                        "maxY" : 256,
+                        "minGradient" : 0,
+                        "minThreshold" : -1,
+                        "minY" : 0,
+                        "noise" : null
+                     },
+                     "minGradient" : 0,
+                     "minY" : 0
+                  }
+               ],
+               "type" : "standard"
+            },
+            "threeD" : null,
+            "threeDMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "threeDMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "threeDSurfaceMaxY" : {
+               "enabled" : false,
+               "value" : 256
+            },
+            "threeDSurfaceMinY" : {
+               "enabled" : false,
+               "value" : 0
+            },
+            "threeDThresholdBias" : {
+               "enabled" : false,
+               "value" : -1
+            },
+            "threed_decorations" : null,
+            "threed_substrate" : null,
+            "x" : null,
+            "y" : null
+         },
+         "temperature" : {
+            "enabled" : true,
+            "value" : 0.12900000810623169
+         },
+         "vegetation" : {
+            "enabled" : true,
+            "value" : 0.33500000834465027
+         },
+         "weight" : 0.5
+      },
+      "links" : [
+         {
+            "blockConstraint" : 997803312,
+            "blockDefault" : "",
+            "checkDefault" : true,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "distortion"
+               },
+               {
+                  "index" : -1,
+                  "name" : "frequency"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@y"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Distortion",
+            "shortPath" : "Caves - Standard.frequency.@y",
+            "sliderCheck" : false,
+            "sliderDefault" : 2,
+            "sliderMax" : 2,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 997803312,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 2,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "base"
+               },
+               {
+                  "index" : -1,
+                  "name" : "frequency"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Dune Frequency",
+            "shortPath" : "Wave 2D.frequency.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.20000000298023224,
+            "sliderMax" : 0.5,
+            "sliderMin" : 0.10000000149011612,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 997803312,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 2,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "distortionScale"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Dune Distortion",
+            "shortPath" : "Distort 2D.scale.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.51600003242492676,
+            "sliderMax" : 4,
+            "sliderMin" : 0.0010000000474974513,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 4153596074,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "weight"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Biome Weight",
+            "shortPath" : "ColdDesert.weight",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.5,
+            "sliderMax" : 1,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
+         }
+      ]
+   },
+   "generator" : {
+      "@version" : 6,
+      "biomeSize" : 24,
+      "lowerSea" : {
+         "level" : 16,
+         "liquidType" : "WATER"
+      },
+      "sea" : {
+         "level" : 64,
+         "liquidType" : "WATER"
+      }
+   },
+   "seed" : "I has a seed!",
+   "sharedConfig" : {
+      "blockColors" : {
+         "ASH_DEFAULT_BASE" : 1,
+         "CRYSTAL_GLEAM_BASE" : 13,
+         "FLORA_FLOWER_1" : 1,
+         "FLORA_FLOWER_2" : 1,
+         "FLORA_FLOWER_3" : 1,
+         "FLORA_FLOWER_4" : 1,
+         "FLORA_PLANT_FIBROUS" : 1,
+         "FLORA_PLANT_INKY" : 1,
+         "GRASS_BARBED_BASE" : 8,
+         "GRASS_GNARLED_BASE" : 7,
+         "GRASS_VERDANT_BASE" : 9,
+         "GRAVEL_DEFAULT_BASE" : 16,
+         "GROWTH_DEFAULT_BASE" : 1,
+         "MOULD_DEFAULT_BASE" : 1,
+         "MUD_DEFAULT_BASE" : 1,
+         "ROCK_IGNEOUS_BASE" : 4,
+         "ROCK_METAMORPHIC_BASE" : 5,
+         "ROCK_SEDIMENTARY_BASE" : 6,
+         "SAND_DEFAULT_BASE" : 16,
+         "SOIL_CLAY_BASE" : 1,
+         "SOIL_PEATY_BASE" : 3,
+         "SOIL_SILTY_BASE" : 2,
+         "SPONGE_DEFAULT_BASE" : 1,
+         "TANGLE_DEFAULT_BASE" : 1,
+         "THORNS_DEFAULT_BASE" : 1,
+         "WOOD_ANCIENT_TRUNK" : 10,
+         "WOOD_EXOTIC_LEAVES" : 15,
+         "WOOD_LUSH_LEAVES" : 13,
+         "WOOD_LUSTROUS_TRUNK" : 1,
+         "WOOD_TWISTED_TRUNK" : 11,
+         "WOOD_WAXY_LEAVES" : 14
+      },
+      "worldSize" : 288
+   },
+   "test" : {
+      "@collapsed" : false,
+      "@name" : "Reference Biome",
+      "@position" : [ 8074, 10269 ],
+      "embedded" : {
+         "@collapsed" : false,
+         "@configType" : "BIOME",
+         "@name" : "ColdDesert",
+         "@position" : [ 7557, 8064 ],
+         "@toggle-test" : false,
+         "@toggle-world" : true,
+         "@version" : 9,
+         "biome" : {
+            "fun" : {
+               "@collapsed" : false,
+               "@name" : "ColdDesert",
+               "@position" : [ 8074, 8367 ],
+               "altitude" : {
+                  "enabled" : true,
+                  "value" : 0.5
+               },
+               "humidity" : {
+                  "enabled" : true,
+                  "value" : 0.29700002074241638
+               },
+               "part" : {
+                  "@collapsed" : false,
+                  "@name" : "ColdDesert",
+                  "@position" : [ 8627, 7987 ],
+                  "@selector-open" : false,
+                  "@toggle-caves" : true,
+                  "@toggle-ccaves" : true,
+                  "@toggle-csurface" : true,
+                  "@toggle-cthreed" : true,
+                  "@toggle-data" : true,
+                  "@toggle-drop" : false,
+                  "@toggle-heightmap" : true,
+                  "@toggle-selector" : false,
+                  "@toggle-stage" : true,
+                  "@toggle-threed" : false,
+                  "@toggle-visualise" : true,
+                  "@x-name" : "x",
+                  "@y-name" : "y",
+                  "caveSurfaceShrink" : {
+                     "enabled" : true,
+                     "value" : 1.6799999475479126
+                  },
+                  "caveThresholdBias" : {
+                     "enabled" : true,
+                     "value" : 0
+                  },
+                  "caves" : {
+                     "@collapsed" : false,
+                     "@name" : "Layered 3D",
+                     "@position" : [ 9162, 7290 ],
+                     "components" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "DistortedGrid",
+                              "@position" : [ 9461, 7245 ],
+                              "frequency" : [ 1.4240000247955322, 1.6430001258850098, 1.4240000247955322 ],
+                              "links" : [
+                                 {
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise3d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 0,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "distortion"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "frequency"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "@xz"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : 0.64600002765655518
+                                 },
+                                 {
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise3d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 0,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "distortion"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "frequency"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "@y"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : 0.60700005292892456
+                                 },
+                                 {
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise3d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 1,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "value"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : 0.7070000171661377
+                                 }
+                              ],
+                              "offset" : [ 139.33932495117188, 58.779743194580078, -112.3780517578125 ],
+                              "offset-hash" : "56eGfGCPBly4guZs",
+                              "reference" : "noise3d/DistortGrid.json",
+                              "tick" : 0,
+                              "type" : "reference"
+                           },
+                           "y" : 78.921005249023438
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 3D",
+                              "@position" : [ 9461, 7443 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "offset" : [ 410.51065063476563, -63.815147399902344, -238.8133544921875 ],
+                              "offset-hash" : "Dhm6jtFqBahDx09m",
+                              "type" : "constant",
+                              "value" : 0
+                           },
+                           "y" : 134.97700500488281
+                        }
+                     ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "type" : "layered"
+                  },
+                  "caves_decorations" : null,
+                  "caves_substrate" : null,
+                  "distortion" : {
+                     "@collapsed" : false,
+                     "@name" : "Caves - Standard",
+                     "@position" : [ 9162, 7116 ],
+                     "frequency" : [ 0.35400000214576721, 0.56000000238418579, 0.35400000214576721 ],
+                     "links" : [],
+                     "offset" : [ 1011.6187133789063, -28.537572860717773, -354.69320678710938 ],
+                     "offset-hash" : "KFej4bYWsYJBOj16",
+                     "reference" : "noise3d/CavesStandard.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  "distortionStrength" : {
+                     "enabled" : true,
+                     "value" : 40
+                  },
+                  "drop" : null,
+                  "dropMaxDepth" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "dropMaxGradient" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "dropMaxNoGravel" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "heightmap" : {
+                     "@collapsed" : false,
+                     "@name" : "Sum 2D",
+                     "@position" : [ 9162, 6559 ],
+                     "frequency" : [ 1, 1 ],
+                     "terms" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Distort 2D",
+                              "@position" : [ 9489, 6419 ],
+                              "base" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Wave 2D",
+                                 "@position" : [ 9781, 6366 ],
+                                 "directions" : "xz",
+                                 "frequency" : [ 0.01100000087171793, 0.01100000087171793 ],
+                                 "offset" : [ 2.8137636184692383, -4.5376124382019043 ],
+                                 "offset-hash" : "aQHHY2CMc0EocQEJ",
+                                 "type" : "wave",
+                                 "waveType" : "sine"
+                              },
+                              "distortion" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Perlin 2D",
+                                 "@position" : [ 9781, 6506 ],
+                                 "frequency" : [ 0.58400005102157593, 0.58400005102157593 ],
+                                 "offset" : [ 71.393913269042969, 339.96658325195313 ],
+                                 "offset-hash" : "qumrXpX2zmfplTHN",
+                                 "type" : "perlin"
+                              },
+                              "distortionScale" : [ 1, 1 ],
+                              "frequency" : [ 1, 1 ],
+                              "type" : "distort"
+                           },
+                           "multiplier" : 0.058000002056360245,
+                           "power" : 1
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 2D",
+                              "@position" : [ 9489, 6612 ],
+                              "frequency" : [ 1, 1 ],
+                              "offset" : [ -207.78515625, -127.05802154541016 ],
+                              "offset-hash" : "6LxpoRVq872Jvmwl",
+                              "type" : "constant",
+                              "value" : -0.31400001049041748
+                           },
+                           "multiplier" : 1,
+                           "power" : 1
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Sum 2D",
+                              "@position" : [ 9489, 6787 ],
+                              "frequency" : [ 1.4450000524520874, 1.4450000524520874 ],
+                              "terms" : [
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Product 2D",
+                                       "@position" : [ 9790, 6774 ],
+                                       "frequency" : [ 1, 1 ],
+                                       "terms" : [
+                                          {
+                                             "fun" : {
+                                                "@collapsed" : false,
+                                                "@name" : "Distort 2D",
+                                                "@position" : [ 10082, 6794 ],
+                                                "base" : {
+                                                   "@collapsed" : false,
+                                                   "@name" : "Wave 2D",
+                                                   "@position" : [ 10374, 6741 ],
+                                                   "directions" : "x",
+                                                   "frequency" : [ 0.23900000751018524, 0.23900000751018524 ],
+                                                   "offset" : [ 2.8137636184692383, -4.5376124382019043 ],
+                                                   "offset-hash" : "aQHHY2CMc0EocQEJ",
+                                                   "type" : "wave",
+                                                   "waveType" : "triangle"
+                                                },
+                                                "distortion" : {
+                                                   "@collapsed" : false,
+                                                   "@name" : "Perlin 2D",
+                                                   "@position" : [ 10374, 6881 ],
+                                                   "frequency" : [ 0.41500002145767212, 0.41500002145767212 ],
+                                                   "offset" : [ 71.393913269042969, 339.96658325195313 ],
+                                                   "offset-hash" : "qumrXpX2zmfplTHN",
+                                                   "type" : "perlin"
+                                                },
+                                                "distortionScale" : [ 0.51600003242492676, 0.51600003242492676 ],
+                                                "frequency" : [ 1, 1 ],
+                                                "type" : "distort"
+                                             },
+                                             "power" : 1
+                                          }
+                                       ],
+                                       "type" : "product"
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 },
+                                 {
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Constant 2D",
+                                       "@position" : [ 9790, 6987 ],
+                                       "frequency" : [ 1, 1 ],
+                                       "offset" : [ -95.735099792480469, 392.55157470703125 ],
+                                       "offset-hash" : "R4BYWFH6s5vs7OgS",
+                                       "type" : "constant",
+                                       "value" : -0.52000004053115845
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
+                                 }
+                              ],
+                              "type" : "sum"
+                           },
+                           "multiplier" : -0.042000003159046173,
+                           "power" : 1
+                        }
+                     ],
+                     "type" : "sum"
+                  },
+                  "heightmapMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "heightmapMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "parts" : [],
+                  "shrink" : null,
+                  "strata" : {
+                     "@collapsed" : false,
+                     "@name" : "Standard Strata",
+                     "@position" : [ 9162, 7595 ],
+                     "strata" : [
+                        {
+                           "averageDepth" : 6,
+                           "averageY" : 58,
+                           "blockType" : "ROCK_SEDIMENTARY_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ICE_DEFAULT_BASE", "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : {
+                              "@collapsed" : false,
+                              "@name" : "Perlin 2D",
+                              "@position" : [ 9467, 7984 ],
+                              "frequency" : [ 0.73000001907348633, 0.73000001907348633 ],
+                              "offset" : [ -66.059356689453125, -262.4566650390625 ],
+                              "offset-hash" : "1N6kRlZm3PDnoP1Q",
+                              "type" : "perlin"
+                           },
+                           "yNoiseScale" : 8
+                        },
+                        {
+                           "averageDepth" : 6,
+                           "averageY" : 67,
+                           "blockType" : "SAND_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ICE_DEFAULT_BASE", "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : {
+                              "@collapsed" : false,
+                              "@name" : "Perlin 2D",
+                              "@position" : [ 9467, 8090 ],
+                              "frequency" : [ 0.73000001907348633, 0.73000001907348633 ],
+                              "offset" : [ -66.059356689453125, -262.4566650390625 ],
+                              "offset-hash" : "1N6kRlZm3PDnoP1Q",
+                              "type" : "perlin"
+                           },
+                           "yNoiseScale" : 11
+                        },
+                        {
+                           "averageDepth" : 32,
+                           "averageY" : 81,
+                           "blockType" : "ROCK_SEDIMENTARY_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : null,
+                           "yNoiseScale" : 0
+                        },
+                        {
+                           "averageDepth" : 18,
+                           "averageY" : 26,
+                           "blockType" : "ROCK_IGNEOUS_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : {
+                              "@collapsed" : false,
+                              "@name" : "Perlin 2D",
+                              "@position" : [ 9467, 8196 ],
+                              "frequency" : [ 2, 2 ],
+                              "offset" : [ 190.73167419433594, -364.02035522460938 ],
+                              "offset-hash" : "j5jlHWKRV1SnVJpc",
+                              "type" : "perlin"
+                           },
+                           "yNoiseScale" : 27
+                        },
+                        {
+                           "averageDepth" : 18,
+                           "averageY" : 15,
+                           "blockType" : "GRAVEL_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : {
+                              "@collapsed" : false,
+                              "@name" : "Perlin 2D",
+                              "@position" : [ 9467, 8302 ],
+                              "frequency" : [ 2, 2 ],
+                              "offset" : [ 146.72465515136719, 99.481727600097656 ],
+                              "offset-hash" : "JEdBBaQ5X5xKBJjT",
+                              "type" : "perlin"
+                           },
+                           "yNoiseScale" : 37
+                        }
+                     ],
+                     "type" : "standard"
+                  },
+                  "surface_decorations" : {
+                     "@collapsed" : false,
+                     "@name" : "Standard Decorations",
+                     "@position" : [ 9162, 9069 ],
+                     "@toggle-ceiling" : false,
+                     "@toggle-floor" : true,
+                     "ceiling" : [],
+                     "floor" : [
+                        {
+                           "clearance" : 8,
+                           "constraintType" : [ "ICE_DEFAULT_BASE" ],
+                           "density" : -0.94999998807907104,
+                           "depth" : 8,
+                           "instance" : null,
+                           "maxGradient" : 5,
+                           "maxSize" : 0.5,
+                           "maxY" : 256,
+                           "minGradient" : 0,
+                           "minSize" : 0.5,
+                           "minY" : 0,
+                           "noise" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 2D",
+                              "@position" : [ 9493, 9297 ],
+                              "frequency" : [ 1, 1 ],
+                              "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                              "offset-hash" : "XzSpopEPWh0C3EqX",
+                              "type" : "constant",
+                              "value" : -1
+                           },
+                           "placementType" : "FLORA_FLOWER_1",
+                           "sizeNoise" : null,
+                           "smooth" : false,
+                           "threshold" : 0
+                        },
+                        {
+                           "clearance" : 8,
+                           "constraintType" : [ "SAND_DEFAULT_BASE", "ICE_DEFAULT_BASE" ],
+                           "density" : -0.90999996662139893,
+                           "depth" : 8,
+                           "instance" : {
+                              "@collapsed" : false,
+                              "@name" : "Bush (deprecated)",
+                              "@position" : [ 9493, 9426 ],
+                              "blockType" : "WOOD_LUSH_LEAVES",
+                              "height" : 3.5,
+                              "maxScale" : 2,
+                              "minScale" : 0.5,
+                              "radius" : 1,
+                              "stemType" : "WOOD_LUSH_LEAVES",
+                              "taper" : 2,
+                              "type" : "bush"
+                           },
+                           "maxGradient" : 5,
+                           "maxSize" : 1,
+                           "maxY" : 256,
+                           "minGradient" : 0,
+                           "minSize" : 0,
+                           "minY" : 0,
+                           "noise" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 2D",
+                              "@position" : [ 9493, 9635 ],
+                              "frequency" : [ 1, 1 ],
+                              "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                              "offset-hash" : "XzSpopEPWh0C3EqX",
+                              "type" : "constant",
+                              "value" : -1
+                           },
+                           "placementType" : "FLORA_FLOWER_1",
+                           "sizeNoise" : null,
+                           "smooth" : false,
+                           "threshold" : 0
+                        },
+                        {
+                           "clearance" : 8,
+                           "constraintType" : [ "ICE_DEFAULT_BASE", "SAND_DEFAULT_BASE" ],
+                           "density" : -0.87999999523162842,
+                           "depth" : 8,
+                           "instance" : {
+                              "@collapsed" : false,
+                              "@name" : "Bush (deprecated)",
+                              "@position" : [ 9493, 9764 ],
+                              "blockType" : "WOOD_LUSH_LEAVES",
+                              "height" : 6,
+                              "maxScale" : 2,
+                              "minScale" : 0.5,
+                              "radius" : 1.5,
+                              "stemType" : "WOOD_LUSH_LEAVES",
+                              "taper" : 2,
+                              "type" : "bush"
+                           },
+                           "maxGradient" : 5,
+                           "maxSize" : 0.5,
+                           "maxY" : 256,
+                           "minGradient" : 0,
+                           "minSize" : 0.5,
+                           "minY" : 0,
+                           "noise" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 2D",
+                              "@position" : [ 9493, 9973 ],
+                              "frequency" : [ 1, 1 ],
+                              "offset" : [ -154.02456665039063, 104.33403778076172 ],
+                              "offset-hash" : "XzSpopEPWh0C3EqX",
+                              "type" : "constant",
+                              "value" : -1
+                           },
+                           "placementType" : "FLORA_FLOWER_1",
+                           "sizeNoise" : null,
+                           "smooth" : false,
+                           "threshold" : 0
+                        }
+                     ],
+                     "type" : "standard"
+                  },
+                  "surface_substrate" : {
+                     "@collapsed" : false,
+                     "@name" : "Standard Substrate",
+                     "@position" : [ 9162, 8797 ],
+                     "strates" : [
+                        {
+                           "averageDepth" : 6,
+                           "blockType" : "ICE_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "maxGradient" : 5,
+                           "maxY" : 144,
+                           "metadata" : {
+                              "@toggle-metadata" : true,
+                              "maxGradient" : 5,
+                              "maxThreshold" : 1,
+                              "maxY" : 256,
+                              "minGradient" : 0,
+                              "minThreshold" : -1,
+                              "minY" : 0,
+                              "noise" : null
+                           },
+                           "minGradient" : 0,
+                           "minY" : 0
+                        }
+                     ],
+                     "type" : "standard"
+                  },
+                  "threeD" : null,
+                  "threeDMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "threeDMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "threeDSurfaceMaxY" : {
+                     "enabled" : false,
+                     "value" : 256
+                  },
+                  "threeDSurfaceMinY" : {
+                     "enabled" : false,
+                     "value" : 0
+                  },
+                  "threeDThresholdBias" : {
+                     "enabled" : false,
+                     "value" : -1
+                  },
+                  "threed_decorations" : null,
+                  "threed_substrate" : null,
+                  "x" : null,
+                  "y" : null
+               },
+               "temperature" : {
+                  "enabled" : true,
+                  "value" : 0.12900000810623169
+               },
+               "vegetation" : {
+                  "enabled" : true,
+                  "value" : 0.33500000834465027
+               },
+               "weight" : 0.5
+            },
+            "links" : [
+               {
+                  "blockConstraint" : 997803312,
+                  "blockDefault" : "",
+                  "checkDefault" : true,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "distortion"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@y"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Distortion",
+                  "shortPath" : "Caves - Standard.frequency.@y",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 2,
+                  "sliderMax" : 2,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 997803312,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "base"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Dune Frequency",
+                  "shortPath" : "Wave 2D.frequency.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.20000000298023224,
+                  "sliderMax" : 0.5,
+                  "sliderMin" : 0.10000000149011612,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 997803312,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "distortionScale"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Dune Distortion",
+                  "shortPath" : "Distort 2D.scale.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.51600003242492676,
+                  "sliderMax" : 4,
+                  "sliderMin" : 0.0010000000474974513,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 4153596074,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Biome Weight",
+                  "shortPath" : "ColdDesert.weight",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.5,
+                  "sliderMax" : 1,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
+               }
+            ]
+         },
+         "generator" : {
+            "@version" : 6,
+            "biomeSize" : 24,
+            "lowerSea" : {
+               "level" : 16,
+               "liquidType" : "WATER"
+            },
+            "sea" : {
+               "level" : 64,
+               "liquidType" : "WATER"
+            }
+         },
+         "seed" : "I has a seed!",
+         "sharedConfig" : {
+            "blockColors" : {
+               "ASH_DEFAULT_BASE" : 1,
+               "CRYSTAL_GLEAM_BASE" : 13,
+               "FLORA_FLOWER_1" : 1,
+               "FLORA_FLOWER_2" : 1,
+               "FLORA_FLOWER_3" : 1,
+               "FLORA_FLOWER_4" : 1,
+               "FLORA_PLANT_FIBROUS" : 1,
+               "FLORA_PLANT_INKY" : 1,
+               "GRASS_BARBED_BASE" : 8,
+               "GRASS_GNARLED_BASE" : 7,
+               "GRASS_VERDANT_BASE" : 9,
+               "GRAVEL_DEFAULT_BASE" : 16,
+               "GROWTH_DEFAULT_BASE" : 1,
+               "MOULD_DEFAULT_BASE" : 1,
+               "MUD_DEFAULT_BASE" : 1,
+               "ROCK_IGNEOUS_BASE" : 4,
+               "ROCK_METAMORPHIC_BASE" : 5,
+               "ROCK_SEDIMENTARY_BASE" : 6,
+               "SAND_DEFAULT_BASE" : 16,
+               "SOIL_CLAY_BASE" : 1,
+               "SOIL_PEATY_BASE" : 3,
+               "SOIL_SILTY_BASE" : 2,
+               "SPONGE_DEFAULT_BASE" : 1,
+               "TANGLE_DEFAULT_BASE" : 1,
+               "THORNS_DEFAULT_BASE" : 1,
+               "WOOD_ANCIENT_TRUNK" : 10,
+               "WOOD_EXOTIC_LEAVES" : 15,
+               "WOOD_LUSH_LEAVES" : 13,
+               "WOOD_LUSTROUS_TRUNK" : 1,
+               "WOOD_TWISTED_TRUNK" : 11,
+               "WOOD_WAXY_LEAVES" : 14
+            },
+            "worldSize" : 288
+         },
+         "test" : {
+            "@collapsed" : false,
+            "@name" : "Reference Biome",
+            "@position" : [ 8074, 10269 ],
+            "type" : "reference"
+         }
+      },
+      "links" : [],
+      "reference" : "",
+      "tick" : 0,
+      "type" : "reference"
+   }
+}

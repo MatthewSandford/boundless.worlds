@@ -1,0 +1,2094 @@
+{
+   "@collapsed" : false,
+   "@configType" : "WORLD",
+   "@name" : "Unnamed World",
+   "@position" : [ 7544, 8070 ],
+   "@scroll" : [ 8488.7529296875, 8917.1591796875, 1 ],
+   "@unlinked" : [
+      {
+         "data" : {
+            "@collapsed" : false,
+            "@name" : "Sum 2D",
+            "@position" : [ 7829, 7277 ],
+            "frequency" : [ 1, 1 ],
+            "terms" : [
+               {
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Perlin 2D",
+                     "@position" : [ 8120, 7301 ],
+                     "frequency" : [ 0.031000001356005669, 0.031000001356005669 ],
+                     "offset" : [ -82.233917236328125, -312.37127685546875 ],
+                     "offset-hash" : "HVbkbZsZ6C5rV3Th",
+                     "type" : "perlin"
+                  },
+                  "multiplier" : 1,
+                  "power" : 1
+               },
+               {
+                  "fun" : {
+                     "@collapsed" : false,
+                     "@name" : "Constant 2D",
+                     "@position" : [ 8120, 7407 ],
+                     "frequency" : [ 1, 1 ],
+                     "offset" : [ 390.53939819335938, -18.447826385498047 ],
+                     "offset-hash" : "UsVF9DzqWxzxfol2",
+                     "type" : "constant",
+                     "value" : 0.32600000500679016
+                  },
+                  "multiplier" : 1,
+                  "power" : 1
+               }
+            ],
+            "type" : "sum"
+         },
+         "nodeType" : "LT:NOISE_2D"
+      }
+   ],
+   "@version" : 9,
+   "generator" : {
+      "@collapsed" : false,
+      "@name" : "Generator",
+      "@position" : [ 8069, 7996 ],
+      "@toggle-distribution" : true,
+      "@toggle-global" : true,
+      "@toggle-visualise" : true,
+      "@version" : 6,
+      "biomeSize" : 16,
+      "biomes" : [
+         {
+            "@collapsed" : false,
+            "@name" : "TieredRainforest",
+            "@position" : [ 8601, 8288 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.53000003099441528
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               }
+            ],
+            "reference" : "biomes/TieredRainforest.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "SemiArid",
+            "@position" : [ 8601, 8394 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.10000000149011612
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "surface_decorations"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "floor"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "noise"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "base"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "cellScale"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "surface_decorations"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "floor"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "noise"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "base"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "cellScale"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.44300001859664917
+               }
+            ],
+            "reference" : "biomes/SemiArid.json",
+            "tick" : 1,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Savana",
+            "@position" : [ 8601, 8546 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "nodeValue"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.30000001192092896
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.44800001382827759
+               }
+            ],
+            "reference" : "biomes/Savana.json",
+            "tick" : 1,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "RockyDesert",
+            "@position" : [ 8601, 8698 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "power"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 3.8000001907348633
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.20000000298023224
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "distortion"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@y"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.43900001049041748
+               }
+            ],
+            "reference" : "biomes/RockyDesert.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Rainforest_2",
+            "@position" : [ 8601, 8873 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.51500004529953003
+               }
+            ],
+            "reference" : "biomes/Rainforest_2.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "RainforestGorge",
+            "@position" : [ 8601, 8956 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.10000000149011612
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 3,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : -0.60000002384185791
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.10000000149011612
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               }
+            ],
+            "reference" : "biomes/RainforestGorge.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "PancakeMountains",
+            "@position" : [ 8601, 9108 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.42000001668930054
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.40000000596046448
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "distortion"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@y"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1.1910001039505005
+               }
+            ],
+            "reference" : "biomes/PancakeMountains.json",
+            "tick" : 3,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Oasis",
+            "@position" : [ 8601, 9260 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.43700000643730164
+               }
+            ],
+            "reference" : "biomes/Oasis.json",
+            "tick" : 3,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Mangrove",
+            "@position" : [ 8601, 9343 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.44300001859664917
+               }
+            ],
+            "reference" : "biomes/Mangroves.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "DesertSpires",
+            "@position" : [ 8601, 9426 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.37000000476837158
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.080000005662441254
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.40000000596046448
+               }
+            ],
+            "reference" : "biomes/DesertSpires.json",
+            "tick" : 1,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "DesertCanyons",
+            "@position" : [ 8601, 9601 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 3,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 3,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 3,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : -0.10000000149011612
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               }
+            ],
+            "reference" : "biomes/DesertCanyons.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "Volcano",
+            "@position" : [ 8601, 9730 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.47700002789497375
+               }
+            ],
+            "reference" : "biomes/Volcanos.json",
+            "tick" : 2,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "RainforestRiver",
+            "@position" : [ 8601, 9836 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "nodeValue"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.40000000596046448
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               }
+            ],
+            "reference" : "biomes/RainforestRiver.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "CarvedDesertMountain",
+            "@position" : [ 8601, 10011 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.52000004053115845
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               }
+            ],
+            "reference" : "biomes/CarvedDesertMountains.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "PeatSwamp",
+            "@position" : [ 8601, 10117 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.26600000262260437
+               }
+            ],
+            "reference" : "biomes/Peaty Swamp.json",
+            "tick" : 0,
+            "type" : "reference"
+         }
+      ],
+      "distribution" : {
+         "altitude" : {
+            "@collapsed" : false,
+            "@name" : "Distort 2D",
+            "@position" : [ 8601, 6535 ],
+            "base" : {
+               "@collapsed" : false,
+               "@name" : "Sum 2D",
+               "@position" : [ 8910, 6371 ],
+               "frequency" : [ 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Wave 2D",
+                        "@position" : [ 9211, 6365 ],
+                        "directions" : "z",
+                        "frequency" : [ 0.13900001347064972, 0.13900001347064972 ],
+                        "offset" : [ -159.46897888183594, -335.31536865234375 ],
+                        "offset-hash" : "bpPfrHnjZY2YXKge",
+                        "type" : "wave",
+                        "waveType" : "sine"
+                     },
+                     "multiplier" : 1,
+                     "power" : 2.1520001888275146
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9211, 6505 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ 390.53939819335938, -18.447826385498047 ],
+                        "offset-hash" : "UsVF9DzqWxzxfol2",
+                        "type" : "constant",
+                        "value" : -0.23400001227855682
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9211, 6634 ],
+                        "frequency" : [ 0.040000002831220627, 0.040000002831220627 ],
+                        "offset" : [ 324.74249267578125, -324.18817138671875 ],
+                        "offset-hash" : "JO7InEUT1Lr0ep9U",
+                        "type" : "perlin"
+                     },
+                     "multiplier" : 0.25900000333786011,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Perlin 2D",
+               "@position" : [ 8910, 6740 ],
+               "frequency" : [ 0.23400001227855682, 0.23400001227855682 ],
+               "offset" : [ 324.74249267578125, -324.18817138671875 ],
+               "offset-hash" : "JO7InEUT1Lr0ep9U",
+               "type" : "perlin"
+            },
+            "distortionScale" : [ 1.3990000486373901, 1.3990000486373901 ],
+            "frequency" : [ 0.046000003814697266, 0.046000003814697266 ],
+            "type" : "distort"
+         },
+         "humidity" : {
+            "@collapsed" : false,
+            "@name" : "Distort 2D",
+            "@position" : [ 8601, 7497 ],
+            "base" : {
+               "@collapsed" : false,
+               "@name" : "Sum 2D",
+               "@position" : [ 8910, 7333 ],
+               "frequency" : [ 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Wave 2D",
+                        "@position" : [ 9211, 7327 ],
+                        "directions" : "z",
+                        "frequency" : [ 0.0010000000474974513, 0.0010000000474974513 ],
+                        "offset" : [ 32.172122955322266, 385.19119262695313 ],
+                        "offset-hash" : "7mP2wFq6WVyltnQj",
+                        "type" : "wave",
+                        "waveType" : "triangle"
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9211, 7467 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ 390.53939819335938, -18.447826385498047 ],
+                        "offset-hash" : "UsVF9DzqWxzxfol2",
+                        "type" : "constant",
+                        "value" : 0.094000004231929779
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9211, 7596 ],
+                        "frequency" : [ 0.045000001788139343, 0.045000001788139343 ],
+                        "offset" : [ -104.2191162109375, -156.56251525878906 ],
+                        "offset-hash" : "wG4mvuwptiCn1LLP",
+                        "type" : "perlin"
+                     },
+                     "multiplier" : 0.45500001311302185,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Perlin 2D",
+               "@position" : [ 8910, 7702 ],
+               "frequency" : [ 0.017000000923871994, 0.017000000923871994 ],
+               "offset" : [ 324.74249267578125, -324.18817138671875 ],
+               "offset-hash" : "JO7InEUT1Lr0ep9U",
+               "type" : "perlin"
+            },
+            "distortionScale" : [ 4, 4 ],
+            "frequency" : [ 1, 1 ],
+            "type" : "distort"
+         },
+         "temperature" : {
+            "@collapsed" : false,
+            "@name" : "Distort 2D",
+            "@position" : [ 8601, 7016 ],
+            "base" : {
+               "@collapsed" : false,
+               "@name" : "Sum 2D",
+               "@position" : [ 8910, 6852 ],
+               "frequency" : [ 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Wave 2D",
+                        "@position" : [ 9211, 6846 ],
+                        "directions" : "z",
+                        "frequency" : [ 0.0010000000474974513, 0.0010000000474974513 ],
+                        "offset" : [ 32.172122955322266, 385.19119262695313 ],
+                        "offset-hash" : "7mP2wFq6WVyltnQj",
+                        "type" : "wave",
+                        "waveType" : "triangle"
+                     },
+                     "multiplier" : -1,
+                     "power" : 1.0470000505447388
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9211, 6986 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ 390.53939819335938, -18.447826385498047 ],
+                        "offset-hash" : "UsVF9DzqWxzxfol2",
+                        "type" : "constant",
+                        "value" : 0.14500001072883606
+                     },
+                     "multiplier" : 1,
+                     "power" : 0.98600006103515625
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9211, 7115 ],
+                        "frequency" : [ 0.040000002831220627, 0.040000002831220627 ],
+                        "offset" : [ 324.74249267578125, -324.18817138671875 ],
+                        "offset-hash" : "JO7InEUT1Lr0ep9U",
+                        "type" : "perlin"
+                     },
+                     "multiplier" : 0.25900000333786011,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Perlin 2D",
+               "@position" : [ 8910, 7221 ],
+               "frequency" : [ 0.017000000923871994, 0.017000000923871994 ],
+               "offset" : [ 324.74249267578125, -324.18817138671875 ],
+               "offset-hash" : "JO7InEUT1Lr0ep9U",
+               "type" : "perlin"
+            },
+            "distortionScale" : [ 4, 4 ],
+            "frequency" : [ 1, 1 ],
+            "type" : "distort"
+         },
+         "vegetation" : {
+            "@collapsed" : false,
+            "@name" : "Distort 2D",
+            "@position" : [ 8601, 7978 ],
+            "base" : {
+               "@collapsed" : false,
+               "@name" : "Sum 2D",
+               "@position" : [ 8910, 7814 ],
+               "frequency" : [ 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Wave 2D",
+                        "@position" : [ 9211, 7808 ],
+                        "directions" : "z",
+                        "frequency" : [ 0.0010000000474974513, 0.0010000000474974513 ],
+                        "offset" : [ 32.172122955322266, 385.19119262695313 ],
+                        "offset-hash" : "7mP2wFq6WVyltnQj",
+                        "type" : "wave",
+                        "waveType" : "triangle"
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 2D",
+                        "@position" : [ 9211, 7948 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ 390.53939819335938, -18.447826385498047 ],
+                        "offset-hash" : "UsVF9DzqWxzxfol2",
+                        "type" : "constant",
+                        "value" : 0.094000004231929779
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9211, 8077 ],
+                        "frequency" : [ 0.040000002831220627, 0.040000002831220627 ],
+                        "offset" : [ 324.74249267578125, -324.18817138671875 ],
+                        "offset-hash" : "JO7InEUT1Lr0ep9U",
+                        "type" : "perlin"
+                     },
+                     "multiplier" : 0.33300000429153442,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Perlin 2D",
+               "@position" : [ 8910, 8183 ],
+               "frequency" : [ 0.017000000923871994, 0.017000000923871994 ],
+               "offset" : [ 324.74249267578125, -324.18817138671875 ],
+               "offset-hash" : "JO7InEUT1Lr0ep9U",
+               "type" : "perlin"
+            },
+            "distortionScale" : [ 4, 4 ],
+            "frequency" : [ 1, 1 ],
+            "type" : "distort"
+         }
+      },
+      "lowerSea" : {
+         "level" : 16,
+         "liquidType" : "WATER"
+      },
+      "sea" : {
+         "level" : 64,
+         "liquidType" : "WATER"
+      }
+   },
+   "seed" : "I has a seed!",
+   "sharedConfig" : {
+      "blockColors" : {
+         "ASH_DEFAULT_BASE" : 1,
+         "CRYSTAL_GLEAM_BASE" : 12,
+         "FLORA_FLOWER_1" : 1,
+         "FLORA_FLOWER_2" : 2,
+         "FLORA_FLOWER_3" : 4,
+         "FLORA_FLOWER_4" : 3,
+         "FLORA_PLANT_FIBROUS" : 1,
+         "FLORA_PLANT_INKY" : 1,
+         "GRASS_BARBED_BASE" : 7,
+         "GRASS_GNARLED_BASE" : 13,
+         "GRASS_VERDANT_BASE" : 8,
+         "GRAVEL_DEFAULT_BASE" : 12,
+         "GROWTH_DEFAULT_BASE" : 7,
+         "MOULD_DEFAULT_BASE" : 4,
+         "MUD_DEFAULT_BASE" : 1,
+         "ROCK_IGNEOUS_BASE" : 4,
+         "ROCK_METAMORPHIC_BASE" : 5,
+         "ROCK_SEDIMENTARY_BASE" : 6,
+         "SAND_DEFAULT_BASE" : 16,
+         "SOIL_CLAY_BASE" : 1,
+         "SOIL_PEATY_BASE" : 3,
+         "SOIL_SILTY_BASE" : 2,
+         "SPONGE_DEFAULT_BASE" : 1,
+         "TANGLE_DEFAULT_BASE" : 1,
+         "THORNS_DEFAULT_BASE" : 1,
+         "WOOD_ANCIENT_TRUNK" : 10,
+         "WOOD_EXOTIC_LEAVES" : 15,
+         "WOOD_LUSH_LEAVES" : 13,
+         "WOOD_LUSTROUS_TRUNK" : 1,
+         "WOOD_TWISTED_TRUNK" : 11,
+         "WOOD_WAXY_LEAVES" : 7
+      },
+      "resourceCategory" : "test_category",
+      "worldRank" : 4,
+      "worldSize" : 288
+   }
+}
