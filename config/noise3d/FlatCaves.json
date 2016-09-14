@@ -3,7 +3,7 @@
    "@configType" : "NOISE3D",
    "@name" : "FlatCaves",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8344.2099609375, 8158.94140625, -0.25 ],
+   "@scroll" : [ 8365.1474609375, 8204.0927734375, 0.25 ],
    "@toggle-test" : false,
    "@toggle-world" : false,
    "@unlinked" : [],
@@ -12,32 +12,65 @@
       "fun" : {
          "@collapsed" : false,
          "@name" : "Sum 3D",
-         "@position" : [ 8243, 8129 ],
-         "frequency" : [ 1, 1, 1 ],
+         "@position" : [ 8241, 8124 ],
+         "frequency" : [ 0.24300001561641693, 2, 0.24300001561641693 ],
          "terms" : [
             {
                "fun" : {
                   "@collapsed" : false,
-                  "@name" : "Perlin 3D",
-                  "@position" : [ 8570, 8149 ],
-                  "frequency" : [ 0.22700001299381256, 1, 0.22700001299381256 ],
-                  "offset" : [ 414.68545532226563, 69.772941589355469, -55.035316467285156 ],
-                  "offset-hash" : "Key5VTR3uDKKfUNc",
-                  "type" : "perlin"
-               },
-               "multiplier" : 1,
-               "power" : 1
-            },
-            {
-               "fun" : {
-                  "@collapsed" : false,
-                  "@name" : "Constant 3D",
-                  "@position" : [ 8591, 8317 ],
-                  "frequency" : [ 1, 1, 1 ],
-                  "offset" : [ -250.53512573242188, 383.47433471679688, -55.92852783203125 ],
-                  "offset-hash" : "GwBo0H6CRuKunMym",
-                  "type" : "constant",
-                  "value" : 1
+                  "@name" : "Sum 3D",
+                  "@position" : [ 8548, 8112 ],
+                  "frequency" : [ 2, 2, 2 ],
+                  "terms" : [
+                     {
+                        "fun" : {
+                           "@collapsed" : false,
+                           "@name" : "SmallCaves",
+                           "@position" : [ 8837, 8143 ],
+                           "frequency" : [ 1, 1.224000096321106, 1 ],
+                           "links" : [
+                              {
+                                 "linkPath" : [
+                                    {
+                                       "index" : -1,
+                                       "name" : "noise3d"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "fun"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "terms"
+                                    },
+                                    {
+                                       "index" : 1,
+                                       "name" : ""
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "fun"
+                                    },
+                                    {
+                                       "index" : -1,
+                                       "name" : "value"
+                                    }
+                                 ],
+                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                 "sliderValue" : 0.31000000238418579
+                              }
+                           ],
+                           "offset" : [ 951.705810546875, -345.4871826171875, -214.16603088378906 ],
+                           "offset-hash" : "AfGWrT0WBMz8dn0p",
+                           "reference" : "noise3d/SmallCaves.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        "multiplier" : 1,
+                        "power" : 1
+                     }
+                  ],
+                  "type" : "sum"
                },
                "multiplier" : 1,
                "power" : 1
@@ -45,47 +78,7 @@
          ],
          "type" : "sum"
       },
-      "links" : [
-         {
-            "blockConstraint" : 1906639592,
-            "blockDefault" : "",
-            "checkDefault" : true,
-            "linkPath" : [
-               {
-                  "index" : -1,
-                  "name" : "noise3d"
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "terms"
-               },
-               {
-                  "index" : 1,
-                  "name" : ""
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "value"
-               }
-            ],
-            "linkType" : "LT:CUSTOM_SLIDER",
-            "name" : "Size",
-            "shortPath" : "Constant 3D.value",
-            "sliderCheck" : false,
-            "sliderDefault" : 1,
-            "sliderMax" : 1,
-            "sliderMin" : -1,
-            "sliderStep" : 0.0010000000474974513
-         }
-      ]
+      "links" : []
    },
    "seed" : "I has a seed!",
    "sharedConfig" : {
@@ -107,32 +100,65 @@
             "fun" : {
                "@collapsed" : false,
                "@name" : "Sum 3D",
-               "@position" : [ 8243, 8129 ],
-               "frequency" : [ 1, 1, 1 ],
+               "@position" : [ 8241, 8124 ],
+               "frequency" : [ 0.24300001561641693, 2, 0.24300001561641693 ],
                "terms" : [
                   {
                      "fun" : {
                         "@collapsed" : false,
-                        "@name" : "Perlin 3D",
-                        "@position" : [ 8570, 8149 ],
-                        "frequency" : [ 0.22700001299381256, 1, 0.22700001299381256 ],
-                        "offset" : [ 414.68545532226563, 69.772941589355469, -55.035316467285156 ],
-                        "offset-hash" : "Key5VTR3uDKKfUNc",
-                        "type" : "perlin"
-                     },
-                     "multiplier" : 1,
-                     "power" : 1
-                  },
-                  {
-                     "fun" : {
-                        "@collapsed" : false,
-                        "@name" : "Constant 3D",
-                        "@position" : [ 8591, 8317 ],
-                        "frequency" : [ 1, 1, 1 ],
-                        "offset" : [ -250.53512573242188, 383.47433471679688, -55.92852783203125 ],
-                        "offset-hash" : "GwBo0H6CRuKunMym",
-                        "type" : "constant",
-                        "value" : 1
+                        "@name" : "Sum 3D",
+                        "@position" : [ 8548, 8112 ],
+                        "frequency" : [ 2, 2, 2 ],
+                        "terms" : [
+                           {
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "SmallCaves",
+                                 "@position" : [ 8837, 8143 ],
+                                 "frequency" : [ 1, 1.224000096321106, 1 ],
+                                 "links" : [
+                                    {
+                                       "linkPath" : [
+                                          {
+                                             "index" : -1,
+                                             "name" : "noise3d"
+                                          },
+                                          {
+                                             "index" : -1,
+                                             "name" : "fun"
+                                          },
+                                          {
+                                             "index" : -1,
+                                             "name" : "terms"
+                                          },
+                                          {
+                                             "index" : 1,
+                                             "name" : ""
+                                          },
+                                          {
+                                             "index" : -1,
+                                             "name" : "fun"
+                                          },
+                                          {
+                                             "index" : -1,
+                                             "name" : "value"
+                                          }
+                                       ],
+                                       "linkType" : "LT:CUSTOM_SLIDER",
+                                       "sliderValue" : 0.31000000238418579
+                                    }
+                                 ],
+                                 "offset" : [ 951.705810546875, -345.4871826171875, -214.16603088378906 ],
+                                 "offset-hash" : "AfGWrT0WBMz8dn0p",
+                                 "reference" : "noise3d/SmallCaves.json",
+                                 "tick" : 0,
+                                 "type" : "reference"
+                              },
+                              "multiplier" : 1,
+                              "power" : 1
+                           }
+                        ],
+                        "type" : "sum"
                      },
                      "multiplier" : 1,
                      "power" : 1
@@ -140,47 +166,7 @@
                ],
                "type" : "sum"
             },
-            "links" : [
-               {
-                  "blockConstraint" : 1906639592,
-                  "blockDefault" : "",
-                  "checkDefault" : true,
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "noise3d"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "terms"
-                     },
-                     {
-                        "index" : 1,
-                        "name" : ""
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "value"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "name" : "Size",
-                  "shortPath" : "Constant 3D.value",
-                  "sliderCheck" : false,
-                  "sliderDefault" : 1,
-                  "sliderMax" : 1,
-                  "sliderMin" : -1,
-                  "sliderStep" : 0.0010000000474974513
-               }
-            ]
+            "links" : []
          },
          "seed" : "I has a seed!",
          "sharedConfig" : {

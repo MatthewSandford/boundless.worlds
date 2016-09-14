@@ -3,18 +3,25 @@
    "@configType" : "BIOME",
    "@name" : "LavaField",
    "@position" : [ 7566, 8055 ],
-   "@scroll" : [ 8667.7333984375, 9017.654296875, -0.5 ],
+   "@scroll" : [ 8149.560546875, 8662.2138671875, -1 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 8,
+   "@version" : 10,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
          "@name" : "LavaField",
          "@position" : [ 7986, 8358 ],
-         "altitude" : 0.54900002479553223,
-         "humidity" : 0.27800002694129944,
+         "altitude" : {
+            "enabled" : true,
+            "value" : 0.54900002479553223
+         },
+         "humidity" : {
+            "enabled" : true,
+            "value" : 0.27800002694129944
+         },
+         "nameStyle" : "Depressio",
          "part" : {
             "@collapsed" : false,
             "@name" : "LavaField",
@@ -71,14 +78,14 @@
                   {
                      "@collapsed" : false,
                      "@name" : "Sum 2D",
-                     "@position" : [ 9183, 7869 ],
+                     "@position" : [ 9163, 7459 ],
                      "frequency" : [ 1, 1 ],
                      "terms" : [
                         {
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Heightmap - Rolling Hills",
-                              "@position" : [ 9509, 7727 ],
+                              "@position" : [ 9489, 7317 ],
                               "frequency" : [ 2, 2 ],
                               "links" : [
                                  {
@@ -147,12 +154,12 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 9509, 7879 ],
+                              "@position" : [ 9489, 7469 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ 71.406120300292969, -362.92800903320313 ],
                               "offset-hash" : "0ybOAtlTPKaRIvi0",
                               "type" : "constant",
-                              "value" : -0.36200001835823059
+                              "value" : -0.50800001621246338
                            },
                            "multiplier" : 1,
                            "power" : 1
@@ -161,7 +168,7 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Rivers",
-                              "@position" : [ 9509, 8008 ],
+                              "@position" : [ 9489, 7598 ],
                               "frequency" : [ 2, 2 ],
                               "links" : [
                                  {
@@ -223,7 +230,7 @@
                                     "nodeValue" : {
                                        "@collapsed" : false,
                                        "@name" : "Perlin 2D",
-                                       "@position" : [ 9791, 8091 ],
+                                       "@position" : [ 9771, 7681 ],
                                        "frequency" : [ 1, 1 ],
                                        "offset" : [ 392.3216552734375, 338.57281494140625 ],
                                        "offset-hash" : "Ej6vehVyF7unuNvn",
@@ -526,7 +533,7 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Ditches",
-                              "@position" : [ 9509, 8280 ],
+                              "@position" : [ 9489, 7870 ],
                               "frequency" : [ 0.49900001287460327, 0.49900001287460327 ],
                               "links" : [
                                  {
@@ -557,7 +564,7 @@
                                        }
                                     ],
                                     "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : -2
+                                    "sliderValue" : -1.1510000228881836
                                  },
                                  {
                                     "linkPath" : [
@@ -661,11 +668,11 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Distort 2D",
-                              "@position" : [ 9512, 8461 ],
+                              "@position" : [ 9492, 8051 ],
                               "base" : {
                                  "@collapsed" : false,
                                  "@name" : "Wave 2D",
-                                 "@position" : [ 9860, 8445 ],
+                                 "@position" : [ 9840, 8035 ],
                                  "directions" : "z",
                                  "frequency" : [ 0.16000001132488251, 0.16000001132488251 ],
                                  "offset" : [ -303.6484375, -262.08773803710938 ],
@@ -676,7 +683,7 @@
                               "distortion" : {
                                  "@collapsed" : false,
                                  "@name" : "Perlin 2D",
-                                 "@position" : [ 9843, 8576 ],
+                                 "@position" : [ 9823, 8166 ],
                                  "frequency" : [ 0.79900002479553223, 0.79900002479553223 ],
                                  "offset" : [ 242.30715942382813, 268.79339599609375 ],
                                  "offset-hash" : "3YsYJwGGno3Oa3jM",
@@ -850,8 +857,14 @@
             "x" : null,
             "y" : null
          },
-         "temperature" : 0.74300003051757813,
-         "vegetation" : 0.088000006973743439,
+         "temperature" : {
+            "enabled" : true,
+            "value" : 0.74300003051757813
+         },
+         "vegetation" : {
+            "enabled" : true,
+            "value" : 0.088000006973743439
+         },
          "weight" : 0.5
       },
       "links" : []
@@ -916,14 +929,21 @@
          "@position" : [ 7566, 8055 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 8,
+         "@version" : 10,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
                "@name" : "LavaField",
                "@position" : [ 7986, 8358 ],
-               "altitude" : 0.54900002479553223,
-               "humidity" : 0.27800002694129944,
+               "altitude" : {
+                  "enabled" : true,
+                  "value" : 0.54900002479553223
+               },
+               "humidity" : {
+                  "enabled" : true,
+                  "value" : 0.27800002694129944
+               },
+               "nameStyle" : "Depressio",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "LavaField",
@@ -980,14 +1000,14 @@
                         {
                            "@collapsed" : false,
                            "@name" : "Sum 2D",
-                           "@position" : [ 9183, 7869 ],
+                           "@position" : [ 9163, 7459 ],
                            "frequency" : [ 1, 1 ],
                            "terms" : [
                               {
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Heightmap - Rolling Hills",
-                                    "@position" : [ 9509, 7727 ],
+                                    "@position" : [ 9489, 7317 ],
                                     "frequency" : [ 2, 2 ],
                                     "links" : [
                                        {
@@ -1056,12 +1076,12 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Constant 2D",
-                                    "@position" : [ 9509, 7879 ],
+                                    "@position" : [ 9489, 7469 ],
                                     "frequency" : [ 1, 1 ],
                                     "offset" : [ 71.406120300292969, -362.92800903320313 ],
                                     "offset-hash" : "0ybOAtlTPKaRIvi0",
                                     "type" : "constant",
-                                    "value" : -0.36200001835823059
+                                    "value" : -0.50800001621246338
                                  },
                                  "multiplier" : 1,
                                  "power" : 1
@@ -1070,7 +1090,7 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Rivers",
-                                    "@position" : [ 9509, 8008 ],
+                                    "@position" : [ 9489, 7598 ],
                                     "frequency" : [ 2, 2 ],
                                     "links" : [
                                        {
@@ -1132,7 +1152,7 @@
                                           "nodeValue" : {
                                              "@collapsed" : false,
                                              "@name" : "Perlin 2D",
-                                             "@position" : [ 9791, 8091 ],
+                                             "@position" : [ 9771, 7681 ],
                                              "frequency" : [ 1, 1 ],
                                              "offset" : [ 392.3216552734375, 338.57281494140625 ],
                                              "offset-hash" : "Ej6vehVyF7unuNvn",
@@ -1435,7 +1455,7 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Ditches",
-                                    "@position" : [ 9509, 8280 ],
+                                    "@position" : [ 9489, 7870 ],
                                     "frequency" : [ 0.49900001287460327, 0.49900001287460327 ],
                                     "links" : [
                                        {
@@ -1466,7 +1486,7 @@
                                              }
                                           ],
                                           "linkType" : "LT:CUSTOM_SLIDER",
-                                          "sliderValue" : -2
+                                          "sliderValue" : -1.1510000228881836
                                        },
                                        {
                                           "linkPath" : [
@@ -1570,11 +1590,11 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Distort 2D",
-                                    "@position" : [ 9512, 8461 ],
+                                    "@position" : [ 9492, 8051 ],
                                     "base" : {
                                        "@collapsed" : false,
                                        "@name" : "Wave 2D",
-                                       "@position" : [ 9860, 8445 ],
+                                       "@position" : [ 9840, 8035 ],
                                        "directions" : "z",
                                        "frequency" : [ 0.16000001132488251, 0.16000001132488251 ],
                                        "offset" : [ -303.6484375, -262.08773803710938 ],
@@ -1585,7 +1605,7 @@
                                     "distortion" : {
                                        "@collapsed" : false,
                                        "@name" : "Perlin 2D",
-                                       "@position" : [ 9843, 8576 ],
+                                       "@position" : [ 9823, 8166 ],
                                        "frequency" : [ 0.79900002479553223, 0.79900002479553223 ],
                                        "offset" : [ 242.30715942382813, 268.79339599609375 ],
                                        "offset-hash" : "3YsYJwGGno3Oa3jM",
@@ -1759,8 +1779,14 @@
                   "x" : null,
                   "y" : null
                },
-               "temperature" : 0.74300003051757813,
-               "vegetation" : 0.088000006973743439,
+               "temperature" : {
+                  "enabled" : true,
+                  "value" : 0.74300003051757813
+               },
+               "vegetation" : {
+                  "enabled" : true,
+                  "value" : 0.088000006973743439
+               },
                "weight" : 0.5
             },
             "links" : []

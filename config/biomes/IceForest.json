@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "IceForest",
    "@position" : [ 7781, 8145 ],
-   "@scroll" : [ 8607.5283203125, 8654.6201171875, -0.25 ],
+   "@scroll" : [ 8351.947265625, 8744.416015625, -0.75 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 9,
+   "@version" : 10,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -21,6 +21,7 @@
             "enabled" : false,
             "value" : 0.1810000091791153
          },
+         "nameStyle" : "Tessera",
          "part" : {
             "@collapsed" : false,
             "@name" : "IceForest",
@@ -40,12 +41,12 @@
             "@x-name" : "x",
             "@y-name" : "y",
             "caveSurfaceShrink" : {
-               "enabled" : false,
-               "value" : 1.0099999904632568
+               "enabled" : true,
+               "value" : 1
             },
             "caveThresholdBias" : {
                "enabled" : true,
-               "value" : -0.11999999731779099
+               "value" : 0
             },
             "caves" : {
                "@collapsed" : false,
@@ -55,124 +56,17 @@
                   {
                      "fun" : {
                         "@collapsed" : false,
-                        "@name" : "RoundedCaves",
-                        "@position" : [ 9469, 7786 ],
-                        "frequency" : [ 2, 2, 2 ],
-                        "links" : [
-                           {
-                              "linkPath" : [
-                                 {
-                                    "index" : -1,
-                                    "name" : "noise3d"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 0,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "distortion"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "frequency"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "@xz"
-                                 }
-                              ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0
-                           },
-                           {
-                              "linkPath" : [
-                                 {
-                                    "index" : -1,
-                                    "name" : "noise3d"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 0,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "distortion"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "frequency"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "@y"
-                                 }
-                              ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0
-                           },
-                           {
-                              "linkPath" : [
-                                 {
-                                    "index" : -1,
-                                    "name" : "noise3d"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 1,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "value"
-                                 }
-                              ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0.90100002288818359
-                           }
-                        ],
-                        "offset" : [ 33.649269104003906, -122.79573822021484, -372.30511474609375 ],
-                        "offset-hash" : "7ofummDecI3m7gJF",
-                        "reference" : "noise3d/RoundedCaves.json",
-                        "tick" : 1,
+                        "@name" : "FlatCaves",
+                        "@position" : [ 9477, 7826 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "links" : [],
+                        "offset" : [ 924.11712646484375, 371.38250732421875, -20.823198318481445 ],
+                        "offset-hash" : "AjX3rgzK9VVB3a9v",
+                        "reference" : "noise3d/FlatCaves.json",
+                        "tick" : 0,
                         "type" : "reference"
                      },
-                     "y" : 73.287002563476563
+                     "y" : 105.28200531005859
                   },
                   {
                      "fun" : {
@@ -185,10 +79,10 @@
                         "type" : "constant",
                         "value" : 0
                      },
-                     "y" : 142.031005859375
+                     "y" : 130.28201293945313
                   }
                ],
-               "frequency" : [ 1, 1, 1 ],
+               "frequency" : [ 1.1790000200271606, 2, 1.1790000200271606 ],
                "type" : "layered"
             },
             "caves_decorations" : null,
@@ -797,7 +691,7 @@
          "@position" : [ 7781, 8145 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 9,
+         "@version" : 10,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -811,6 +705,7 @@
                   "enabled" : false,
                   "value" : 0.1810000091791153
                },
+               "nameStyle" : "Tessera",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "IceForest",
@@ -830,12 +725,12 @@
                   "@x-name" : "x",
                   "@y-name" : "y",
                   "caveSurfaceShrink" : {
-                     "enabled" : false,
-                     "value" : 1.0099999904632568
+                     "enabled" : true,
+                     "value" : 1
                   },
                   "caveThresholdBias" : {
                      "enabled" : true,
-                     "value" : -0.11999999731779099
+                     "value" : 0
                   },
                   "caves" : {
                      "@collapsed" : false,
@@ -845,124 +740,17 @@
                         {
                            "fun" : {
                               "@collapsed" : false,
-                              "@name" : "RoundedCaves",
-                              "@position" : [ 9469, 7786 ],
-                              "frequency" : [ 2, 2, 2 ],
-                              "links" : [
-                                 {
-                                    "linkPath" : [
-                                       {
-                                          "index" : -1,
-                                          "name" : "noise3d"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 0,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "distortion"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "frequency"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "@xz"
-                                       }
-                                    ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0
-                                 },
-                                 {
-                                    "linkPath" : [
-                                       {
-                                          "index" : -1,
-                                          "name" : "noise3d"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 0,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "distortion"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "frequency"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "@y"
-                                       }
-                                    ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0
-                                 },
-                                 {
-                                    "linkPath" : [
-                                       {
-                                          "index" : -1,
-                                          "name" : "noise3d"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 1,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "value"
-                                       }
-                                    ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0.90100002288818359
-                                 }
-                              ],
-                              "offset" : [ 33.649269104003906, -122.79573822021484, -372.30511474609375 ],
-                              "offset-hash" : "7ofummDecI3m7gJF",
-                              "reference" : "noise3d/RoundedCaves.json",
-                              "tick" : 1,
+                              "@name" : "FlatCaves",
+                              "@position" : [ 9477, 7826 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "links" : [],
+                              "offset" : [ 924.11712646484375, 371.38250732421875, -20.823198318481445 ],
+                              "offset-hash" : "AjX3rgzK9VVB3a9v",
+                              "reference" : "noise3d/FlatCaves.json",
+                              "tick" : 0,
                               "type" : "reference"
                            },
-                           "y" : 73.287002563476563
+                           "y" : 105.28200531005859
                         },
                         {
                            "fun" : {
@@ -975,10 +763,10 @@
                               "type" : "constant",
                               "value" : 0
                            },
-                           "y" : 142.031005859375
+                           "y" : 130.28201293945313
                         }
                      ],
-                     "frequency" : [ 1, 1, 1 ],
+                     "frequency" : [ 1.1790000200271606, 2, 1.1790000200271606 ],
                      "type" : "layered"
                   },
                   "caves_decorations" : null,

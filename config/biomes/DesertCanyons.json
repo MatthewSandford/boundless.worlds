@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "DesertCanyons",
    "@position" : [ 7745, 8095 ],
-   "@scroll" : [ 9395.3134765625, 8704.01171875, 0.5 ],
+   "@scroll" : [ 8910.31640625, 9203.8603515625, 0.5 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 9,
+   "@version" : 10,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -21,6 +21,7 @@
             "enabled" : true,
             "value" : 0.30400002002716064
          },
+         "nameStyle" : "Fauces",
          "part" : {
             "@collapsed" : false,
             "@name" : "DesertCanyons",
@@ -827,7 +828,7 @@
                "strata" : [
                   {
                      "averageDepth" : 6,
-                     "averageY" : 88,
+                     "averageY" : 85,
                      "blockType" : "ROCK_SEDIMENTARY_BASE",
                      "depthNoise" : null,
                      "depthNoiseScale" : 3,
@@ -841,14 +842,14 @@
                         "offset-hash" : "IOXW5O8XF6o250GX",
                         "type" : "perlin"
                      },
-                     "yNoiseScale" : 12
+                     "yNoiseScale" : 10
                   },
                   {
                      "averageDepth" : 11,
-                     "averageY" : 64,
+                     "averageY" : 69,
                      "blockType" : "SOIL_CLAY_BASE",
                      "depthNoise" : null,
-                     "depthNoiseScale" : 3,
+                     "depthNoiseScale" : 2,
                      "replaceTypes" : [ "ROCK_METAMORPHIC_BASE", "SAND_DEFAULT_BASE" ],
                      "yNoise" : {
                         "@collapsed" : false,
@@ -859,7 +860,7 @@
                         "offset-hash" : "IOXW5O8XF6o250GX",
                         "type" : "perlin"
                      },
-                     "yNoiseScale" : 8
+                     "yNoiseScale" : 7
                   },
                   {
                      "averageDepth" : 7,
@@ -878,24 +879,6 @@
                         "type" : "perlin"
                      },
                      "yNoiseScale" : 11
-                  },
-                  {
-                     "averageDepth" : 10,
-                     "averageY" : 122,
-                     "blockType" : "GRAVEL_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE", "SAND_DEFAULT_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9646, 8735 ],
-                        "frequency" : [ 0.037000000476837158, 0.037000000476837158 ],
-                        "offset" : [ -141.34126281738281, -263.8599853515625 ],
-                        "offset-hash" : "14id5PsRSpOTms8i",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 12
                   },
                   {
                      "averageDepth" : 10,
@@ -1046,14 +1029,42 @@
             "surface_substrate" : {
                "@collapsed" : false,
                "@name" : "Standard Substrate",
-               "@position" : [ 9327, 9470 ],
+               "@position" : [ 9338, 9235 ],
                "strates" : [
                   {
-                     "averageDepth" : 32,
+                     "averageDepth" : 9,
                      "blockType" : "SAND_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
+                     "depthNoise" : {
+                        "@collapsed" : false,
+                        "@name" : "Perlin 2D",
+                        "@position" : [ 9654, 9329 ],
+                        "frequency" : [ 1, 1 ],
+                        "offset" : [ 222.39718627929688, -154.7335205078125 ],
+                        "offset-hash" : "QFXWOfATUDHp4LZU",
+                        "type" : "perlin"
+                     },
+                     "depthNoiseScale" : 8,
                      "maxGradient" : 5,
+                     "maxY" : 256,
+                     "metadata" : {
+                        "@toggle-metadata" : true,
+                        "maxGradient" : 5,
+                        "maxThreshold" : 1,
+                        "maxY" : 256,
+                        "minGradient" : 0,
+                        "minThreshold" : -1,
+                        "minY" : 0,
+                        "noise" : null
+                     },
+                     "minGradient" : 0,
+                     "minY" : 0
+                  },
+                  {
+                     "averageDepth" : 3,
+                     "blockType" : "GRAVEL_DEFAULT_BASE",
+                     "depthNoise" : null,
+                     "depthNoiseScale" : 6,
+                     "maxGradient" : 1,
                      "maxY" : 256,
                      "metadata" : {
                         "@toggle-metadata" : true,
@@ -1273,7 +1284,7 @@
          "GRASS_BARBED_BASE" : 8,
          "GRASS_GNARLED_BASE" : 7,
          "GRASS_VERDANT_BASE" : 9,
-         "GRAVEL_DEFAULT_BASE" : 16,
+         "GRAVEL_DEFAULT_BASE" : 14,
          "GROWTH_DEFAULT_BASE" : 1,
          "MOULD_DEFAULT_BASE" : 1,
          "MUD_DEFAULT_BASE" : 1,
@@ -1307,7 +1318,7 @@
          "@position" : [ 7745, 8095 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 9,
+         "@version" : 10,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -1321,6 +1332,7 @@
                   "enabled" : true,
                   "value" : 0.30400002002716064
                },
+               "nameStyle" : "Fauces",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "DesertCanyons",
@@ -2127,7 +2139,7 @@
                      "strata" : [
                         {
                            "averageDepth" : 6,
-                           "averageY" : 88,
+                           "averageY" : 85,
                            "blockType" : "ROCK_SEDIMENTARY_BASE",
                            "depthNoise" : null,
                            "depthNoiseScale" : 3,
@@ -2141,14 +2153,14 @@
                               "offset-hash" : "IOXW5O8XF6o250GX",
                               "type" : "perlin"
                            },
-                           "yNoiseScale" : 12
+                           "yNoiseScale" : 10
                         },
                         {
                            "averageDepth" : 11,
-                           "averageY" : 64,
+                           "averageY" : 69,
                            "blockType" : "SOIL_CLAY_BASE",
                            "depthNoise" : null,
-                           "depthNoiseScale" : 3,
+                           "depthNoiseScale" : 2,
                            "replaceTypes" : [ "ROCK_METAMORPHIC_BASE", "SAND_DEFAULT_BASE" ],
                            "yNoise" : {
                               "@collapsed" : false,
@@ -2159,7 +2171,7 @@
                               "offset-hash" : "IOXW5O8XF6o250GX",
                               "type" : "perlin"
                            },
-                           "yNoiseScale" : 8
+                           "yNoiseScale" : 7
                         },
                         {
                            "averageDepth" : 7,
@@ -2178,24 +2190,6 @@
                               "type" : "perlin"
                            },
                            "yNoiseScale" : 11
-                        },
-                        {
-                           "averageDepth" : 10,
-                           "averageY" : 122,
-                           "blockType" : "GRAVEL_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE", "SAND_DEFAULT_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9646, 8735 ],
-                              "frequency" : [ 0.037000000476837158, 0.037000000476837158 ],
-                              "offset" : [ -141.34126281738281, -263.8599853515625 ],
-                              "offset-hash" : "14id5PsRSpOTms8i",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 12
                         },
                         {
                            "averageDepth" : 10,
@@ -2346,14 +2340,42 @@
                   "surface_substrate" : {
                      "@collapsed" : false,
                      "@name" : "Standard Substrate",
-                     "@position" : [ 9327, 9470 ],
+                     "@position" : [ 9338, 9235 ],
                      "strates" : [
                         {
-                           "averageDepth" : 32,
+                           "averageDepth" : 9,
                            "blockType" : "SAND_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
+                           "depthNoise" : {
+                              "@collapsed" : false,
+                              "@name" : "Perlin 2D",
+                              "@position" : [ 9654, 9329 ],
+                              "frequency" : [ 1, 1 ],
+                              "offset" : [ 222.39718627929688, -154.7335205078125 ],
+                              "offset-hash" : "QFXWOfATUDHp4LZU",
+                              "type" : "perlin"
+                           },
+                           "depthNoiseScale" : 8,
                            "maxGradient" : 5,
+                           "maxY" : 256,
+                           "metadata" : {
+                              "@toggle-metadata" : true,
+                              "maxGradient" : 5,
+                              "maxThreshold" : 1,
+                              "maxY" : 256,
+                              "minGradient" : 0,
+                              "minThreshold" : -1,
+                              "minY" : 0,
+                              "noise" : null
+                           },
+                           "minGradient" : 0,
+                           "minY" : 0
+                        },
+                        {
+                           "averageDepth" : 3,
+                           "blockType" : "GRAVEL_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 6,
+                           "maxGradient" : 1,
                            "maxY" : 256,
                            "metadata" : {
                               "@toggle-metadata" : true,
@@ -2573,7 +2595,7 @@
                "GRASS_BARBED_BASE" : 8,
                "GRASS_GNARLED_BASE" : 7,
                "GRASS_VERDANT_BASE" : 9,
-               "GRAVEL_DEFAULT_BASE" : 16,
+               "GRAVEL_DEFAULT_BASE" : 14,
                "GROWTH_DEFAULT_BASE" : 1,
                "MOULD_DEFAULT_BASE" : 1,
                "MUD_DEFAULT_BASE" : 1,

@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "SeaVolcano",
    "@position" : [ 7453, 8075 ],
-   "@scroll" : [ 10148.4443359375, 8483.32421875, 0 ],
+   "@scroll" : [ 8428.1279296875, 8306.2998046875, -0.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 9,
+   "@version" : 10,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -21,6 +21,7 @@
             "enabled" : true,
             "value" : 0.71700000762939453
          },
+         "nameStyle" : "Ardesco",
          "part" : {
             "@collapsed" : false,
             "@name" : "SeaVolcano",
@@ -50,20 +51,20 @@
             "caves" : {
                "@collapsed" : false,
                "@name" : "Sum 3D",
-               "@position" : [ 9448, 8241 ],
+               "@position" : [ 9750, 9955 ],
                "frequency" : [ 2, 2, 2 ],
                "terms" : [
                   {
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Layered 3D",
-                        "@position" : [ 9738, 8221 ],
+                        "@position" : [ 10057, 9910 ],
                         "components" : [
                            {
                               "fun" : {
                                  "@collapsed" : false,
                                  "@name" : "Constant 3D",
-                                 "@position" : [ 10083, 8436 ],
+                                 "@position" : [ 10364, 9841 ],
                                  "frequency" : [ 1, 1, 1 ],
                                  "offset" : [ 970.309326171875, 249.58145141601563, -276.15658569335938 ],
                                  "offset-hash" : "uZBuPBhDzOld7vzZ",
@@ -75,46 +76,13 @@
                            {
                               "fun" : {
                                  "@collapsed" : false,
-                                 "@name" : "FlatCaves",
-                                 "@position" : [ 10055, 8590 ],
-                                 "frequency" : [ 2, 2, 2 ],
-                                 "links" : [
-                                    {
-                                       "linkPath" : [
-                                          {
-                                             "index" : -1,
-                                             "name" : "noise3d"
-                                          },
-                                          {
-                                             "index" : -1,
-                                             "name" : "fun"
-                                          },
-                                          {
-                                             "index" : -1,
-                                             "name" : "terms"
-                                          },
-                                          {
-                                             "index" : 1,
-                                             "name" : ""
-                                          },
-                                          {
-                                             "index" : -1,
-                                             "name" : "fun"
-                                          },
-                                          {
-                                             "index" : -1,
-                                             "name" : "value"
-                                          }
-                                       ],
-                                       "linkType" : "LT:CUSTOM_SLIDER",
-                                       "sliderValue" : 1
-                                    }
-                                 ],
-                                 "offset" : [ 668.62005615234375, 195.49322509765625, -349.82107543945313 ],
-                                 "offset-hash" : "svMxIIUL3S6gdZCS",
-                                 "reference" : "noise3d/FlatCaves.json",
-                                 "tick" : 0,
-                                 "type" : "reference"
+                                 "@name" : "Constant 3D",
+                                 "@position" : [ 10364, 9993 ],
+                                 "frequency" : [ 1, 1, 1 ],
+                                 "offset" : [ 970.309326171875, 249.58145141601563, -276.15658569335938 ],
+                                 "offset-hash" : "uZBuPBhDzOld7vzZ",
+                                 "type" : "constant",
+                                 "value" : 0
                               },
                               "y" : 63.495002746582031
                            },
@@ -122,7 +90,7 @@
                               "fun" : {
                                  "@collapsed" : false,
                                  "@name" : "Constant 3D",
-                                 "@position" : [ 10064, 8754 ],
+                                 "@position" : [ 10364, 10145 ],
                                  "frequency" : [ 1, 1, 1 ],
                                  "offset" : [ 401.81924438476563, -341.90213012695313, -352.35824584960938 ],
                                  "offset-hash" : "DOFsOKQOML9Ifepi",
@@ -164,14 +132,14 @@
             "heightmap" : {
                "@collapsed" : false,
                "@name" : "Sum 2D",
-               "@position" : [ 9698, 7152 ],
+               "@position" : [ 9750, 6924 ],
                "frequency" : [ 1, 1 ],
                "terms" : [
                   {
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Remove Negative",
-                        "@position" : [ 10303, 7138 ],
+                        "@position" : [ 10379, 6910 ],
                         "frequency" : [ 1, 1 ],
                         "links" : [
                            {
@@ -237,14 +205,14 @@
                               "nodeValue" : {
                                  "@collapsed" : false,
                                  "@name" : "Sum 2D",
-                                 "@position" : [ 10894, 5379 ],
+                                 "@position" : [ 10994, 5022 ],
                                  "frequency" : [ 1, 1 ],
                                  "terms" : [
                                     {
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sea Base",
-                                          "@position" : [ 11279, 4793 ],
+                                          "@position" : [ 11388, 4371 ],
                                           "frequency" : [ 1, 1 ],
                                           "links" : [],
                                           "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -260,22 +228,22 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sum 2D",
-                                          "@position" : [ 11279, 5312 ],
+                                          "@position" : [ 11388, 4955 ],
                                           "frequency" : [ 1, 1 ],
                                           "terms" : [
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Distort 2D",
-                                                   "@position" : [ 11630, 5074 ],
+                                                   "@position" : [ 11748, 4653 ],
                                                    "base" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Distort 2D",
-                                                      "@position" : [ 11939, 5021 ],
+                                                      "@position" : [ 12057, 4600 ],
                                                       "base" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Worley 2D",
-                                                         "@position" : [ 12241, 4899 ],
+                                                         "@position" : [ 12359, 4478 ],
                                                          "cellCount" : 1,
                                                          "cellScale" : 1,
                                                          "components" : [
@@ -293,7 +261,7 @@
                                                       "distortion" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 12241, 5177 ],
+                                                         "@position" : [ 12359, 4756 ],
                                                          "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                          "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                          "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -306,7 +274,7 @@
                                                    "distortion" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Perlin 2D",
-                                                      "@position" : [ 11939, 5283 ],
+                                                      "@position" : [ 12057, 4862 ],
                                                       "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                       "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                       "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -322,95 +290,114 @@
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
-                                                   "@name" : "Sum 2D",
-                                                   "@position" : [ 11630, 5597 ],
+                                                   "@name" : "Min 2D",
+                                                   "@position" : [ 11748, 5263 ],
                                                    "frequency" : [ 1, 1 ],
                                                    "terms" : [
                                                       {
-                                                         "fun" : {
-                                                            "@collapsed" : false,
-                                                            "@name" : "Sum 2D",
-                                                            "@position" : [ 11948, 5557 ],
-                                                            "frequency" : [ 1, 1 ],
-                                                            "terms" : [
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Distort 2D",
-                                                                     "@position" : [ 12266, 5564 ],
-                                                                     "base" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Distort 2D",
-                                                                        "@position" : [ 12575, 5511 ],
-                                                                        "base" : {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Sum 2D",
+                                                         "@position" : [ 12075, 5176 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "terms" : [
+                                                            {
+                                                               "fun" : {
+                                                                  "@collapsed" : false,
+                                                                  "@name" : "Sum 2D",
+                                                                  "@position" : [ 12393, 5136 ],
+                                                                  "frequency" : [ 1, 1 ],
+                                                                  "terms" : [
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Worley 2D",
-                                                                           "@position" : [ 12877, 5389 ],
-                                                                           "cellCount" : 1,
-                                                                           "cellScale" : 1,
-                                                                           "components" : [
-                                                                              {
-                                                                                 "k" : 0,
-                                                                                 "multiplier" : -1.0099999904632568,
-                                                                                 "power" : 1.0329999923706055
-                                                                              }
-                                                                           ],
-                                                                           "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                           "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                           "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                           "type" : "worley"
+                                                                           "@name" : "Distort 2D",
+                                                                           "@position" : [ 12711, 5143 ],
+                                                                           "base" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Distort 2D",
+                                                                              "@position" : [ 13020, 5090 ],
+                                                                              "base" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Worley 2D",
+                                                                                 "@position" : [ 13322, 4968 ],
+                                                                                 "cellCount" : 1,
+                                                                                 "cellScale" : 1,
+                                                                                 "components" : [
+                                                                                    {
+                                                                                       "k" : 0,
+                                                                                       "multiplier" : -1.0099999904632568,
+                                                                                       "power" : 1.0329999923706055
+                                                                                    }
+                                                                                 ],
+                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                 "type" : "worley"
+                                                                              },
+                                                                              "distortion" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Perlin 2D",
+                                                                                 "@position" : [ 13322, 5246 ],
+                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                 "type" : "perlin"
+                                                                              },
+                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                              "frequency" : [ 1, 1 ],
+                                                                              "type" : "distort"
+                                                                           },
+                                                                           "distortion" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Perlin 2D",
+                                                                              "@position" : [ 13020, 5352 ],
+                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                              "type" : "perlin"
+                                                                           },
+                                                                           "distortionScale" : [ 1, 1 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "type" : "distort"
                                                                         },
-                                                                        "distortion" : {
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1.0789999961853027
+                                                                     },
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Perlin 2D",
-                                                                           "@position" : [ 12877, 5667 ],
-                                                                           "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                           "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                           "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                           "type" : "perlin"
+                                                                           "@name" : "Constant 2D",
+                                                                           "@position" : [ 12711, 5458 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                           "type" : "constant",
+                                                                           "value" : -0.80900001525878906
                                                                         },
-                                                                        "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                        "frequency" : [ 1, 1 ],
-                                                                        "type" : "distort"
-                                                                     },
-                                                                     "distortion" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Perlin 2D",
-                                                                        "@position" : [ 12575, 5773 ],
-                                                                        "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                        "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                        "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                        "type" : "perlin"
-                                                                     },
-                                                                     "distortionScale" : [ 1, 1 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "type" : "distort"
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1.0789999961853027
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1
+                                                                     }
+                                                                  ],
+                                                                  "type" : "sum"
                                                                },
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Constant 2D",
-                                                                     "@position" : [ 12266, 5879 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                     "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                     "type" : "constant",
-                                                                     "value" : -0.80900001525878906
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1
-                                                               }
-                                                            ],
-                                                            "type" : "sum"
-                                                         },
-                                                         "multiplier" : 1,
-                                                         "power" : 0.071000002324581146
+                                                               "multiplier" : 1,
+                                                               "power" : 0.071000002324581146
+                                                            }
+                                                         ],
+                                                         "type" : "sum"
+                                                      },
+                                                      {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Constant 2D",
+                                                         "@position" : [ 12075, 5587 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                         "offset-hash" : "952FPa0wMopAtAkg",
+                                                         "type" : "constant",
+                                                         "value" : -0.32600000500679016
                                                       }
                                                    ],
-                                                   "type" : "sum"
+                                                   "type" : "min"
                                                 },
                                                 "multiplier" : -0.63100004196166992,
                                                 "power" : 1
@@ -425,7 +412,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Rivers",
-                                          "@position" : [ 11279, 6008 ],
+                                          "@position" : [ 11388, 5715 ],
                                           "frequency" : [ 2, 2 ],
                                           "links" : [
                                              {
@@ -487,7 +474,7 @@
                                                 "nodeValue" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Perlin 2D",
-                                                   "@position" : [ 11561, 6091 ],
+                                                   "@position" : [ 11670, 5798 ],
                                                    "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                    "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                    "offset-hash" : "qGOkpOLJTf732FGz",
@@ -790,7 +777,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
-                                          "@position" : [ 11279, 6280 ],
+                                          "@position" : [ 11388, 5987 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                           "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -867,14 +854,14 @@
                               "nodeValue" : {
                                  "@collapsed" : false,
                                  "@name" : "Sum 2D",
-                                 "@position" : [ 10894, 6995 ],
+                                 "@position" : [ 10994, 6767 ],
                                  "frequency" : [ 1, 1 ],
                                  "terms" : [
                                     {
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sea Base",
-                                          "@position" : [ 11279, 6409 ],
+                                          "@position" : [ 11388, 6116 ],
                                           "frequency" : [ 1, 1 ],
                                           "links" : [],
                                           "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -890,22 +877,22 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sum 2D",
-                                          "@position" : [ 11279, 6928 ],
+                                          "@position" : [ 11388, 6700 ],
                                           "frequency" : [ 1, 1 ],
                                           "terms" : [
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Distort 2D",
-                                                   "@position" : [ 11630, 6690 ],
+                                                   "@position" : [ 11748, 6398 ],
                                                    "base" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Distort 2D",
-                                                      "@position" : [ 11939, 6637 ],
+                                                      "@position" : [ 12057, 6345 ],
                                                       "base" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Worley 2D",
-                                                         "@position" : [ 12241, 6515 ],
+                                                         "@position" : [ 12359, 6223 ],
                                                          "cellCount" : 1,
                                                          "cellScale" : 1,
                                                          "components" : [
@@ -923,7 +910,7 @@
                                                       "distortion" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 12241, 6793 ],
+                                                         "@position" : [ 12359, 6501 ],
                                                          "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                          "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                          "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -936,7 +923,7 @@
                                                    "distortion" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Perlin 2D",
-                                                      "@position" : [ 11939, 6899 ],
+                                                      "@position" : [ 12057, 6607 ],
                                                       "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                       "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                       "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -952,95 +939,114 @@
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
-                                                   "@name" : "Sum 2D",
-                                                   "@position" : [ 11630, 7213 ],
+                                                   "@name" : "Min 2D",
+                                                   "@position" : [ 11748, 7008 ],
                                                    "frequency" : [ 1, 1 ],
                                                    "terms" : [
                                                       {
-                                                         "fun" : {
-                                                            "@collapsed" : false,
-                                                            "@name" : "Sum 2D",
-                                                            "@position" : [ 11948, 7173 ],
-                                                            "frequency" : [ 1, 1 ],
-                                                            "terms" : [
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Distort 2D",
-                                                                     "@position" : [ 12266, 7180 ],
-                                                                     "base" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Distort 2D",
-                                                                        "@position" : [ 12575, 7127 ],
-                                                                        "base" : {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Sum 2D",
+                                                         "@position" : [ 12075, 6921 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "terms" : [
+                                                            {
+                                                               "fun" : {
+                                                                  "@collapsed" : false,
+                                                                  "@name" : "Sum 2D",
+                                                                  "@position" : [ 12393, 6881 ],
+                                                                  "frequency" : [ 1, 1 ],
+                                                                  "terms" : [
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Worley 2D",
-                                                                           "@position" : [ 12877, 7005 ],
-                                                                           "cellCount" : 1,
-                                                                           "cellScale" : 1,
-                                                                           "components" : [
-                                                                              {
-                                                                                 "k" : 0,
-                                                                                 "multiplier" : -1.0099999904632568,
-                                                                                 "power" : 1.0329999923706055
-                                                                              }
-                                                                           ],
-                                                                           "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                           "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                           "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                           "type" : "worley"
+                                                                           "@name" : "Distort 2D",
+                                                                           "@position" : [ 12711, 6888 ],
+                                                                           "base" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Distort 2D",
+                                                                              "@position" : [ 13020, 6835 ],
+                                                                              "base" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Worley 2D",
+                                                                                 "@position" : [ 13322, 6713 ],
+                                                                                 "cellCount" : 1,
+                                                                                 "cellScale" : 1,
+                                                                                 "components" : [
+                                                                                    {
+                                                                                       "k" : 0,
+                                                                                       "multiplier" : -1.0099999904632568,
+                                                                                       "power" : 1.0329999923706055
+                                                                                    }
+                                                                                 ],
+                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                 "type" : "worley"
+                                                                              },
+                                                                              "distortion" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Perlin 2D",
+                                                                                 "@position" : [ 13322, 6991 ],
+                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                 "type" : "perlin"
+                                                                              },
+                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                              "frequency" : [ 1, 1 ],
+                                                                              "type" : "distort"
+                                                                           },
+                                                                           "distortion" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Perlin 2D",
+                                                                              "@position" : [ 13020, 7097 ],
+                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                              "type" : "perlin"
+                                                                           },
+                                                                           "distortionScale" : [ 1, 1 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "type" : "distort"
                                                                         },
-                                                                        "distortion" : {
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1.0789999961853027
+                                                                     },
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Perlin 2D",
-                                                                           "@position" : [ 12877, 7283 ],
-                                                                           "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                           "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                           "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                           "type" : "perlin"
+                                                                           "@name" : "Constant 2D",
+                                                                           "@position" : [ 12711, 7203 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                           "type" : "constant",
+                                                                           "value" : -0.80900001525878906
                                                                         },
-                                                                        "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                        "frequency" : [ 1, 1 ],
-                                                                        "type" : "distort"
-                                                                     },
-                                                                     "distortion" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Perlin 2D",
-                                                                        "@position" : [ 12575, 7389 ],
-                                                                        "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                        "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                        "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                        "type" : "perlin"
-                                                                     },
-                                                                     "distortionScale" : [ 1, 1 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "type" : "distort"
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1.0789999961853027
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1
+                                                                     }
+                                                                  ],
+                                                                  "type" : "sum"
                                                                },
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Constant 2D",
-                                                                     "@position" : [ 12266, 7495 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                     "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                     "type" : "constant",
-                                                                     "value" : -0.80900001525878906
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1
-                                                               }
-                                                            ],
-                                                            "type" : "sum"
-                                                         },
-                                                         "multiplier" : 1,
-                                                         "power" : 0.071000002324581146
+                                                               "multiplier" : 1,
+                                                               "power" : 0.071000002324581146
+                                                            }
+                                                         ],
+                                                         "type" : "sum"
+                                                      },
+                                                      {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Constant 2D",
+                                                         "@position" : [ 12075, 7332 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                         "offset-hash" : "952FPa0wMopAtAkg",
+                                                         "type" : "constant",
+                                                         "value" : -0.32600000500679016
                                                       }
                                                    ],
-                                                   "type" : "sum"
+                                                   "type" : "min"
                                                 },
                                                 "multiplier" : -0.63100004196166992,
                                                 "power" : 1
@@ -1055,7 +1061,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Rivers",
-                                          "@position" : [ 11279, 7624 ],
+                                          "@position" : [ 11388, 7460 ],
                                           "frequency" : [ 2, 2 ],
                                           "links" : [
                                              {
@@ -1117,7 +1123,7 @@
                                                 "nodeValue" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Perlin 2D",
-                                                   "@position" : [ 11561, 7707 ],
+                                                   "@position" : [ 11670, 7543 ],
                                                    "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                    "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                    "offset-hash" : "qGOkpOLJTf732FGz",
@@ -1420,7 +1426,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
-                                          "@position" : [ 11279, 7896 ],
+                                          "@position" : [ 11388, 7732 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                           "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -1473,14 +1479,14 @@
                               "nodeValue" : {
                                  "@collapsed" : false,
                                  "@name" : "Sum 2D",
-                                 "@position" : [ 10894, 8611 ],
+                                 "@position" : [ 10994, 8512 ],
                                  "frequency" : [ 1, 1 ],
                                  "terms" : [
                                     {
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sea Base",
-                                          "@position" : [ 11279, 8025 ],
+                                          "@position" : [ 11388, 7861 ],
                                           "frequency" : [ 1, 1 ],
                                           "links" : [],
                                           "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -1496,22 +1502,22 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Sum 2D",
-                                          "@position" : [ 11279, 8544 ],
+                                          "@position" : [ 11388, 8445 ],
                                           "frequency" : [ 1, 1 ],
                                           "terms" : [
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Distort 2D",
-                                                   "@position" : [ 11630, 8306 ],
+                                                   "@position" : [ 11748, 8143 ],
                                                    "base" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Distort 2D",
-                                                      "@position" : [ 11939, 8253 ],
+                                                      "@position" : [ 12057, 8090 ],
                                                       "base" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Worley 2D",
-                                                         "@position" : [ 12241, 8131 ],
+                                                         "@position" : [ 12359, 7968 ],
                                                          "cellCount" : 1,
                                                          "cellScale" : 1,
                                                          "components" : [
@@ -1529,7 +1535,7 @@
                                                       "distortion" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 12241, 8409 ],
+                                                         "@position" : [ 12359, 8246 ],
                                                          "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                          "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                          "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -1542,7 +1548,7 @@
                                                    "distortion" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Perlin 2D",
-                                                      "@position" : [ 11939, 8515 ],
+                                                      "@position" : [ 12057, 8352 ],
                                                       "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                       "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                       "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -1558,95 +1564,114 @@
                                              {
                                                 "fun" : {
                                                    "@collapsed" : false,
-                                                   "@name" : "Sum 2D",
-                                                   "@position" : [ 11630, 8829 ],
+                                                   "@name" : "Min 2D",
+                                                   "@position" : [ 11748, 8753 ],
                                                    "frequency" : [ 1, 1 ],
                                                    "terms" : [
                                                       {
-                                                         "fun" : {
-                                                            "@collapsed" : false,
-                                                            "@name" : "Sum 2D",
-                                                            "@position" : [ 11948, 8789 ],
-                                                            "frequency" : [ 1, 1 ],
-                                                            "terms" : [
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Distort 2D",
-                                                                     "@position" : [ 12266, 8796 ],
-                                                                     "base" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Distort 2D",
-                                                                        "@position" : [ 12575, 8743 ],
-                                                                        "base" : {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Sum 2D",
+                                                         "@position" : [ 12075, 8666 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "terms" : [
+                                                            {
+                                                               "fun" : {
+                                                                  "@collapsed" : false,
+                                                                  "@name" : "Sum 2D",
+                                                                  "@position" : [ 12393, 8626 ],
+                                                                  "frequency" : [ 1, 1 ],
+                                                                  "terms" : [
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Worley 2D",
-                                                                           "@position" : [ 12877, 8621 ],
-                                                                           "cellCount" : 1,
-                                                                           "cellScale" : 1,
-                                                                           "components" : [
-                                                                              {
-                                                                                 "k" : 0,
-                                                                                 "multiplier" : -1.0099999904632568,
-                                                                                 "power" : 1.0329999923706055
-                                                                              }
-                                                                           ],
-                                                                           "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                           "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                           "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                           "type" : "worley"
+                                                                           "@name" : "Distort 2D",
+                                                                           "@position" : [ 12711, 8633 ],
+                                                                           "base" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Distort 2D",
+                                                                              "@position" : [ 13020, 8580 ],
+                                                                              "base" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Worley 2D",
+                                                                                 "@position" : [ 13322, 8458 ],
+                                                                                 "cellCount" : 1,
+                                                                                 "cellScale" : 1,
+                                                                                 "components" : [
+                                                                                    {
+                                                                                       "k" : 0,
+                                                                                       "multiplier" : -1.0099999904632568,
+                                                                                       "power" : 1.0329999923706055
+                                                                                    }
+                                                                                 ],
+                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                 "type" : "worley"
+                                                                              },
+                                                                              "distortion" : {
+                                                                                 "@collapsed" : false,
+                                                                                 "@name" : "Perlin 2D",
+                                                                                 "@position" : [ 13322, 8736 ],
+                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                 "type" : "perlin"
+                                                                              },
+                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                              "frequency" : [ 1, 1 ],
+                                                                              "type" : "distort"
+                                                                           },
+                                                                           "distortion" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Perlin 2D",
+                                                                              "@position" : [ 13020, 8842 ],
+                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                              "type" : "perlin"
+                                                                           },
+                                                                           "distortionScale" : [ 1, 1 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "type" : "distort"
                                                                         },
-                                                                        "distortion" : {
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1.0789999961853027
+                                                                     },
+                                                                     {
+                                                                        "fun" : {
                                                                            "@collapsed" : false,
-                                                                           "@name" : "Perlin 2D",
-                                                                           "@position" : [ 12877, 8899 ],
-                                                                           "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                           "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                           "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                           "type" : "perlin"
+                                                                           "@name" : "Constant 2D",
+                                                                           "@position" : [ 12711, 8948 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                           "type" : "constant",
+                                                                           "value" : -0.80900001525878906
                                                                         },
-                                                                        "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                        "frequency" : [ 1, 1 ],
-                                                                        "type" : "distort"
-                                                                     },
-                                                                     "distortion" : {
-                                                                        "@collapsed" : false,
-                                                                        "@name" : "Perlin 2D",
-                                                                        "@position" : [ 12575, 9005 ],
-                                                                        "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                        "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                        "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                        "type" : "perlin"
-                                                                     },
-                                                                     "distortionScale" : [ 1, 1 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "type" : "distort"
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1.0789999961853027
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1
+                                                                     }
+                                                                  ],
+                                                                  "type" : "sum"
                                                                },
-                                                               {
-                                                                  "fun" : {
-                                                                     "@collapsed" : false,
-                                                                     "@name" : "Constant 2D",
-                                                                     "@position" : [ 12266, 9111 ],
-                                                                     "frequency" : [ 1, 1 ],
-                                                                     "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                     "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                     "type" : "constant",
-                                                                     "value" : -0.80900001525878906
-                                                                  },
-                                                                  "multiplier" : 1,
-                                                                  "power" : 1
-                                                               }
-                                                            ],
-                                                            "type" : "sum"
-                                                         },
-                                                         "multiplier" : 1,
-                                                         "power" : 0.071000002324581146
+                                                               "multiplier" : 1,
+                                                               "power" : 0.071000002324581146
+                                                            }
+                                                         ],
+                                                         "type" : "sum"
+                                                      },
+                                                      {
+                                                         "@collapsed" : false,
+                                                         "@name" : "Constant 2D",
+                                                         "@position" : [ 12075, 9077 ],
+                                                         "frequency" : [ 1, 1 ],
+                                                         "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                         "offset-hash" : "952FPa0wMopAtAkg",
+                                                         "type" : "constant",
+                                                         "value" : -0.32600000500679016
                                                       }
                                                    ],
-                                                   "type" : "sum"
+                                                   "type" : "min"
                                                 },
                                                 "multiplier" : -0.63100004196166992,
                                                 "power" : 1
@@ -1661,7 +1686,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Rivers",
-                                          "@position" : [ 11279, 9240 ],
+                                          "@position" : [ 11388, 9205 ],
                                           "frequency" : [ 2, 2 ],
                                           "links" : [
                                              {
@@ -1723,7 +1748,7 @@
                                                 "nodeValue" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Perlin 2D",
-                                                   "@position" : [ 11561, 9323 ],
+                                                   "@position" : [ 11670, 9288 ],
                                                    "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                    "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                    "offset-hash" : "qGOkpOLJTf732FGz",
@@ -2026,7 +2051,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
-                                          "@position" : [ 11279, 9512 ],
+                                          "@position" : [ 11388, 9477 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                           "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -2054,7 +2079,7 @@
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Constant 2D",
-                        "@position" : [ 10303, 9640 ],
+                        "@position" : [ 10379, 9606 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -136.4461669921875, -387.97250366210938 ],
                         "offset-hash" : "YNjgaBQllEOCiufy",
@@ -2068,7 +2093,7 @@
                      "fun" : {
                         "@collapsed" : false,
                         "@name" : "Sea Base",
-                        "@position" : [ 10303, 9769 ],
+                        "@position" : [ 10379, 9735 ],
                         "frequency" : [ 1, 1 ],
                         "links" : [],
                         "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -2096,7 +2121,7 @@
             "strata" : {
                "@collapsed" : false,
                "@name" : "Standard Strata",
-               "@position" : [ 9698, 9875 ],
+               "@position" : [ 9750, 10296 ],
                "strata" : [
                   {
                      "averageDepth" : 32,
@@ -2108,7 +2133,7 @@
                      "yNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10010, 10194 ],
+                        "@position" : [ 10062, 10615 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -14.947737693786621, 321.57708740234375 ],
                         "offset-hash" : "ccsOh8ykqVJRSTZD",
@@ -2126,7 +2151,7 @@
                      "yNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10010, 10300 ],
+                        "@position" : [ 10062, 10721 ],
                         "frequency" : [ 0.44200003147125244, 0.44200003147125244 ],
                         "offset" : [ -14.947737693786621, 321.57708740234375 ],
                         "offset-hash" : "ccsOh8ykqVJRSTZD",
@@ -2144,7 +2169,7 @@
                      "yNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10010, 10406 ],
+                        "@position" : [ 10062, 10827 ],
                         "frequency" : [ 2, 2 ],
                         "offset" : [ -130.02517700195313, 280.6488037109375 ],
                         "offset-hash" : "pgcFNq518tDvMSuu",
@@ -2162,7 +2187,7 @@
                      "yNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10010, 10512 ],
+                        "@position" : [ 10062, 10933 ],
                         "frequency" : [ 2, 2 ],
                         "offset" : [ -153.85366821289063, -49.666942596435547 ],
                         "offset-hash" : "7qUKsLMKN9ZlpVxM",
@@ -2180,7 +2205,7 @@
                      "yNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 10010, 10618 ],
+                        "@position" : [ 10062, 11039 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ 263.5233154296875, 20.032878875732422 ],
                         "offset-hash" : "J50et04bF3SuTXnl",
@@ -2194,7 +2219,7 @@
             "surface_decorations" : {
                "@collapsed" : false,
                "@name" : "Standard Decorations",
-               "@position" : [ 9698, 11315 ],
+               "@position" : [ 9750, 11736 ],
                "@toggle-ceiling" : false,
                "@toggle-floor" : true,
                "ceiling" : [],
@@ -2207,7 +2232,7 @@
                      "instance" : {
                         "@collapsed" : false,
                         "@name" : "Bush (deprecated)",
-                        "@position" : [ 10032, 11328 ],
+                        "@position" : [ 10084, 11749 ],
                         "blockType" : "ROCK_SEDIMENTARY_BASE",
                         "height" : 3.75,
                         "maxScale" : 1,
@@ -2226,7 +2251,7 @@
                      "noise" : {
                         "@collapsed" : false,
                         "@name" : "Constant 2D",
-                        "@position" : [ 10032, 11537 ],
+                        "@position" : [ 10084, 11958 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ 374.98739624023438, -229.22604370117188 ],
                         "offset-hash" : "F2PUkBusSCTgNdMG",
@@ -2246,7 +2271,7 @@
                      "instance" : {
                         "@collapsed" : false,
                         "@name" : "Bush (deprecated)",
-                        "@position" : [ 10032, 11666 ],
+                        "@position" : [ 10084, 12087 ],
                         "blockType" : "WOOD_EXOTIC_LEAVES",
                         "height" : 3.75,
                         "maxScale" : 1,
@@ -2265,21 +2290,21 @@
                      "noise" : {
                         "@collapsed" : false,
                         "@name" : "Remap 2D",
-                        "@position" : [ 10032, 11931 ],
+                        "@position" : [ 10084, 12352 ],
                         "clamp" : true,
                         "clampPower" : 10,
                         "frequency" : [ 1, 1 ],
                         "fun" : {
                            "@collapsed" : false,
                            "@name" : "Sum 2D",
-                           "@position" : [ 10328, 11886 ],
+                           "@position" : [ 10380, 12307 ],
                            "frequency" : [ 1, 1 ],
                            "terms" : [
                               {
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Ditches",
-                                    "@position" : [ 10624, 11876 ],
+                                    "@position" : [ 10676, 12297 ],
                                     "frequency" : [ 0.55900001525878906, 0.55900001525878906 ],
                                     "links" : [
                                        {
@@ -2414,7 +2439,7 @@
                                  "fun" : {
                                     "@collapsed" : false,
                                     "@name" : "Constant 2D",
-                                    "@position" : [ 10624, 12051 ],
+                                    "@position" : [ 10676, 12472 ],
                                     "frequency" : [ 1, 1 ],
                                     "offset" : [ -215.9517822265625, 30.380863189697266 ],
                                     "offset-hash" : "pKSpnBwiVPs99DV4",
@@ -2442,7 +2467,7 @@
             "surface_substrate" : {
                "@collapsed" : false,
                "@name" : "Standard Substrate",
-               "@position" : [ 9698, 11043 ],
+               "@position" : [ 9750, 11464 ],
                "strates" : [
                   {
                      "averageDepth" : 6,
@@ -2632,7 +2657,7 @@
          "@position" : [ 7453, 8075 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 9,
+         "@version" : 10,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -2646,6 +2671,7 @@
                   "enabled" : true,
                   "value" : 0.71700000762939453
                },
+               "nameStyle" : "Ardesco",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "SeaVolcano",
@@ -2675,20 +2701,20 @@
                   "caves" : {
                      "@collapsed" : false,
                      "@name" : "Sum 3D",
-                     "@position" : [ 9448, 8241 ],
+                     "@position" : [ 9750, 9955 ],
                      "frequency" : [ 2, 2, 2 ],
                      "terms" : [
                         {
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Layered 3D",
-                              "@position" : [ 9738, 8221 ],
+                              "@position" : [ 10057, 9910 ],
                               "components" : [
                                  {
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Constant 3D",
-                                       "@position" : [ 10083, 8436 ],
+                                       "@position" : [ 10364, 9841 ],
                                        "frequency" : [ 1, 1, 1 ],
                                        "offset" : [ 970.309326171875, 249.58145141601563, -276.15658569335938 ],
                                        "offset-hash" : "uZBuPBhDzOld7vzZ",
@@ -2700,46 +2726,13 @@
                                  {
                                     "fun" : {
                                        "@collapsed" : false,
-                                       "@name" : "FlatCaves",
-                                       "@position" : [ 10055, 8590 ],
-                                       "frequency" : [ 2, 2, 2 ],
-                                       "links" : [
-                                          {
-                                             "linkPath" : [
-                                                {
-                                                   "index" : -1,
-                                                   "name" : "noise3d"
-                                                },
-                                                {
-                                                   "index" : -1,
-                                                   "name" : "fun"
-                                                },
-                                                {
-                                                   "index" : -1,
-                                                   "name" : "terms"
-                                                },
-                                                {
-                                                   "index" : 1,
-                                                   "name" : ""
-                                                },
-                                                {
-                                                   "index" : -1,
-                                                   "name" : "fun"
-                                                },
-                                                {
-                                                   "index" : -1,
-                                                   "name" : "value"
-                                                }
-                                             ],
-                                             "linkType" : "LT:CUSTOM_SLIDER",
-                                             "sliderValue" : 1
-                                          }
-                                       ],
-                                       "offset" : [ 668.62005615234375, 195.49322509765625, -349.82107543945313 ],
-                                       "offset-hash" : "svMxIIUL3S6gdZCS",
-                                       "reference" : "noise3d/FlatCaves.json",
-                                       "tick" : 0,
-                                       "type" : "reference"
+                                       "@name" : "Constant 3D",
+                                       "@position" : [ 10364, 9993 ],
+                                       "frequency" : [ 1, 1, 1 ],
+                                       "offset" : [ 970.309326171875, 249.58145141601563, -276.15658569335938 ],
+                                       "offset-hash" : "uZBuPBhDzOld7vzZ",
+                                       "type" : "constant",
+                                       "value" : 0
                                     },
                                     "y" : 63.495002746582031
                                  },
@@ -2747,7 +2740,7 @@
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Constant 3D",
-                                       "@position" : [ 10064, 8754 ],
+                                       "@position" : [ 10364, 10145 ],
                                        "frequency" : [ 1, 1, 1 ],
                                        "offset" : [ 401.81924438476563, -341.90213012695313, -352.35824584960938 ],
                                        "offset-hash" : "DOFsOKQOML9Ifepi",
@@ -2789,14 +2782,14 @@
                   "heightmap" : {
                      "@collapsed" : false,
                      "@name" : "Sum 2D",
-                     "@position" : [ 9698, 7152 ],
+                     "@position" : [ 9750, 6924 ],
                      "frequency" : [ 1, 1 ],
                      "terms" : [
                         {
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Remove Negative",
-                              "@position" : [ 10303, 7138 ],
+                              "@position" : [ 10379, 6910 ],
                               "frequency" : [ 1, 1 ],
                               "links" : [
                                  {
@@ -2862,14 +2855,14 @@
                                     "nodeValue" : {
                                        "@collapsed" : false,
                                        "@name" : "Sum 2D",
-                                       "@position" : [ 10894, 5379 ],
+                                       "@position" : [ 10994, 5022 ],
                                        "frequency" : [ 1, 1 ],
                                        "terms" : [
                                           {
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sea Base",
-                                                "@position" : [ 11279, 4793 ],
+                                                "@position" : [ 11388, 4371 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "links" : [],
                                                 "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -2885,22 +2878,22 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sum 2D",
-                                                "@position" : [ 11279, 5312 ],
+                                                "@position" : [ 11388, 4955 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "terms" : [
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Distort 2D",
-                                                         "@position" : [ 11630, 5074 ],
+                                                         "@position" : [ 11748, 4653 ],
                                                          "base" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Distort 2D",
-                                                            "@position" : [ 11939, 5021 ],
+                                                            "@position" : [ 12057, 4600 ],
                                                             "base" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Worley 2D",
-                                                               "@position" : [ 12241, 4899 ],
+                                                               "@position" : [ 12359, 4478 ],
                                                                "cellCount" : 1,
                                                                "cellScale" : 1,
                                                                "components" : [
@@ -2918,7 +2911,7 @@
                                                             "distortion" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Perlin 2D",
-                                                               "@position" : [ 12241, 5177 ],
+                                                               "@position" : [ 12359, 4756 ],
                                                                "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                                "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                                "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -2931,7 +2924,7 @@
                                                          "distortion" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Perlin 2D",
-                                                            "@position" : [ 11939, 5283 ],
+                                                            "@position" : [ 12057, 4862 ],
                                                             "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                             "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                             "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -2947,95 +2940,114 @@
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
-                                                         "@name" : "Sum 2D",
-                                                         "@position" : [ 11630, 5597 ],
+                                                         "@name" : "Min 2D",
+                                                         "@position" : [ 11748, 5263 ],
                                                          "frequency" : [ 1, 1 ],
                                                          "terms" : [
                                                             {
-                                                               "fun" : {
-                                                                  "@collapsed" : false,
-                                                                  "@name" : "Sum 2D",
-                                                                  "@position" : [ 11948, 5557 ],
-                                                                  "frequency" : [ 1, 1 ],
-                                                                  "terms" : [
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Distort 2D",
-                                                                           "@position" : [ 12266, 5564 ],
-                                                                           "base" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Distort 2D",
-                                                                              "@position" : [ 12575, 5511 ],
-                                                                              "base" : {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Sum 2D",
+                                                               "@position" : [ 12075, 5176 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "terms" : [
+                                                                  {
+                                                                     "fun" : {
+                                                                        "@collapsed" : false,
+                                                                        "@name" : "Sum 2D",
+                                                                        "@position" : [ 12393, 5136 ],
+                                                                        "frequency" : [ 1, 1 ],
+                                                                        "terms" : [
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Worley 2D",
-                                                                                 "@position" : [ 12877, 5389 ],
-                                                                                 "cellCount" : 1,
-                                                                                 "cellScale" : 1,
-                                                                                 "components" : [
-                                                                                    {
-                                                                                       "k" : 0,
-                                                                                       "multiplier" : -1.0099999904632568,
-                                                                                       "power" : 1.0329999923706055
-                                                                                    }
-                                                                                 ],
-                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                                 "type" : "worley"
+                                                                                 "@name" : "Distort 2D",
+                                                                                 "@position" : [ 12711, 5143 ],
+                                                                                 "base" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Distort 2D",
+                                                                                    "@position" : [ 13020, 5090 ],
+                                                                                    "base" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Worley 2D",
+                                                                                       "@position" : [ 13322, 4968 ],
+                                                                                       "cellCount" : 1,
+                                                                                       "cellScale" : 1,
+                                                                                       "components" : [
+                                                                                          {
+                                                                                             "k" : 0,
+                                                                                             "multiplier" : -1.0099999904632568,
+                                                                                             "power" : 1.0329999923706055
+                                                                                          }
+                                                                                       ],
+                                                                                       "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                       "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                       "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                       "type" : "worley"
+                                                                                    },
+                                                                                    "distortion" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Perlin 2D",
+                                                                                       "@position" : [ 13322, 5246 ],
+                                                                                       "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                       "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                       "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                       "type" : "perlin"
+                                                                                    },
+                                                                                    "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                                    "frequency" : [ 1, 1 ],
+                                                                                    "type" : "distort"
+                                                                                 },
+                                                                                 "distortion" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Perlin 2D",
+                                                                                    "@position" : [ 13020, 5352 ],
+                                                                                    "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                                    "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                                    "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                                    "type" : "perlin"
+                                                                                 },
+                                                                                 "distortionScale" : [ 1, 1 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "type" : "distort"
                                                                               },
-                                                                              "distortion" : {
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1.0789999961853027
+                                                                           },
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Perlin 2D",
-                                                                                 "@position" : [ 12877, 5667 ],
-                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                                 "type" : "perlin"
+                                                                                 "@name" : "Constant 2D",
+                                                                                 "@position" : [ 12711, 5458 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                                 "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                                 "type" : "constant",
+                                                                                 "value" : -0.80900001525878906
                                                                               },
-                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                              "frequency" : [ 1, 1 ],
-                                                                              "type" : "distort"
-                                                                           },
-                                                                           "distortion" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Perlin 2D",
-                                                                              "@position" : [ 12575, 5773 ],
-                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                              "type" : "perlin"
-                                                                           },
-                                                                           "distortionScale" : [ 1, 1 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "type" : "distort"
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1.0789999961853027
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1
+                                                                           }
+                                                                        ],
+                                                                        "type" : "sum"
                                                                      },
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Constant 2D",
-                                                                           "@position" : [ 12266, 5879 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                           "type" : "constant",
-                                                                           "value" : -0.80900001525878906
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1
-                                                                     }
-                                                                  ],
-                                                                  "type" : "sum"
-                                                               },
-                                                               "multiplier" : 1,
-                                                               "power" : 0.071000002324581146
+                                                                     "multiplier" : 1,
+                                                                     "power" : 0.071000002324581146
+                                                                  }
+                                                               ],
+                                                               "type" : "sum"
+                                                            },
+                                                            {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Constant 2D",
+                                                               "@position" : [ 12075, 5587 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                               "offset-hash" : "952FPa0wMopAtAkg",
+                                                               "type" : "constant",
+                                                               "value" : -0.32600000500679016
                                                             }
                                                          ],
-                                                         "type" : "sum"
+                                                         "type" : "min"
                                                       },
                                                       "multiplier" : -0.63100004196166992,
                                                       "power" : 1
@@ -3050,7 +3062,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Rivers",
-                                                "@position" : [ 11279, 6008 ],
+                                                "@position" : [ 11388, 5715 ],
                                                 "frequency" : [ 2, 2 ],
                                                 "links" : [
                                                    {
@@ -3112,7 +3124,7 @@
                                                       "nodeValue" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 11561, 6091 ],
+                                                         "@position" : [ 11670, 5798 ],
                                                          "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                          "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                          "offset-hash" : "qGOkpOLJTf732FGz",
@@ -3415,7 +3427,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Constant 2D",
-                                                "@position" : [ 11279, 6280 ],
+                                                "@position" : [ 11388, 5987 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                                 "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -3492,14 +3504,14 @@
                                     "nodeValue" : {
                                        "@collapsed" : false,
                                        "@name" : "Sum 2D",
-                                       "@position" : [ 10894, 6995 ],
+                                       "@position" : [ 10994, 6767 ],
                                        "frequency" : [ 1, 1 ],
                                        "terms" : [
                                           {
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sea Base",
-                                                "@position" : [ 11279, 6409 ],
+                                                "@position" : [ 11388, 6116 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "links" : [],
                                                 "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -3515,22 +3527,22 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sum 2D",
-                                                "@position" : [ 11279, 6928 ],
+                                                "@position" : [ 11388, 6700 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "terms" : [
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Distort 2D",
-                                                         "@position" : [ 11630, 6690 ],
+                                                         "@position" : [ 11748, 6398 ],
                                                          "base" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Distort 2D",
-                                                            "@position" : [ 11939, 6637 ],
+                                                            "@position" : [ 12057, 6345 ],
                                                             "base" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Worley 2D",
-                                                               "@position" : [ 12241, 6515 ],
+                                                               "@position" : [ 12359, 6223 ],
                                                                "cellCount" : 1,
                                                                "cellScale" : 1,
                                                                "components" : [
@@ -3548,7 +3560,7 @@
                                                             "distortion" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Perlin 2D",
-                                                               "@position" : [ 12241, 6793 ],
+                                                               "@position" : [ 12359, 6501 ],
                                                                "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                                "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                                "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -3561,7 +3573,7 @@
                                                          "distortion" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Perlin 2D",
-                                                            "@position" : [ 11939, 6899 ],
+                                                            "@position" : [ 12057, 6607 ],
                                                             "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                             "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                             "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -3577,95 +3589,114 @@
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
-                                                         "@name" : "Sum 2D",
-                                                         "@position" : [ 11630, 7213 ],
+                                                         "@name" : "Min 2D",
+                                                         "@position" : [ 11748, 7008 ],
                                                          "frequency" : [ 1, 1 ],
                                                          "terms" : [
                                                             {
-                                                               "fun" : {
-                                                                  "@collapsed" : false,
-                                                                  "@name" : "Sum 2D",
-                                                                  "@position" : [ 11948, 7173 ],
-                                                                  "frequency" : [ 1, 1 ],
-                                                                  "terms" : [
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Distort 2D",
-                                                                           "@position" : [ 12266, 7180 ],
-                                                                           "base" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Distort 2D",
-                                                                              "@position" : [ 12575, 7127 ],
-                                                                              "base" : {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Sum 2D",
+                                                               "@position" : [ 12075, 6921 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "terms" : [
+                                                                  {
+                                                                     "fun" : {
+                                                                        "@collapsed" : false,
+                                                                        "@name" : "Sum 2D",
+                                                                        "@position" : [ 12393, 6881 ],
+                                                                        "frequency" : [ 1, 1 ],
+                                                                        "terms" : [
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Worley 2D",
-                                                                                 "@position" : [ 12877, 7005 ],
-                                                                                 "cellCount" : 1,
-                                                                                 "cellScale" : 1,
-                                                                                 "components" : [
-                                                                                    {
-                                                                                       "k" : 0,
-                                                                                       "multiplier" : -1.0099999904632568,
-                                                                                       "power" : 1.0329999923706055
-                                                                                    }
-                                                                                 ],
-                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                                 "type" : "worley"
+                                                                                 "@name" : "Distort 2D",
+                                                                                 "@position" : [ 12711, 6888 ],
+                                                                                 "base" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Distort 2D",
+                                                                                    "@position" : [ 13020, 6835 ],
+                                                                                    "base" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Worley 2D",
+                                                                                       "@position" : [ 13322, 6713 ],
+                                                                                       "cellCount" : 1,
+                                                                                       "cellScale" : 1,
+                                                                                       "components" : [
+                                                                                          {
+                                                                                             "k" : 0,
+                                                                                             "multiplier" : -1.0099999904632568,
+                                                                                             "power" : 1.0329999923706055
+                                                                                          }
+                                                                                       ],
+                                                                                       "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                       "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                       "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                       "type" : "worley"
+                                                                                    },
+                                                                                    "distortion" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Perlin 2D",
+                                                                                       "@position" : [ 13322, 6991 ],
+                                                                                       "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                       "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                       "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                       "type" : "perlin"
+                                                                                    },
+                                                                                    "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                                    "frequency" : [ 1, 1 ],
+                                                                                    "type" : "distort"
+                                                                                 },
+                                                                                 "distortion" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Perlin 2D",
+                                                                                    "@position" : [ 13020, 7097 ],
+                                                                                    "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                                    "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                                    "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                                    "type" : "perlin"
+                                                                                 },
+                                                                                 "distortionScale" : [ 1, 1 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "type" : "distort"
                                                                               },
-                                                                              "distortion" : {
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1.0789999961853027
+                                                                           },
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Perlin 2D",
-                                                                                 "@position" : [ 12877, 7283 ],
-                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                                 "type" : "perlin"
+                                                                                 "@name" : "Constant 2D",
+                                                                                 "@position" : [ 12711, 7203 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                                 "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                                 "type" : "constant",
+                                                                                 "value" : -0.80900001525878906
                                                                               },
-                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                              "frequency" : [ 1, 1 ],
-                                                                              "type" : "distort"
-                                                                           },
-                                                                           "distortion" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Perlin 2D",
-                                                                              "@position" : [ 12575, 7389 ],
-                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                              "type" : "perlin"
-                                                                           },
-                                                                           "distortionScale" : [ 1, 1 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "type" : "distort"
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1.0789999961853027
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1
+                                                                           }
+                                                                        ],
+                                                                        "type" : "sum"
                                                                      },
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Constant 2D",
-                                                                           "@position" : [ 12266, 7495 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                           "type" : "constant",
-                                                                           "value" : -0.80900001525878906
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1
-                                                                     }
-                                                                  ],
-                                                                  "type" : "sum"
-                                                               },
-                                                               "multiplier" : 1,
-                                                               "power" : 0.071000002324581146
+                                                                     "multiplier" : 1,
+                                                                     "power" : 0.071000002324581146
+                                                                  }
+                                                               ],
+                                                               "type" : "sum"
+                                                            },
+                                                            {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Constant 2D",
+                                                               "@position" : [ 12075, 7332 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                               "offset-hash" : "952FPa0wMopAtAkg",
+                                                               "type" : "constant",
+                                                               "value" : -0.32600000500679016
                                                             }
                                                          ],
-                                                         "type" : "sum"
+                                                         "type" : "min"
                                                       },
                                                       "multiplier" : -0.63100004196166992,
                                                       "power" : 1
@@ -3680,7 +3711,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Rivers",
-                                                "@position" : [ 11279, 7624 ],
+                                                "@position" : [ 11388, 7460 ],
                                                 "frequency" : [ 2, 2 ],
                                                 "links" : [
                                                    {
@@ -3742,7 +3773,7 @@
                                                       "nodeValue" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 11561, 7707 ],
+                                                         "@position" : [ 11670, 7543 ],
                                                          "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                          "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                          "offset-hash" : "qGOkpOLJTf732FGz",
@@ -4045,7 +4076,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Constant 2D",
-                                                "@position" : [ 11279, 7896 ],
+                                                "@position" : [ 11388, 7732 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                                 "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -4098,14 +4129,14 @@
                                     "nodeValue" : {
                                        "@collapsed" : false,
                                        "@name" : "Sum 2D",
-                                       "@position" : [ 10894, 8611 ],
+                                       "@position" : [ 10994, 8512 ],
                                        "frequency" : [ 1, 1 ],
                                        "terms" : [
                                           {
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sea Base",
-                                                "@position" : [ 11279, 8025 ],
+                                                "@position" : [ 11388, 7861 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "links" : [],
                                                 "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -4121,22 +4152,22 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Sum 2D",
-                                                "@position" : [ 11279, 8544 ],
+                                                "@position" : [ 11388, 8445 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "terms" : [
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Distort 2D",
-                                                         "@position" : [ 11630, 8306 ],
+                                                         "@position" : [ 11748, 8143 ],
                                                          "base" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Distort 2D",
-                                                            "@position" : [ 11939, 8253 ],
+                                                            "@position" : [ 12057, 8090 ],
                                                             "base" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Worley 2D",
-                                                               "@position" : [ 12241, 8131 ],
+                                                               "@position" : [ 12359, 7968 ],
                                                                "cellCount" : 1,
                                                                "cellScale" : 1,
                                                                "components" : [
@@ -4154,7 +4185,7 @@
                                                             "distortion" : {
                                                                "@collapsed" : false,
                                                                "@name" : "Perlin 2D",
-                                                               "@position" : [ 12241, 8409 ],
+                                                               "@position" : [ 12359, 8246 ],
                                                                "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
                                                                "offset" : [ 293.43099975585938, 117.23139190673828 ],
                                                                "offset-hash" : "g2wVIUubEHmUwUsX",
@@ -4167,7 +4198,7 @@
                                                          "distortion" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Perlin 2D",
-                                                            "@position" : [ 11939, 8515 ],
+                                                            "@position" : [ 12057, 8352 ],
                                                             "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
                                                             "offset" : [ 226.30349731445313, -267.02267456054688 ],
                                                             "offset-hash" : "zzCUBV33mHXu1Abz",
@@ -4183,95 +4214,114 @@
                                                    {
                                                       "fun" : {
                                                          "@collapsed" : false,
-                                                         "@name" : "Sum 2D",
-                                                         "@position" : [ 11630, 8829 ],
+                                                         "@name" : "Min 2D",
+                                                         "@position" : [ 11748, 8753 ],
                                                          "frequency" : [ 1, 1 ],
                                                          "terms" : [
                                                             {
-                                                               "fun" : {
-                                                                  "@collapsed" : false,
-                                                                  "@name" : "Sum 2D",
-                                                                  "@position" : [ 11948, 8789 ],
-                                                                  "frequency" : [ 1, 1 ],
-                                                                  "terms" : [
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Distort 2D",
-                                                                           "@position" : [ 12266, 8796 ],
-                                                                           "base" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Distort 2D",
-                                                                              "@position" : [ 12575, 8743 ],
-                                                                              "base" : {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Sum 2D",
+                                                               "@position" : [ 12075, 8666 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "terms" : [
+                                                                  {
+                                                                     "fun" : {
+                                                                        "@collapsed" : false,
+                                                                        "@name" : "Sum 2D",
+                                                                        "@position" : [ 12393, 8626 ],
+                                                                        "frequency" : [ 1, 1 ],
+                                                                        "terms" : [
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Worley 2D",
-                                                                                 "@position" : [ 12877, 8621 ],
-                                                                                 "cellCount" : 1,
-                                                                                 "cellScale" : 1,
-                                                                                 "components" : [
-                                                                                    {
-                                                                                       "k" : 0,
-                                                                                       "multiplier" : -1.0099999904632568,
-                                                                                       "power" : 1.0329999923706055
-                                                                                    }
-                                                                                 ],
-                                                                                 "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
-                                                                                 "offset" : [ 339.18365478515625, -35.272365570068359 ],
-                                                                                 "offset-hash" : "QtnF6yr6tuUlqaU9",
-                                                                                 "type" : "worley"
+                                                                                 "@name" : "Distort 2D",
+                                                                                 "@position" : [ 12711, 8633 ],
+                                                                                 "base" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Distort 2D",
+                                                                                    "@position" : [ 13020, 8580 ],
+                                                                                    "base" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Worley 2D",
+                                                                                       "@position" : [ 13322, 8458 ],
+                                                                                       "cellCount" : 1,
+                                                                                       "cellScale" : 1,
+                                                                                       "components" : [
+                                                                                          {
+                                                                                             "k" : 0,
+                                                                                             "multiplier" : -1.0099999904632568,
+                                                                                             "power" : 1.0329999923706055
+                                                                                          }
+                                                                                       ],
+                                                                                       "frequency" : [ 0.094000004231929779, 0.094000004231929779 ],
+                                                                                       "offset" : [ 339.18365478515625, -35.272365570068359 ],
+                                                                                       "offset-hash" : "QtnF6yr6tuUlqaU9",
+                                                                                       "type" : "worley"
+                                                                                    },
+                                                                                    "distortion" : {
+                                                                                       "@collapsed" : false,
+                                                                                       "@name" : "Perlin 2D",
+                                                                                       "@position" : [ 13322, 8736 ],
+                                                                                       "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
+                                                                                       "offset" : [ 293.43099975585938, 117.23139190673828 ],
+                                                                                       "offset-hash" : "g2wVIUubEHmUwUsX",
+                                                                                       "type" : "perlin"
+                                                                                    },
+                                                                                    "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
+                                                                                    "frequency" : [ 1, 1 ],
+                                                                                    "type" : "distort"
+                                                                                 },
+                                                                                 "distortion" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Perlin 2D",
+                                                                                    "@position" : [ 13020, 8842 ],
+                                                                                    "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
+                                                                                    "offset" : [ 226.30349731445313, -267.02267456054688 ],
+                                                                                    "offset-hash" : "zzCUBV33mHXu1Abz",
+                                                                                    "type" : "perlin"
+                                                                                 },
+                                                                                 "distortionScale" : [ 1, 1 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "type" : "distort"
                                                                               },
-                                                                              "distortion" : {
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1.0789999961853027
+                                                                           },
+                                                                           {
+                                                                              "fun" : {
                                                                                  "@collapsed" : false,
-                                                                                 "@name" : "Perlin 2D",
-                                                                                 "@position" : [ 12877, 8899 ],
-                                                                                 "frequency" : [ 0.13600000739097595, 0.13600000739097595 ],
-                                                                                 "offset" : [ 293.43099975585938, 117.23139190673828 ],
-                                                                                 "offset-hash" : "g2wVIUubEHmUwUsX",
-                                                                                 "type" : "perlin"
+                                                                                 "@name" : "Constant 2D",
+                                                                                 "@position" : [ 12711, 8948 ],
+                                                                                 "frequency" : [ 1, 1 ],
+                                                                                 "offset" : [ 138.52140808105469, 94.953254699707031 ],
+                                                                                 "offset-hash" : "ePNAJwI29XIrWCZD",
+                                                                                 "type" : "constant",
+                                                                                 "value" : -0.80900001525878906
                                                                               },
-                                                                              "distortionScale" : [ 2.1880002021789551, 2.1880002021789551 ],
-                                                                              "frequency" : [ 1, 1 ],
-                                                                              "type" : "distort"
-                                                                           },
-                                                                           "distortion" : {
-                                                                              "@collapsed" : false,
-                                                                              "@name" : "Perlin 2D",
-                                                                              "@position" : [ 12575, 9005 ],
-                                                                              "frequency" : [ 0.17700000107288361, 0.17700000107288361 ],
-                                                                              "offset" : [ 226.30349731445313, -267.02267456054688 ],
-                                                                              "offset-hash" : "zzCUBV33mHXu1Abz",
-                                                                              "type" : "perlin"
-                                                                           },
-                                                                           "distortionScale" : [ 1, 1 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "type" : "distort"
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1.0789999961853027
+                                                                              "multiplier" : 1,
+                                                                              "power" : 1
+                                                                           }
+                                                                        ],
+                                                                        "type" : "sum"
                                                                      },
-                                                                     {
-                                                                        "fun" : {
-                                                                           "@collapsed" : false,
-                                                                           "@name" : "Constant 2D",
-                                                                           "@position" : [ 12266, 9111 ],
-                                                                           "frequency" : [ 1, 1 ],
-                                                                           "offset" : [ 138.52140808105469, 94.953254699707031 ],
-                                                                           "offset-hash" : "ePNAJwI29XIrWCZD",
-                                                                           "type" : "constant",
-                                                                           "value" : -0.80900001525878906
-                                                                        },
-                                                                        "multiplier" : 1,
-                                                                        "power" : 1
-                                                                     }
-                                                                  ],
-                                                                  "type" : "sum"
-                                                               },
-                                                               "multiplier" : 1,
-                                                               "power" : 0.071000002324581146
+                                                                     "multiplier" : 1,
+                                                                     "power" : 0.071000002324581146
+                                                                  }
+                                                               ],
+                                                               "type" : "sum"
+                                                            },
+                                                            {
+                                                               "@collapsed" : false,
+                                                               "@name" : "Constant 2D",
+                                                               "@position" : [ 12075, 9077 ],
+                                                               "frequency" : [ 1, 1 ],
+                                                               "offset" : [ 134.67613220214844, -384.123291015625 ],
+                                                               "offset-hash" : "952FPa0wMopAtAkg",
+                                                               "type" : "constant",
+                                                               "value" : -0.32600000500679016
                                                             }
                                                          ],
-                                                         "type" : "sum"
+                                                         "type" : "min"
                                                       },
                                                       "multiplier" : -0.63100004196166992,
                                                       "power" : 1
@@ -4286,7 +4336,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Rivers",
-                                                "@position" : [ 11279, 9240 ],
+                                                "@position" : [ 11388, 9205 ],
                                                 "frequency" : [ 2, 2 ],
                                                 "links" : [
                                                    {
@@ -4348,7 +4398,7 @@
                                                       "nodeValue" : {
                                                          "@collapsed" : false,
                                                          "@name" : "Perlin 2D",
-                                                         "@position" : [ 11561, 9323 ],
+                                                         "@position" : [ 11670, 9288 ],
                                                          "frequency" : [ 1.0770000219345093, 1.0770000219345093 ],
                                                          "offset" : [ 331.84710693359375, 265.62307739257813 ],
                                                          "offset-hash" : "qGOkpOLJTf732FGz",
@@ -4651,7 +4701,7 @@
                                              "fun" : {
                                                 "@collapsed" : false,
                                                 "@name" : "Constant 2D",
-                                                "@position" : [ 11279, 9512 ],
+                                                "@position" : [ 11388, 9477 ],
                                                 "frequency" : [ 1, 1 ],
                                                 "offset" : [ -118.87998962402344, 36.384902954101563 ],
                                                 "offset-hash" : "yIaHVFWWhI5bYGAv",
@@ -4679,7 +4729,7 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 10303, 9640 ],
+                              "@position" : [ 10379, 9606 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -136.4461669921875, -387.97250366210938 ],
                               "offset-hash" : "YNjgaBQllEOCiufy",
@@ -4693,7 +4743,7 @@
                            "fun" : {
                               "@collapsed" : false,
                               "@name" : "Sea Base",
-                              "@position" : [ 10303, 9769 ],
+                              "@position" : [ 10379, 9735 ],
                               "frequency" : [ 1, 1 ],
                               "links" : [],
                               "offset" : [ -183.00450134277344, 192.75843811035156 ],
@@ -4721,7 +4771,7 @@
                   "strata" : {
                      "@collapsed" : false,
                      "@name" : "Standard Strata",
-                     "@position" : [ 9698, 9875 ],
+                     "@position" : [ 9750, 10296 ],
                      "strata" : [
                         {
                            "averageDepth" : 32,
@@ -4733,7 +4783,7 @@
                            "yNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 10010, 10194 ],
+                              "@position" : [ 10062, 10615 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -14.947737693786621, 321.57708740234375 ],
                               "offset-hash" : "ccsOh8ykqVJRSTZD",
@@ -4751,7 +4801,7 @@
                            "yNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 10010, 10300 ],
+                              "@position" : [ 10062, 10721 ],
                               "frequency" : [ 0.44200003147125244, 0.44200003147125244 ],
                               "offset" : [ -14.947737693786621, 321.57708740234375 ],
                               "offset-hash" : "ccsOh8ykqVJRSTZD",
@@ -4769,7 +4819,7 @@
                            "yNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 10010, 10406 ],
+                              "@position" : [ 10062, 10827 ],
                               "frequency" : [ 2, 2 ],
                               "offset" : [ -130.02517700195313, 280.6488037109375 ],
                               "offset-hash" : "pgcFNq518tDvMSuu",
@@ -4787,7 +4837,7 @@
                            "yNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 10010, 10512 ],
+                              "@position" : [ 10062, 10933 ],
                               "frequency" : [ 2, 2 ],
                               "offset" : [ -153.85366821289063, -49.666942596435547 ],
                               "offset-hash" : "7qUKsLMKN9ZlpVxM",
@@ -4805,7 +4855,7 @@
                            "yNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 10010, 10618 ],
+                              "@position" : [ 10062, 11039 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ 263.5233154296875, 20.032878875732422 ],
                               "offset-hash" : "J50et04bF3SuTXnl",
@@ -4819,7 +4869,7 @@
                   "surface_decorations" : {
                      "@collapsed" : false,
                      "@name" : "Standard Decorations",
-                     "@position" : [ 9698, 11315 ],
+                     "@position" : [ 9750, 11736 ],
                      "@toggle-ceiling" : false,
                      "@toggle-floor" : true,
                      "ceiling" : [],
@@ -4832,7 +4882,7 @@
                            "instance" : {
                               "@collapsed" : false,
                               "@name" : "Bush (deprecated)",
-                              "@position" : [ 10032, 11328 ],
+                              "@position" : [ 10084, 11749 ],
                               "blockType" : "ROCK_SEDIMENTARY_BASE",
                               "height" : 3.75,
                               "maxScale" : 1,
@@ -4851,7 +4901,7 @@
                            "noise" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 10032, 11537 ],
+                              "@position" : [ 10084, 11958 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ 374.98739624023438, -229.22604370117188 ],
                               "offset-hash" : "F2PUkBusSCTgNdMG",
@@ -4871,7 +4921,7 @@
                            "instance" : {
                               "@collapsed" : false,
                               "@name" : "Bush (deprecated)",
-                              "@position" : [ 10032, 11666 ],
+                              "@position" : [ 10084, 12087 ],
                               "blockType" : "WOOD_EXOTIC_LEAVES",
                               "height" : 3.75,
                               "maxScale" : 1,
@@ -4890,21 +4940,21 @@
                            "noise" : {
                               "@collapsed" : false,
                               "@name" : "Remap 2D",
-                              "@position" : [ 10032, 11931 ],
+                              "@position" : [ 10084, 12352 ],
                               "clamp" : true,
                               "clampPower" : 10,
                               "frequency" : [ 1, 1 ],
                               "fun" : {
                                  "@collapsed" : false,
                                  "@name" : "Sum 2D",
-                                 "@position" : [ 10328, 11886 ],
+                                 "@position" : [ 10380, 12307 ],
                                  "frequency" : [ 1, 1 ],
                                  "terms" : [
                                     {
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Ditches",
-                                          "@position" : [ 10624, 11876 ],
+                                          "@position" : [ 10676, 12297 ],
                                           "frequency" : [ 0.55900001525878906, 0.55900001525878906 ],
                                           "links" : [
                                              {
@@ -5039,7 +5089,7 @@
                                        "fun" : {
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
-                                          "@position" : [ 10624, 12051 ],
+                                          "@position" : [ 10676, 12472 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ -215.9517822265625, 30.380863189697266 ],
                                           "offset-hash" : "pKSpnBwiVPs99DV4",
@@ -5067,7 +5117,7 @@
                   "surface_substrate" : {
                      "@collapsed" : false,
                      "@name" : "Standard Substrate",
-                     "@position" : [ 9698, 11043 ],
+                     "@position" : [ 9750, 11464 ],
                      "strates" : [
                         {
                            "averageDepth" : 6,

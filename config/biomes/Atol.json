@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "Atol",
    "@position" : [ 7754, 8130 ],
-   "@scroll" : [ 9283.84375, 7784.49267578125, 0.5 ],
+   "@scroll" : [ 9477.091796875, 7892.4052734375, 1.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 9,
+   "@version" : 10,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -21,6 +21,7 @@
             "enabled" : true,
             "value" : 0.61200004816055298
          },
+         "nameStyle" : "Insula",
          "part" : {
             "@collapsed" : false,
             "@name" : "Atol",
@@ -55,45 +56,14 @@
                   {
                      "fun" : {
                         "@collapsed" : false,
-                        "@name" : "SmallCaves",
-                        "@position" : [ 9677, 7350 ],
-                        "frequency" : [ 2, 2, 2 ],
-                        "links" : [
-                           {
-                              "linkPath" : [
-                                 {
-                                    "index" : -1,
-                                    "name" : "noise3d"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 1,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "value"
-                                 }
-                              ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0.27400001883506775
-                           }
-                        ],
-                        "offset" : [ -337.57244873046875, -1.9521722793579102, -69.22943115234375 ],
-                        "offset-hash" : "UxSfkYFF8zteDQab",
-                        "reference" : "noise3d/SmallCaves.json",
-                        "tick" : 1,
+                        "@name" : "SimpleCaves",
+                        "@position" : [ 9696, 7360 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "links" : [],
+                        "offset" : [ -40.668315887451172, -100.89211273193359, -155.0185546875 ],
+                        "offset-hash" : "xSFETcM4Q4Xsm3ro",
+                        "reference" : "noise3d/SimpleCaves.json",
+                        "tick" : 0,
                         "type" : "reference"
                      },
                      "y" : 18.432001113891602
@@ -690,7 +660,7 @@
                      "depthNoise" : {
                         "@collapsed" : false,
                         "@name" : "Constant 2D",
-                        "@position" : [ 9685, 7914 ],
+                        "@position" : [ 9692, 7861 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -50.202182769775391, 242.56636047363281 ],
                         "offset-hash" : "f7XatV9hrRI33mfw",
@@ -719,7 +689,7 @@
                      "depthNoise" : {
                         "@collapsed" : false,
                         "@name" : "Constant 2D",
-                        "@position" : [ 9685, 8043 ],
+                        "@position" : [ 9692, 7990 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -50.202182769775391, 242.56636047363281 ],
                         "offset-hash" : "f7XatV9hrRI33mfw",
@@ -737,7 +707,15 @@
                         "minGradient" : 0,
                         "minThreshold" : -1,
                         "minY" : 0,
-                        "noise" : null
+                        "noise" : {
+                           "@collapsed" : false,
+                           "@name" : "Perlin 2D",
+                           "@position" : [ 9692, 8119 ],
+                           "frequency" : [ 1, 1 ],
+                           "offset" : [ 364.41595458984375, 344.89556884765625 ],
+                           "offset-hash" : "QrZ8aLfbY8wMh1zI",
+                           "type" : "perlin"
+                        }
                      },
                      "minGradient" : 0,
                      "minY" : 51
@@ -748,7 +726,7 @@
                      "depthNoise" : {
                         "@collapsed" : false,
                         "@name" : "Constant 2D",
-                        "@position" : [ 9685, 8172 ],
+                        "@position" : [ 9692, 8225 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -50.202182769775391, 242.56636047363281 ],
                         "offset-hash" : "f7XatV9hrRI33mfw",
@@ -811,6 +789,45 @@
          "weight" : 0.5
       },
       "links" : [
+         {
+            "blockConstraint" : 1876031168,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "frequency"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Atol Frequency",
+            "shortPath" : "Sum 2D.frequency.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 1,
+            "sliderMax" : 2,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
+         },
          {
             "blockConstraint" : 2264038624,
             "blockDefault" : "",
@@ -900,7 +917,7 @@
          "@position" : [ 7754, 8130 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 9,
+         "@version" : 10,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -914,6 +931,7 @@
                   "enabled" : true,
                   "value" : 0.61200004816055298
                },
+               "nameStyle" : "Insula",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "Atol",
@@ -948,45 +966,14 @@
                         {
                            "fun" : {
                               "@collapsed" : false,
-                              "@name" : "SmallCaves",
-                              "@position" : [ 9677, 7350 ],
-                              "frequency" : [ 2, 2, 2 ],
-                              "links" : [
-                                 {
-                                    "linkPath" : [
-                                       {
-                                          "index" : -1,
-                                          "name" : "noise3d"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 1,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "value"
-                                       }
-                                    ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0.27400001883506775
-                                 }
-                              ],
-                              "offset" : [ -337.57244873046875, -1.9521722793579102, -69.22943115234375 ],
-                              "offset-hash" : "UxSfkYFF8zteDQab",
-                              "reference" : "noise3d/SmallCaves.json",
-                              "tick" : 1,
+                              "@name" : "SimpleCaves",
+                              "@position" : [ 9696, 7360 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "links" : [],
+                              "offset" : [ -40.668315887451172, -100.89211273193359, -155.0185546875 ],
+                              "offset-hash" : "xSFETcM4Q4Xsm3ro",
+                              "reference" : "noise3d/SimpleCaves.json",
+                              "tick" : 0,
                               "type" : "reference"
                            },
                            "y" : 18.432001113891602
@@ -1583,7 +1570,7 @@
                            "depthNoise" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 9685, 7914 ],
+                              "@position" : [ 9692, 7861 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -50.202182769775391, 242.56636047363281 ],
                               "offset-hash" : "f7XatV9hrRI33mfw",
@@ -1612,7 +1599,7 @@
                            "depthNoise" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 9685, 8043 ],
+                              "@position" : [ 9692, 7990 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -50.202182769775391, 242.56636047363281 ],
                               "offset-hash" : "f7XatV9hrRI33mfw",
@@ -1630,7 +1617,15 @@
                               "minGradient" : 0,
                               "minThreshold" : -1,
                               "minY" : 0,
-                              "noise" : null
+                              "noise" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Perlin 2D",
+                                 "@position" : [ 9692, 8119 ],
+                                 "frequency" : [ 1, 1 ],
+                                 "offset" : [ 364.41595458984375, 344.89556884765625 ],
+                                 "offset-hash" : "QrZ8aLfbY8wMh1zI",
+                                 "type" : "perlin"
+                              }
                            },
                            "minGradient" : 0,
                            "minY" : 51
@@ -1641,7 +1636,7 @@
                            "depthNoise" : {
                               "@collapsed" : false,
                               "@name" : "Constant 2D",
-                              "@position" : [ 9685, 8172 ],
+                              "@position" : [ 9692, 8225 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -50.202182769775391, 242.56636047363281 ],
                               "offset-hash" : "f7XatV9hrRI33mfw",
@@ -1704,6 +1699,45 @@
                "weight" : 0.5
             },
             "links" : [
+               {
+                  "blockConstraint" : 1876031168,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Atol Frequency",
+                  "shortPath" : "Sum 2D.frequency.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 1,
+                  "sliderMax" : 2,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
+               },
                {
                   "blockConstraint" : 2264038624,
                   "blockDefault" : "",
