@@ -3,7 +3,7 @@
    "@configType" : "BIOME",
    "@name" : "MountainRange",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8718.1923828125, 8376.9482421875, -0.25 ],
+   "@scroll" : [ 9798.994140625, 7073.8759765625, 0.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
@@ -15,11 +15,11 @@
          "@position" : [ 8455, 8463 ],
          "altitude" : {
             "enabled" : true,
-            "value" : 0.4570000171661377
+            "value" : 0.81700003147125244
          },
          "humidity" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.41400003433227539
          },
          "nameStyle" : "Iuga",
          "part" : {
@@ -313,7 +313,7 @@
                                  }
                               ],
                               "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0.37200000882148743
+                              "sliderValue" : 0.099000006914138794
                            },
                            {
                               "linkPath" : [
@@ -895,15 +895,164 @@
          },
          "temperature" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.3970000147819519
          },
          "vegetation" : {
             "enabled" : true,
-            "value" : 0.9230000376701355
+            "value" : 0.62200003862380981
          },
          "weight" : 0.5
       },
       "links" : [
+         {
+            "blockConstraint" : 793213024,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "frequency"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Mountain Frequency",
+            "shortPath" : "Sum 2D.frequency.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 1,
+            "sliderMax" : 2,
+            "sliderMin" : 0.5,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 793213024,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 1,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "links"
+               },
+               {
+                  "index" : 3,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "sliderValue"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Mountain Height",
+            "shortPath" : "Rivers.River Depth",
+            "sliderCheck" : false,
+            "sliderDefault" : -2,
+            "sliderMax" : -0.5,
+            "sliderMin" : -2,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 793213024,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 1,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "links"
+               },
+               {
+                  "index" : 2,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "sliderValue"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Mountain Bendiness",
+            "shortPath" : "Rivers.River Distortion",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.10000000149011612,
+            "sliderMax" : 1,
+            "sliderMin" : 0.0010000000474974513,
+            "sliderStep" : 0.0010000000474974513
+         },
          {
             "blockConstraint" : 128708736,
             "blockDefault" : "",
@@ -1001,11 +1150,11 @@
                "@position" : [ 8455, 8463 ],
                "altitude" : {
                   "enabled" : true,
-                  "value" : 0.4570000171661377
+                  "value" : 0.81700003147125244
                },
                "humidity" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.41400003433227539
                },
                "nameStyle" : "Iuga",
                "part" : {
@@ -1299,7 +1448,7 @@
                                        }
                                     ],
                                     "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0.37200000882148743
+                                    "sliderValue" : 0.099000006914138794
                                  },
                                  {
                                     "linkPath" : [
@@ -1881,15 +2030,164 @@
                },
                "temperature" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.3970000147819519
                },
                "vegetation" : {
                   "enabled" : true,
-                  "value" : 0.9230000376701355
+                  "value" : 0.62200003862380981
                },
                "weight" : 0.5
             },
             "links" : [
+               {
+                  "blockConstraint" : 793213024,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Mountain Frequency",
+                  "shortPath" : "Sum 2D.frequency.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 1,
+                  "sliderMax" : 2,
+                  "sliderMin" : 0.5,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 793213024,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 3,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Mountain Height",
+                  "shortPath" : "Rivers.River Depth",
+                  "sliderCheck" : false,
+                  "sliderDefault" : -2,
+                  "sliderMax" : -0.5,
+                  "sliderMin" : -2,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 793213024,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Mountain Bendiness",
+                  "shortPath" : "Rivers.River Distortion",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.10000000149011612,
+                  "sliderMax" : 1,
+                  "sliderMin" : 0.0010000000474974513,
+                  "sliderStep" : 0.0010000000474974513
+               },
                {
                   "blockConstraint" : 128708736,
                   "blockDefault" : "",

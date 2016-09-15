@@ -1,9 +1,9 @@
 {
    "@collapsed" : false,
    "@configType" : "BIOME",
-   "@name" : "CraterField",
+   "@name" : "GolfCourse",
    "@position" : [ 7368, 8082 ],
-   "@scroll" : [ 9304.69140625, 9673.1396484375, 1 ],
+   "@scroll" : [ 9534.2314453125, 8705.7958984375, 0.5 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
@@ -11,7 +11,7 @@
    "biome" : {
       "fun" : {
          "@collapsed" : false,
-         "@name" : "CraterField",
+         "@name" : "GolfCourse",
          "@position" : [ 7946, 8385 ],
          "altitude" : {
             "enabled" : true,
@@ -24,7 +24,7 @@
          "nameStyle" : "Catena {}",
          "part" : {
             "@collapsed" : false,
-            "@name" : "CraterField",
+            "@name" : "GolfCourse",
             "@position" : [ 8523, 8130 ],
             "@selector-open" : false,
             "@toggle-caves" : true,
@@ -114,134 +114,531 @@
                   {
                      "fun" : {
                         "@collapsed" : false,
-                        "@name" : "Ditches",
-                        "@position" : [ 9402, 6193 ],
-                        "frequency" : [ 2, 2 ],
-                        "links" : [
+                        "@name" : "Max 2D",
+                        "@position" : [ 9491, 6215 ],
+                        "frequency" : [ 1, 1 ],
+                        "terms" : [
                            {
-                              "linkPath" : [
+                              "@collapsed" : false,
+                              "@name" : "Ditches",
+                              "@position" : [ 9853, 6125 ],
+                              "frequency" : [ 2, 2 ],
+                              "links" : [
                                  {
-                                    "index" : -1,
-                                    "name" : "noise2d"
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise2d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 0,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "min"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : -0.036000002175569534
                                  },
                                  {
-                                    "index" : -1,
-                                    "name" : "fun"
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise2d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 0,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "base"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "cellScale"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : 20
                                  },
                                  {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 0,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "min"
+                                    "linkPath" : [
+                                       {
+                                          "index" : -1,
+                                          "name" : "noise2d"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "terms"
+                                       },
+                                       {
+                                          "index" : 0,
+                                          "name" : ""
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "fun"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "distortion"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "frequency"
+                                       },
+                                       {
+                                          "index" : -1,
+                                          "name" : "@xz"
+                                       }
+                                    ],
+                                    "linkType" : "LT:CUSTOM_SLIDER",
+                                    "sliderValue" : 0.30700001120567322
                                  }
                               ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : -0.036000002175569534
+                              "offset" : [ 143.599609375, -377.43121337890625 ],
+                              "offset-hash" : "1qOfk372Yw93JADj",
+                              "reference" : "noise2d/Ditches.json",
+                              "tick" : 0,
+                              "type" : "reference"
                            },
                            {
-                              "linkPath" : [
+                              "@collapsed" : false,
+                              "@name" : "Sum 2D",
+                              "@position" : [ 9830, 6354 ],
+                              "frequency" : [ 1, 1 ],
+                              "terms" : [
                                  {
-                                    "index" : -1,
-                                    "name" : "noise2d"
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Rivers",
+                                       "@position" : [ 10107, 6301 ],
+                                       "frequency" : [ 1.6330001354217529, 1.6330001354217529 ],
+                                       "links" : [
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "base"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "base"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                }
+                                             ],
+                                             "linkType" : "LT:NOISE_2D",
+                                             "nodeValue" : {
+                                                "@collapsed" : false,
+                                                "@name" : "Perlin 2D",
+                                                "@position" : [ 10432, 6457 ],
+                                                "frequency" : [ 0.57500004768371582, 0.57500004768371582 ],
+                                                "offset" : [ 147.90875244140625, 307.70999145507813 ],
+                                                "offset-hash" : "ELI97oy6RcuUADQZ",
+                                                "type" : "perlin"
+                                             }
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "base"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "min"
+                                                }
+                                             ],
+                                             "linkType" : "LT:CUSTOM_SLIDER",
+                                             "sliderValue" : 0.029000001028180122
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "base"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "distortionScale"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "@xz"
+                                                }
+                                             ],
+                                             "linkType" : "LT:CUSTOM_SLIDER",
+                                             "sliderValue" : 0.19900001585483551
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "f2"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 2,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "multiplier"
+                                                }
+                                             ],
+                                             "linkType" : "LT:CUSTOM_SLIDER",
+                                             "sliderValue" : 1.874000072479248
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "base"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "max"
+                                                }
+                                             ],
+                                             "linkType" : "LT:CUSTOM_SLIDER",
+                                             "sliderValue" : -0.085000000894069672
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "f1"
+                                                }
+                                             ],
+                                             "linkType" : "LT:NOISE_2D",
+                                             "nodeValue" : null
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "f2"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                }
+                                             ],
+                                             "linkType" : "LT:NOISE_2D",
+                                             "nodeValue" : null
+                                          },
+                                          {
+                                             "linkPath" : [
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "noise2d"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "f2"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "fun"
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "terms"
+                                                },
+                                                {
+                                                   "index" : 0,
+                                                   "name" : ""
+                                                },
+                                                {
+                                                   "index" : -1,
+                                                   "name" : "multiplier"
+                                                }
+                                             ],
+                                             "linkType" : "LT:CUSTOM_SLIDER",
+                                             "sliderValue" : 0.10000000149011612
+                                          }
+                                       ],
+                                       "offset" : [ -129.92752075195313, 39.067737579345703 ],
+                                       "offset-hash" : "o4AP3ZjNaoDDs4XK",
+                                       "reference" : "noise2d/Rivers.json",
+                                       "tick" : 0,
+                                       "type" : "reference"
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
                                  },
                                  {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 0,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "base"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "cellScale"
+                                    "fun" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Constant 2D",
+                                       "@position" : [ 10116, 6568 ],
+                                       "frequency" : [ 1, 1 ],
+                                       "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                       "offset-hash" : "asTQeTfgijleeSTP",
+                                       "type" : "constant",
+                                       "value" : 0.092000007629394531
+                                    },
+                                    "multiplier" : 1,
+                                    "power" : 1
                                  }
                               ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 20
-                           },
-                           {
-                              "linkPath" : [
-                                 {
-                                    "index" : -1,
-                                    "name" : "noise2d"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "terms"
-                                 },
-                                 {
-                                    "index" : 0,
-                                    "name" : ""
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "fun"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "distortion"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "frequency"
-                                 },
-                                 {
-                                    "index" : -1,
-                                    "name" : "@xz"
-                                 }
-                              ],
-                              "linkType" : "LT:CUSTOM_SLIDER",
-                              "sliderValue" : 0.30700001120567322
+                              "type" : "sum"
                            }
                         ],
-                        "offset" : [ 143.599609375, -377.43121337890625 ],
-                        "offset-hash" : "1qOfk372Yw93JADj",
-                        "reference" : "noise2d/Ditches.json",
-                        "tick" : 0,
-                        "type" : "reference"
+                        "type" : "max"
                      },
                      "multiplier" : 1,
                      "power" : 1
@@ -1771,140 +2168,537 @@
                                           "fun" : {
                                              "@collapsed" : false,
                                              "@name" : "Sum 2D",
-                                             "@position" : [ 11035, 7629 ],
+                                             "@position" : [ 11064, 7637 ],
                                              "frequency" : [ 1, 1 ],
                                              "terms" : [
                                                 {
                                                    "fun" : {
                                                       "@collapsed" : false,
-                                                      "@name" : "Ditches",
-                                                      "@position" : [ 11331, 7619 ],
-                                                      "frequency" : [ 2, 2 ],
-                                                      "links" : [
+                                                      "@name" : "Max 2D",
+                                                      "@position" : [ 11389, 7566 ],
+                                                      "frequency" : [ 1, 1 ],
+                                                      "terms" : [
                                                          {
-                                                            "linkPath" : [
+                                                            "@collapsed" : false,
+                                                            "@name" : "Ditches",
+                                                            "@position" : [ 11751, 7476 ],
+                                                            "frequency" : [ 2, 2 ],
+                                                            "links" : [
                                                                {
-                                                                  "index" : -1,
-                                                                  "name" : "noise2d"
+                                                                  "linkPath" : [
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "noise2d"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "terms"
+                                                                     },
+                                                                     {
+                                                                        "index" : 0,
+                                                                        "name" : ""
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "min"
+                                                                     }
+                                                                  ],
+                                                                  "linkType" : "LT:CUSTOM_SLIDER",
+                                                                  "sliderValue" : -0.036000002175569534
                                                                },
                                                                {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
+                                                                  "linkPath" : [
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "noise2d"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "terms"
+                                                                     },
+                                                                     {
+                                                                        "index" : 0,
+                                                                        "name" : ""
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "base"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "cellScale"
+                                                                     }
+                                                                  ],
+                                                                  "linkType" : "LT:CUSTOM_SLIDER",
+                                                                  "sliderValue" : 20
                                                                },
                                                                {
-                                                                  "index" : -1,
-                                                                  "name" : "terms"
-                                                               },
-                                                               {
-                                                                  "index" : 0,
-                                                                  "name" : ""
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "min"
+                                                                  "linkPath" : [
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "noise2d"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "terms"
+                                                                     },
+                                                                     {
+                                                                        "index" : 0,
+                                                                        "name" : ""
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "fun"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "distortion"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "frequency"
+                                                                     },
+                                                                     {
+                                                                        "index" : -1,
+                                                                        "name" : "@xz"
+                                                                     }
+                                                                  ],
+                                                                  "linkType" : "LT:CUSTOM_SLIDER",
+                                                                  "sliderValue" : 0.30700001120567322
                                                                }
                                                             ],
-                                                            "linkType" : "LT:CUSTOM_SLIDER",
-                                                            "sliderValue" : -0.036000002175569534
+                                                            "offset" : [ 143.599609375, -377.43121337890625 ],
+                                                            "offset-hash" : "1qOfk372Yw93JADj",
+                                                            "reference" : "noise2d/Ditches.json",
+                                                            "tick" : 0,
+                                                            "type" : "reference"
                                                          },
                                                          {
-                                                            "linkPath" : [
+                                                            "@collapsed" : false,
+                                                            "@name" : "Sum 2D",
+                                                            "@position" : [ 11728, 7705 ],
+                                                            "frequency" : [ 1, 1 ],
+                                                            "terms" : [
                                                                {
-                                                                  "index" : -1,
-                                                                  "name" : "noise2d"
+                                                                  "fun" : {
+                                                                     "@collapsed" : false,
+                                                                     "@name" : "Rivers",
+                                                                     "@position" : [ 12005, 7652 ],
+                                                                     "frequency" : [ 1.6330001354217529, 1.6330001354217529 ],
+                                                                     "links" : [
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "base"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "base"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:NOISE_2D",
+                                                                           "nodeValue" : {
+                                                                              "@collapsed" : false,
+                                                                              "@name" : "Perlin 2D",
+                                                                              "@position" : [ 12330, 7808 ],
+                                                                              "frequency" : [ 0.57500004768371582, 0.57500004768371582 ],
+                                                                              "offset" : [ 147.90875244140625, 307.70999145507813 ],
+                                                                              "offset-hash" : "ELI97oy6RcuUADQZ",
+                                                                              "type" : "perlin"
+                                                                           }
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "base"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "min"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:CUSTOM_SLIDER",
+                                                                           "sliderValue" : 0.029000001028180122
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "base"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "distortionScale"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "@xz"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:CUSTOM_SLIDER",
+                                                                           "sliderValue" : 0.19900001585483551
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "f2"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 2,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "multiplier"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:CUSTOM_SLIDER",
+                                                                           "sliderValue" : 1.874000072479248
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "base"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "max"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:CUSTOM_SLIDER",
+                                                                           "sliderValue" : -0.085000000894069672
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "f1"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:NOISE_2D",
+                                                                           "nodeValue" : null
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "f2"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:NOISE_2D",
+                                                                           "nodeValue" : null
+                                                                        },
+                                                                        {
+                                                                           "linkPath" : [
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "noise2d"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "f2"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "fun"
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "terms"
+                                                                              },
+                                                                              {
+                                                                                 "index" : 0,
+                                                                                 "name" : ""
+                                                                              },
+                                                                              {
+                                                                                 "index" : -1,
+                                                                                 "name" : "multiplier"
+                                                                              }
+                                                                           ],
+                                                                           "linkType" : "LT:CUSTOM_SLIDER",
+                                                                           "sliderValue" : 0.10000000149011612
+                                                                        }
+                                                                     ],
+                                                                     "offset" : [ -129.92752075195313, 39.067737579345703 ],
+                                                                     "offset-hash" : "o4AP3ZjNaoDDs4XK",
+                                                                     "reference" : "noise2d/Rivers.json",
+                                                                     "tick" : 0,
+                                                                     "type" : "reference"
+                                                                  },
+                                                                  "multiplier" : 1,
+                                                                  "power" : 1
                                                                },
                                                                {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "terms"
-                                                               },
-                                                               {
-                                                                  "index" : 0,
-                                                                  "name" : ""
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "base"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "cellScale"
+                                                                  "fun" : {
+                                                                     "@collapsed" : false,
+                                                                     "@name" : "Constant 2D",
+                                                                     "@position" : [ 12014, 7919 ],
+                                                                     "frequency" : [ 1, 1 ],
+                                                                     "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                                                     "offset-hash" : "asTQeTfgijleeSTP",
+                                                                     "type" : "constant",
+                                                                     "value" : 0.092000007629394531
+                                                                  },
+                                                                  "multiplier" : 1,
+                                                                  "power" : 1
                                                                }
                                                             ],
-                                                            "linkType" : "LT:CUSTOM_SLIDER",
-                                                            "sliderValue" : 20
-                                                         },
-                                                         {
-                                                            "linkPath" : [
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "noise2d"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "terms"
-                                                               },
-                                                               {
-                                                                  "index" : 0,
-                                                                  "name" : ""
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "fun"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "distortion"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "frequency"
-                                                               },
-                                                               {
-                                                                  "index" : -1,
-                                                                  "name" : "@xz"
-                                                               }
-                                                            ],
-                                                            "linkType" : "LT:CUSTOM_SLIDER",
-                                                            "sliderValue" : 0.30700001120567322
+                                                            "type" : "sum"
                                                          }
                                                       ],
-                                                      "offset" : [ 143.599609375, -377.43121337890625 ],
-                                                      "offset-hash" : "1qOfk372Yw93JADj",
-                                                      "reference" : "noise2d/Ditches.json",
-                                                      "tick" : 0,
-                                                      "type" : "reference"
+                                                      "type" : "max"
                                                    },
                                                    "multiplier" : 1,
                                                    "power" : 1
@@ -1913,12 +2707,12 @@
                                                    "fun" : {
                                                       "@collapsed" : false,
                                                       "@name" : "Constant 2D",
-                                                      "@position" : [ 11331, 7794 ],
+                                                      "@position" : [ 11350, 7851 ],
                                                       "frequency" : [ 1, 1 ],
-                                                      "offset" : [ -170.65080261230469, 156.39212036132813 ],
-                                                      "offset-hash" : "IygjzaWrzolH6AcY",
+                                                      "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                                      "offset-hash" : "asTQeTfgijleeSTP",
                                                       "type" : "constant",
-                                                      "value" : -0.074000000953674316
+                                                      "value" : -0.061000004410743713
                                                    },
                                                    "multiplier" : 1,
                                                    "power" : 1
@@ -2304,7 +3098,7 @@
                                  },
                                  {
                                     "fun" : {
-                                       "@collapsed" : false,
+                                       "@collapsed" : true,
                                        "@name" : "Constant 2D",
                                        "@position" : [ 10443, 8028 ],
                                        "frequency" : [ 1, 1 ],
@@ -3060,7 +3854,7 @@
             ],
             "linkType" : "LT:CUSTOM_SLIDER",
             "name" : "Biome Weight",
-            "shortPath" : "CraterField.weight",
+            "shortPath" : "GolfCourse.weight",
             "sliderCheck" : false,
             "sliderDefault" : 0.5,
             "sliderMax" : 1,
@@ -3125,7 +3919,7 @@
       "embedded" : {
          "@collapsed" : false,
          "@configType" : "BIOME",
-         "@name" : "CraterField",
+         "@name" : "GolfCourse",
          "@position" : [ 7368, 8082 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
@@ -3133,7 +3927,7 @@
          "biome" : {
             "fun" : {
                "@collapsed" : false,
-               "@name" : "CraterField",
+               "@name" : "GolfCourse",
                "@position" : [ 7946, 8385 ],
                "altitude" : {
                   "enabled" : true,
@@ -3146,7 +3940,7 @@
                "nameStyle" : "Catena {}",
                "part" : {
                   "@collapsed" : false,
-                  "@name" : "CraterField",
+                  "@name" : "GolfCourse",
                   "@position" : [ 8523, 8130 ],
                   "@selector-open" : false,
                   "@toggle-caves" : true,
@@ -3236,134 +4030,531 @@
                         {
                            "fun" : {
                               "@collapsed" : false,
-                              "@name" : "Ditches",
-                              "@position" : [ 9402, 6193 ],
-                              "frequency" : [ 2, 2 ],
-                              "links" : [
+                              "@name" : "Max 2D",
+                              "@position" : [ 9491, 6215 ],
+                              "frequency" : [ 1, 1 ],
+                              "terms" : [
                                  {
-                                    "linkPath" : [
+                                    "@collapsed" : false,
+                                    "@name" : "Ditches",
+                                    "@position" : [ 9853, 6125 ],
+                                    "frequency" : [ 2, 2 ],
+                                    "links" : [
                                        {
-                                          "index" : -1,
-                                          "name" : "noise2d"
+                                          "linkPath" : [
+                                             {
+                                                "index" : -1,
+                                                "name" : "noise2d"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "terms"
+                                             },
+                                             {
+                                                "index" : 0,
+                                                "name" : ""
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "min"
+                                             }
+                                          ],
+                                          "linkType" : "LT:CUSTOM_SLIDER",
+                                          "sliderValue" : -0.036000002175569534
                                        },
                                        {
-                                          "index" : -1,
-                                          "name" : "fun"
+                                          "linkPath" : [
+                                             {
+                                                "index" : -1,
+                                                "name" : "noise2d"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "terms"
+                                             },
+                                             {
+                                                "index" : 0,
+                                                "name" : ""
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "base"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "cellScale"
+                                             }
+                                          ],
+                                          "linkType" : "LT:CUSTOM_SLIDER",
+                                          "sliderValue" : 20
                                        },
                                        {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 0,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "min"
+                                          "linkPath" : [
+                                             {
+                                                "index" : -1,
+                                                "name" : "noise2d"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "terms"
+                                             },
+                                             {
+                                                "index" : 0,
+                                                "name" : ""
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "fun"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "distortion"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "frequency"
+                                             },
+                                             {
+                                                "index" : -1,
+                                                "name" : "@xz"
+                                             }
+                                          ],
+                                          "linkType" : "LT:CUSTOM_SLIDER",
+                                          "sliderValue" : 0.30700001120567322
                                        }
                                     ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : -0.036000002175569534
+                                    "offset" : [ 143.599609375, -377.43121337890625 ],
+                                    "offset-hash" : "1qOfk372Yw93JADj",
+                                    "reference" : "noise2d/Ditches.json",
+                                    "tick" : 0,
+                                    "type" : "reference"
                                  },
                                  {
-                                    "linkPath" : [
+                                    "@collapsed" : false,
+                                    "@name" : "Sum 2D",
+                                    "@position" : [ 9830, 6354 ],
+                                    "frequency" : [ 1, 1 ],
+                                    "terms" : [
                                        {
-                                          "index" : -1,
-                                          "name" : "noise2d"
+                                          "fun" : {
+                                             "@collapsed" : false,
+                                             "@name" : "Rivers",
+                                             "@position" : [ 10107, 6301 ],
+                                             "frequency" : [ 1.6330001354217529, 1.6330001354217529 ],
+                                             "links" : [
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "base"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "base"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:NOISE_2D",
+                                                   "nodeValue" : {
+                                                      "@collapsed" : false,
+                                                      "@name" : "Perlin 2D",
+                                                      "@position" : [ 10432, 6457 ],
+                                                      "frequency" : [ 0.57500004768371582, 0.57500004768371582 ],
+                                                      "offset" : [ 147.90875244140625, 307.70999145507813 ],
+                                                      "offset-hash" : "ELI97oy6RcuUADQZ",
+                                                      "type" : "perlin"
+                                                   }
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "base"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "min"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:CUSTOM_SLIDER",
+                                                   "sliderValue" : 0.029000001028180122
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "base"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "distortionScale"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "@xz"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:CUSTOM_SLIDER",
+                                                   "sliderValue" : 0.19900001585483551
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "f2"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 2,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "multiplier"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:CUSTOM_SLIDER",
+                                                   "sliderValue" : 1.874000072479248
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "base"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "max"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:CUSTOM_SLIDER",
+                                                   "sliderValue" : -0.085000000894069672
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "f1"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:NOISE_2D",
+                                                   "nodeValue" : null
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "f2"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:NOISE_2D",
+                                                   "nodeValue" : null
+                                                },
+                                                {
+                                                   "linkPath" : [
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "noise2d"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "f2"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "fun"
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "terms"
+                                                      },
+                                                      {
+                                                         "index" : 0,
+                                                         "name" : ""
+                                                      },
+                                                      {
+                                                         "index" : -1,
+                                                         "name" : "multiplier"
+                                                      }
+                                                   ],
+                                                   "linkType" : "LT:CUSTOM_SLIDER",
+                                                   "sliderValue" : 0.10000000149011612
+                                                }
+                                             ],
+                                             "offset" : [ -129.92752075195313, 39.067737579345703 ],
+                                             "offset-hash" : "o4AP3ZjNaoDDs4XK",
+                                             "reference" : "noise2d/Rivers.json",
+                                             "tick" : 0,
+                                             "type" : "reference"
+                                          },
+                                          "multiplier" : 1,
+                                          "power" : 1
                                        },
                                        {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 0,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "base"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "cellScale"
+                                          "fun" : {
+                                             "@collapsed" : false,
+                                             "@name" : "Constant 2D",
+                                             "@position" : [ 10116, 6568 ],
+                                             "frequency" : [ 1, 1 ],
+                                             "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                             "offset-hash" : "asTQeTfgijleeSTP",
+                                             "type" : "constant",
+                                             "value" : 0.092000007629394531
+                                          },
+                                          "multiplier" : 1,
+                                          "power" : 1
                                        }
                                     ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 20
-                                 },
-                                 {
-                                    "linkPath" : [
-                                       {
-                                          "index" : -1,
-                                          "name" : "noise2d"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "terms"
-                                       },
-                                       {
-                                          "index" : 0,
-                                          "name" : ""
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "fun"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "distortion"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "frequency"
-                                       },
-                                       {
-                                          "index" : -1,
-                                          "name" : "@xz"
-                                       }
-                                    ],
-                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                    "sliderValue" : 0.30700001120567322
+                                    "type" : "sum"
                                  }
                               ],
-                              "offset" : [ 143.599609375, -377.43121337890625 ],
-                              "offset-hash" : "1qOfk372Yw93JADj",
-                              "reference" : "noise2d/Ditches.json",
-                              "tick" : 0,
-                              "type" : "reference"
+                              "type" : "max"
                            },
                            "multiplier" : 1,
                            "power" : 1
@@ -4893,140 +6084,537 @@
                                                 "fun" : {
                                                    "@collapsed" : false,
                                                    "@name" : "Sum 2D",
-                                                   "@position" : [ 11035, 7629 ],
+                                                   "@position" : [ 11064, 7637 ],
                                                    "frequency" : [ 1, 1 ],
                                                    "terms" : [
                                                       {
                                                          "fun" : {
                                                             "@collapsed" : false,
-                                                            "@name" : "Ditches",
-                                                            "@position" : [ 11331, 7619 ],
-                                                            "frequency" : [ 2, 2 ],
-                                                            "links" : [
+                                                            "@name" : "Max 2D",
+                                                            "@position" : [ 11389, 7566 ],
+                                                            "frequency" : [ 1, 1 ],
+                                                            "terms" : [
                                                                {
-                                                                  "linkPath" : [
+                                                                  "@collapsed" : false,
+                                                                  "@name" : "Ditches",
+                                                                  "@position" : [ 11751, 7476 ],
+                                                                  "frequency" : [ 2, 2 ],
+                                                                  "links" : [
                                                                      {
-                                                                        "index" : -1,
-                                                                        "name" : "noise2d"
+                                                                        "linkPath" : [
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "noise2d"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "terms"
+                                                                           },
+                                                                           {
+                                                                              "index" : 0,
+                                                                              "name" : ""
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "min"
+                                                                           }
+                                                                        ],
+                                                                        "linkType" : "LT:CUSTOM_SLIDER",
+                                                                        "sliderValue" : -0.036000002175569534
                                                                      },
                                                                      {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
+                                                                        "linkPath" : [
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "noise2d"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "terms"
+                                                                           },
+                                                                           {
+                                                                              "index" : 0,
+                                                                              "name" : ""
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "base"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "cellScale"
+                                                                           }
+                                                                        ],
+                                                                        "linkType" : "LT:CUSTOM_SLIDER",
+                                                                        "sliderValue" : 20
                                                                      },
                                                                      {
-                                                                        "index" : -1,
-                                                                        "name" : "terms"
-                                                                     },
-                                                                     {
-                                                                        "index" : 0,
-                                                                        "name" : ""
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "min"
+                                                                        "linkPath" : [
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "noise2d"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "terms"
+                                                                           },
+                                                                           {
+                                                                              "index" : 0,
+                                                                              "name" : ""
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "fun"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "distortion"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "frequency"
+                                                                           },
+                                                                           {
+                                                                              "index" : -1,
+                                                                              "name" : "@xz"
+                                                                           }
+                                                                        ],
+                                                                        "linkType" : "LT:CUSTOM_SLIDER",
+                                                                        "sliderValue" : 0.30700001120567322
                                                                      }
                                                                   ],
-                                                                  "linkType" : "LT:CUSTOM_SLIDER",
-                                                                  "sliderValue" : -0.036000002175569534
+                                                                  "offset" : [ 143.599609375, -377.43121337890625 ],
+                                                                  "offset-hash" : "1qOfk372Yw93JADj",
+                                                                  "reference" : "noise2d/Ditches.json",
+                                                                  "tick" : 0,
+                                                                  "type" : "reference"
                                                                },
                                                                {
-                                                                  "linkPath" : [
+                                                                  "@collapsed" : false,
+                                                                  "@name" : "Sum 2D",
+                                                                  "@position" : [ 11728, 7705 ],
+                                                                  "frequency" : [ 1, 1 ],
+                                                                  "terms" : [
                                                                      {
-                                                                        "index" : -1,
-                                                                        "name" : "noise2d"
+                                                                        "fun" : {
+                                                                           "@collapsed" : false,
+                                                                           "@name" : "Rivers",
+                                                                           "@position" : [ 12005, 7652 ],
+                                                                           "frequency" : [ 1.6330001354217529, 1.6330001354217529 ],
+                                                                           "links" : [
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "base"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "base"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:NOISE_2D",
+                                                                                 "nodeValue" : {
+                                                                                    "@collapsed" : false,
+                                                                                    "@name" : "Perlin 2D",
+                                                                                    "@position" : [ 12330, 7808 ],
+                                                                                    "frequency" : [ 0.57500004768371582, 0.57500004768371582 ],
+                                                                                    "offset" : [ 147.90875244140625, 307.70999145507813 ],
+                                                                                    "offset-hash" : "ELI97oy6RcuUADQZ",
+                                                                                    "type" : "perlin"
+                                                                                 }
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "base"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "min"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                                                                 "sliderValue" : 0.029000001028180122
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "base"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "distortionScale"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "@xz"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                                                                 "sliderValue" : 0.19900001585483551
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "f2"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 2,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "multiplier"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                                                                 "sliderValue" : 1.874000072479248
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "base"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "max"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                                                                 "sliderValue" : -0.085000000894069672
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "f1"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:NOISE_2D",
+                                                                                 "nodeValue" : null
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "f2"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:NOISE_2D",
+                                                                                 "nodeValue" : null
+                                                                              },
+                                                                              {
+                                                                                 "linkPath" : [
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "noise2d"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "f2"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "fun"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "terms"
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : 0,
+                                                                                       "name" : ""
+                                                                                    },
+                                                                                    {
+                                                                                       "index" : -1,
+                                                                                       "name" : "multiplier"
+                                                                                    }
+                                                                                 ],
+                                                                                 "linkType" : "LT:CUSTOM_SLIDER",
+                                                                                 "sliderValue" : 0.10000000149011612
+                                                                              }
+                                                                           ],
+                                                                           "offset" : [ -129.92752075195313, 39.067737579345703 ],
+                                                                           "offset-hash" : "o4AP3ZjNaoDDs4XK",
+                                                                           "reference" : "noise2d/Rivers.json",
+                                                                           "tick" : 0,
+                                                                           "type" : "reference"
+                                                                        },
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1
                                                                      },
                                                                      {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "terms"
-                                                                     },
-                                                                     {
-                                                                        "index" : 0,
-                                                                        "name" : ""
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "base"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "cellScale"
+                                                                        "fun" : {
+                                                                           "@collapsed" : false,
+                                                                           "@name" : "Constant 2D",
+                                                                           "@position" : [ 12014, 7919 ],
+                                                                           "frequency" : [ 1, 1 ],
+                                                                           "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                                                           "offset-hash" : "asTQeTfgijleeSTP",
+                                                                           "type" : "constant",
+                                                                           "value" : 0.092000007629394531
+                                                                        },
+                                                                        "multiplier" : 1,
+                                                                        "power" : 1
                                                                      }
                                                                   ],
-                                                                  "linkType" : "LT:CUSTOM_SLIDER",
-                                                                  "sliderValue" : 20
-                                                               },
-                                                               {
-                                                                  "linkPath" : [
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "noise2d"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "terms"
-                                                                     },
-                                                                     {
-                                                                        "index" : 0,
-                                                                        "name" : ""
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "fun"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "distortion"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "frequency"
-                                                                     },
-                                                                     {
-                                                                        "index" : -1,
-                                                                        "name" : "@xz"
-                                                                     }
-                                                                  ],
-                                                                  "linkType" : "LT:CUSTOM_SLIDER",
-                                                                  "sliderValue" : 0.30700001120567322
+                                                                  "type" : "sum"
                                                                }
                                                             ],
-                                                            "offset" : [ 143.599609375, -377.43121337890625 ],
-                                                            "offset-hash" : "1qOfk372Yw93JADj",
-                                                            "reference" : "noise2d/Ditches.json",
-                                                            "tick" : 0,
-                                                            "type" : "reference"
+                                                            "type" : "max"
                                                          },
                                                          "multiplier" : 1,
                                                          "power" : 1
@@ -5035,12 +6623,12 @@
                                                          "fun" : {
                                                             "@collapsed" : false,
                                                             "@name" : "Constant 2D",
-                                                            "@position" : [ 11331, 7794 ],
+                                                            "@position" : [ 11350, 7851 ],
                                                             "frequency" : [ 1, 1 ],
-                                                            "offset" : [ -170.65080261230469, 156.39212036132813 ],
-                                                            "offset-hash" : "IygjzaWrzolH6AcY",
+                                                            "offset" : [ 390.38070678710938, 383.61166381835938 ],
+                                                            "offset-hash" : "asTQeTfgijleeSTP",
                                                             "type" : "constant",
-                                                            "value" : -0.074000000953674316
+                                                            "value" : -0.061000004410743713
                                                          },
                                                          "multiplier" : 1,
                                                          "power" : 1
@@ -5426,7 +7014,7 @@
                                        },
                                        {
                                           "fun" : {
-                                             "@collapsed" : false,
+                                             "@collapsed" : true,
                                              "@name" : "Constant 2D",
                                              "@position" : [ 10443, 8028 ],
                                              "frequency" : [ 1, 1 ],
@@ -6182,7 +7770,7 @@
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
                   "name" : "Biome Weight",
-                  "shortPath" : "CraterField.weight",
+                  "shortPath" : "GolfCourse.weight",
                   "sliderCheck" : false,
                   "sliderDefault" : 0.5,
                   "sliderMax" : 1,

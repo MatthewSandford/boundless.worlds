@@ -3,7 +3,7 @@
    "@configType" : "BIOME",
    "@name" : "NaturalWells",
    "@position" : [ 7368, 8082 ],
-   "@scroll" : [ 8902.8251953125, 9329.7041015625, 1 ],
+   "@scroll" : [ 8046.54931640625, 8561.5078125, -0.5 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
@@ -15,13 +15,13 @@
          "@position" : [ 7899, 8385 ],
          "altitude" : {
             "enabled" : true,
-            "value" : 0.37900000810623169
+            "value" : 0.35200002789497375
          },
          "humidity" : {
             "enabled" : true,
-            "value" : 0.21500000357627869
+            "value" : 0.53100001811981201
          },
-         "nameStyle" : "Catena {}",
+         "nameStyle" : "{} Chasma",
          "part" : {
             "@collapsed" : false,
             "@name" : "NaturalWells",
@@ -208,7 +208,7 @@
                                                          }
                                                       ],
                                                       "linkType" : "LT:CUSTOM_SLIDER",
-                                                      "sliderValue" : 11.859999656677246
+                                                      "sliderValue" : 11.340000152587891
                                                    },
                                                    {
                                                       "linkPath" : [
@@ -1473,15 +1473,169 @@
          },
          "temperature" : {
             "enabled" : true,
-            "value" : 0.13700000941753387
+            "value" : 0.3970000147819519
          },
          "vegetation" : {
             "enabled" : true,
-            "value" : 0.19900001585483551
+            "value" : 0.70100003480911255
          },
          "weight" : 0.5
       },
       "links" : [
+         {
+            "blockConstraint" : 2197571168,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 2,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "multiplier"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Well Depth",
+            "shortPath" : "Sum 2D.multiplier",
+            "sliderCheck" : false,
+            "sliderDefault" : -1.5210000276565552,
+            "sliderMax" : 0,
+            "sliderMin" : -2,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 2197571168,
+            "blockDefault" : "",
+            "checkDefault" : true,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "links"
+               },
+               {
+                  "index" : 1,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "sliderValue"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Well Size",
+            "shortPath" : "Ditches.Size",
+            "sliderCheck" : false,
+            "sliderDefault" : 11.5,
+            "sliderMax" : 12,
+            "sliderMin" : 4,
+            "sliderStep" : 0.0099999997764825821
+         },
          {
             "blockConstraint" : 3274820576,
             "blockDefault" : "",
@@ -1579,13 +1733,13 @@
                "@position" : [ 7899, 8385 ],
                "altitude" : {
                   "enabled" : true,
-                  "value" : 0.37900000810623169
+                  "value" : 0.35200002789497375
                },
                "humidity" : {
                   "enabled" : true,
-                  "value" : 0.21500000357627869
+                  "value" : 0.53100001811981201
                },
-               "nameStyle" : "Catena {}",
+               "nameStyle" : "{} Chasma",
                "part" : {
                   "@collapsed" : false,
                   "@name" : "NaturalWells",
@@ -1772,7 +1926,7 @@
                                                                }
                                                             ],
                                                             "linkType" : "LT:CUSTOM_SLIDER",
-                                                            "sliderValue" : 11.859999656677246
+                                                            "sliderValue" : 11.340000152587891
                                                          },
                                                          {
                                                             "linkPath" : [
@@ -3037,15 +3191,169 @@
                },
                "temperature" : {
                   "enabled" : true,
-                  "value" : 0.13700000941753387
+                  "value" : 0.3970000147819519
                },
                "vegetation" : {
                   "enabled" : true,
-                  "value" : 0.19900001585483551
+                  "value" : 0.70100003480911255
                },
                "weight" : 0.5
             },
             "links" : [
+               {
+                  "blockConstraint" : 2197571168,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 2,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Well Depth",
+                  "shortPath" : "Sum 2D.multiplier",
+                  "sliderCheck" : false,
+                  "sliderDefault" : -1.5210000276565552,
+                  "sliderMax" : 0,
+                  "sliderMin" : -2,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 2197571168,
+                  "blockDefault" : "",
+                  "checkDefault" : true,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "links"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "sliderValue"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Well Size",
+                  "shortPath" : "Ditches.Size",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 11.5,
+                  "sliderMax" : 12,
+                  "sliderMin" : 4,
+                  "sliderStep" : 0.0099999997764825821
+               },
                {
                   "blockConstraint" : 3274820576,
                   "blockDefault" : "",

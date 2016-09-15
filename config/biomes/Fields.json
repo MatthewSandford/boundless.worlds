@@ -3,7 +3,7 @@
    "@configType" : "BIOME",
    "@name" : "Fields",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 9433.8515625, 10298.8564453125, 2 ],
+   "@scroll" : [ 10136.99609375, 10440.859375, 2 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
@@ -387,7 +387,7 @@
                            ],
                            "type" : "sum"
                         },
-                        "max" : 1.8310000896453857,
+                        "max" : 1.9000000953674316,
                         "min" : -2,
                         "type" : "remap"
                      },
@@ -403,7 +403,7 @@
                         "GRASS_VERDANT_BASE/SOIL_SILTY_BASE",
                         "GRASS_GNARLED_BASE/SOIL_CLAY_BASE"
                      ],
-                     "density" : 0,
+                     "density" : 1,
                      "depth" : 8,
                      "instance" : {
                         "@collapsed" : false,
@@ -485,7 +485,7 @@
                            ],
                            "type" : "sum"
                         },
-                        "max" : 1.8270001411437988,
+                        "max" : 1.9000000953674316,
                         "min" : -2,
                         "type" : "remap"
                      },
@@ -661,202 +661,6 @@
                                     "@collapsed" : false,
                                     "@name" : "Constant 2D",
                                     "@position" : [ 10435, 11113 ],
-                                    "frequency" : [ 1, 1 ],
-                                    "offset" : [ 239.49949645996094, 237.23631286621094 ],
-                                    "offset-hash" : "TGumO4LZH4gFZdm3",
-                                    "type" : "constant",
-                                    "value" : -0.75300002098083496
-                                 },
-                                 "multiplier" : 1,
-                                 "power" : 1
-                              }
-                           ],
-                           "type" : "sum"
-                        },
-                        "max" : 2,
-                        "min" : -2,
-                        "type" : "remap"
-                     },
-                     "placementType" : "FLORA_FLOWER_1",
-                     "sizeNoise" : null,
-                     "smooth" : false,
-                     "threshold" : 0
-                  },
-                  {
-                     "clearance" : 8,
-                     "constraintType" : [
-                        "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                        "GRASS_GNARLED_BASE/SOIL_CLAY_BASE",
-                        "GRASS_VERDANT_BASE/SOIL_SILTY_BASE"
-                     ],
-                     "density" : 0,
-                     "depth" : 8,
-                     "instance" : {
-                        "@collapsed" : false,
-                        "@name" : "Bush (deprecated)",
-                        "@position" : [ 9850, 11238 ],
-                        "blockType" : "WOOD_LUSH_LEAVES",
-                        "height" : 3.25,
-                        "maxScale" : 2,
-                        "minScale" : 0.5,
-                        "radius" : 2.75,
-                        "stemType" : "WOOD_LUSH_LEAVES",
-                        "taper" : 1,
-                        "type" : "bush"
-                     },
-                     "maxGradient" : 5,
-                     "maxSize" : 0.5,
-                     "maxY" : 102,
-                     "minGradient" : 0,
-                     "minSize" : 0.5,
-                     "minY" : 63,
-                     "noise" : null,
-                     "placementType" : "FLORA_FLOWER_1",
-                     "sizeNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Remap 2D",
-                        "@position" : [ 9843, 11503 ],
-                        "clamp" : true,
-                        "clampPower" : 10,
-                        "frequency" : [ 1, 1 ],
-                        "fun" : {
-                           "@collapsed" : false,
-                           "@name" : "Sum 2D",
-                           "@position" : [ 10139, 11458 ],
-                           "frequency" : [ 1, 1 ],
-                           "terms" : [
-                              {
-                                 "fun" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Remap 2D",
-                                    "@position" : [ 10435, 11451 ],
-                                    "clamp" : false,
-                                    "clampPower" : 5,
-                                    "frequency" : [ 1, 1 ],
-                                    "fun" : {
-                                       "@collapsed" : false,
-                                       "@name" : "Cell Distance 2D",
-                                       "@position" : [ 10717, 11486 ],
-                                       "cells" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Voronoi 2D",
-                                          "@position" : [ 10999, 11483 ],
-                                          "frequency" : [ 0.15000000596046448, 0.15000000596046448 ],
-                                          "offset" : [ 355.80987548828125, 103.65824127197266 ],
-                                          "offset-hash" : "l7cVU9Dw9MJJRCQx",
-                                          "type" : "voronoi"
-                                       },
-                                       "frequency" : [ 1, 1 ],
-                                       "type" : "cell_distance"
-                                    },
-                                    "max" : 2,
-                                    "min" : 0.71400004625320435,
-                                    "type" : "remap"
-                                 },
-                                 "multiplier" : 1,
-                                 "power" : 1
-                              },
-                              {
-                                 "fun" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Constant 2D",
-                                    "@position" : [ 10435, 11620 ],
-                                    "frequency" : [ 1, 1 ],
-                                    "offset" : [ 239.49949645996094, 237.23631286621094 ],
-                                    "offset-hash" : "TGumO4LZH4gFZdm3",
-                                    "type" : "constant",
-                                    "value" : -0.75300002098083496
-                                 },
-                                 "multiplier" : 1,
-                                 "power" : 1
-                              }
-                           ],
-                           "type" : "sum"
-                        },
-                        "max" : 2,
-                        "min" : -2,
-                        "type" : "remap"
-                     },
-                     "smooth" : false,
-                     "threshold" : 0
-                  },
-                  {
-                     "clearance" : 8,
-                     "constraintType" : [
-                        "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                        "GRASS_GNARLED_BASE/SOIL_CLAY_BASE",
-                        "GRASS_VERDANT_BASE/SOIL_SILTY_BASE"
-                     ],
-                     "density" : 0,
-                     "depth" : 8,
-                     "instance" : {
-                        "@collapsed" : false,
-                        "@name" : "Bush (deprecated)",
-                        "@position" : [ 9843, 11748 ],
-                        "blockType" : "WOOD_LUSH_LEAVES",
-                        "height" : 3.25,
-                        "maxScale" : 2,
-                        "minScale" : 0.5,
-                        "radius" : 2.75,
-                        "stemType" : "WOOD_LUSH_LEAVES",
-                        "taper" : 1,
-                        "type" : "bush"
-                     },
-                     "maxGradient" : 5,
-                     "maxSize" : 0.5,
-                     "maxY" : 101,
-                     "minGradient" : 0,
-                     "minSize" : 0.5,
-                     "minY" : 59,
-                     "noise" : {
-                        "@collapsed" : false,
-                        "@name" : "Remap 2D",
-                        "@position" : [ 9843, 12010 ],
-                        "clamp" : true,
-                        "clampPower" : 10,
-                        "frequency" : [ 1, 1 ],
-                        "fun" : {
-                           "@collapsed" : false,
-                           "@name" : "Sum 2D",
-                           "@position" : [ 10139, 11965 ],
-                           "frequency" : [ 1, 1 ],
-                           "terms" : [
-                              {
-                                 "fun" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Remap 2D",
-                                    "@position" : [ 10435, 11958 ],
-                                    "clamp" : false,
-                                    "clampPower" : 5,
-                                    "frequency" : [ 1, 1 ],
-                                    "fun" : {
-                                       "@collapsed" : false,
-                                       "@name" : "Cell Distance 2D",
-                                       "@position" : [ 10717, 11993 ],
-                                       "cells" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Voronoi 2D",
-                                          "@position" : [ 10999, 11990 ],
-                                          "frequency" : [ 0.15000000596046448, 0.15000000596046448 ],
-                                          "offset" : [ 355.80987548828125, 103.65824127197266 ],
-                                          "offset-hash" : "l7cVU9Dw9MJJRCQx",
-                                          "type" : "voronoi"
-                                       },
-                                       "frequency" : [ 1, 1 ],
-                                       "type" : "cell_distance"
-                                    },
-                                    "max" : 2,
-                                    "min" : 0.71400004625320435,
-                                    "type" : "remap"
-                                 },
-                                 "multiplier" : 1,
-                                 "power" : 1
-                              },
-                              {
-                                 "fun" : {
-                                    "@collapsed" : false,
-                                    "@name" : "Constant 2D",
-                                    "@position" : [ 10435, 12127 ],
                                     "frequency" : [ 1, 1 ],
                                     "offset" : [ 239.49949645996094, 237.23631286621094 ],
                                     "offset-hash" : "TGumO4LZH4gFZdm3",
@@ -1587,7 +1391,7 @@
                                  ],
                                  "type" : "sum"
                               },
-                              "max" : 1.8310000896453857,
+                              "max" : 1.9000000953674316,
                               "min" : -2,
                               "type" : "remap"
                            },
@@ -1603,7 +1407,7 @@
                               "GRASS_VERDANT_BASE/SOIL_SILTY_BASE",
                               "GRASS_GNARLED_BASE/SOIL_CLAY_BASE"
                            ],
-                           "density" : 0,
+                           "density" : 1,
                            "depth" : 8,
                            "instance" : {
                               "@collapsed" : false,
@@ -1685,7 +1489,7 @@
                                  ],
                                  "type" : "sum"
                               },
-                              "max" : 1.8270001411437988,
+                              "max" : 1.9000000953674316,
                               "min" : -2,
                               "type" : "remap"
                            },
@@ -1861,202 +1665,6 @@
                                           "@collapsed" : false,
                                           "@name" : "Constant 2D",
                                           "@position" : [ 10435, 11113 ],
-                                          "frequency" : [ 1, 1 ],
-                                          "offset" : [ 239.49949645996094, 237.23631286621094 ],
-                                          "offset-hash" : "TGumO4LZH4gFZdm3",
-                                          "type" : "constant",
-                                          "value" : -0.75300002098083496
-                                       },
-                                       "multiplier" : 1,
-                                       "power" : 1
-                                    }
-                                 ],
-                                 "type" : "sum"
-                              },
-                              "max" : 2,
-                              "min" : -2,
-                              "type" : "remap"
-                           },
-                           "placementType" : "FLORA_FLOWER_1",
-                           "sizeNoise" : null,
-                           "smooth" : false,
-                           "threshold" : 0
-                        },
-                        {
-                           "clearance" : 8,
-                           "constraintType" : [
-                              "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                              "GRASS_GNARLED_BASE/SOIL_CLAY_BASE",
-                              "GRASS_VERDANT_BASE/SOIL_SILTY_BASE"
-                           ],
-                           "density" : 0,
-                           "depth" : 8,
-                           "instance" : {
-                              "@collapsed" : false,
-                              "@name" : "Bush (deprecated)",
-                              "@position" : [ 9850, 11238 ],
-                              "blockType" : "WOOD_LUSH_LEAVES",
-                              "height" : 3.25,
-                              "maxScale" : 2,
-                              "minScale" : 0.5,
-                              "radius" : 2.75,
-                              "stemType" : "WOOD_LUSH_LEAVES",
-                              "taper" : 1,
-                              "type" : "bush"
-                           },
-                           "maxGradient" : 5,
-                           "maxSize" : 0.5,
-                           "maxY" : 102,
-                           "minGradient" : 0,
-                           "minSize" : 0.5,
-                           "minY" : 63,
-                           "noise" : null,
-                           "placementType" : "FLORA_FLOWER_1",
-                           "sizeNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Remap 2D",
-                              "@position" : [ 9843, 11503 ],
-                              "clamp" : true,
-                              "clampPower" : 10,
-                              "frequency" : [ 1, 1 ],
-                              "fun" : {
-                                 "@collapsed" : false,
-                                 "@name" : "Sum 2D",
-                                 "@position" : [ 10139, 11458 ],
-                                 "frequency" : [ 1, 1 ],
-                                 "terms" : [
-                                    {
-                                       "fun" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Remap 2D",
-                                          "@position" : [ 10435, 11451 ],
-                                          "clamp" : false,
-                                          "clampPower" : 5,
-                                          "frequency" : [ 1, 1 ],
-                                          "fun" : {
-                                             "@collapsed" : false,
-                                             "@name" : "Cell Distance 2D",
-                                             "@position" : [ 10717, 11486 ],
-                                             "cells" : {
-                                                "@collapsed" : false,
-                                                "@name" : "Voronoi 2D",
-                                                "@position" : [ 10999, 11483 ],
-                                                "frequency" : [ 0.15000000596046448, 0.15000000596046448 ],
-                                                "offset" : [ 355.80987548828125, 103.65824127197266 ],
-                                                "offset-hash" : "l7cVU9Dw9MJJRCQx",
-                                                "type" : "voronoi"
-                                             },
-                                             "frequency" : [ 1, 1 ],
-                                             "type" : "cell_distance"
-                                          },
-                                          "max" : 2,
-                                          "min" : 0.71400004625320435,
-                                          "type" : "remap"
-                                       },
-                                       "multiplier" : 1,
-                                       "power" : 1
-                                    },
-                                    {
-                                       "fun" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Constant 2D",
-                                          "@position" : [ 10435, 11620 ],
-                                          "frequency" : [ 1, 1 ],
-                                          "offset" : [ 239.49949645996094, 237.23631286621094 ],
-                                          "offset-hash" : "TGumO4LZH4gFZdm3",
-                                          "type" : "constant",
-                                          "value" : -0.75300002098083496
-                                       },
-                                       "multiplier" : 1,
-                                       "power" : 1
-                                    }
-                                 ],
-                                 "type" : "sum"
-                              },
-                              "max" : 2,
-                              "min" : -2,
-                              "type" : "remap"
-                           },
-                           "smooth" : false,
-                           "threshold" : 0
-                        },
-                        {
-                           "clearance" : 8,
-                           "constraintType" : [
-                              "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                              "GRASS_GNARLED_BASE/SOIL_CLAY_BASE",
-                              "GRASS_VERDANT_BASE/SOIL_SILTY_BASE"
-                           ],
-                           "density" : 0,
-                           "depth" : 8,
-                           "instance" : {
-                              "@collapsed" : false,
-                              "@name" : "Bush (deprecated)",
-                              "@position" : [ 9843, 11748 ],
-                              "blockType" : "WOOD_LUSH_LEAVES",
-                              "height" : 3.25,
-                              "maxScale" : 2,
-                              "minScale" : 0.5,
-                              "radius" : 2.75,
-                              "stemType" : "WOOD_LUSH_LEAVES",
-                              "taper" : 1,
-                              "type" : "bush"
-                           },
-                           "maxGradient" : 5,
-                           "maxSize" : 0.5,
-                           "maxY" : 101,
-                           "minGradient" : 0,
-                           "minSize" : 0.5,
-                           "minY" : 59,
-                           "noise" : {
-                              "@collapsed" : false,
-                              "@name" : "Remap 2D",
-                              "@position" : [ 9843, 12010 ],
-                              "clamp" : true,
-                              "clampPower" : 10,
-                              "frequency" : [ 1, 1 ],
-                              "fun" : {
-                                 "@collapsed" : false,
-                                 "@name" : "Sum 2D",
-                                 "@position" : [ 10139, 11965 ],
-                                 "frequency" : [ 1, 1 ],
-                                 "terms" : [
-                                    {
-                                       "fun" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Remap 2D",
-                                          "@position" : [ 10435, 11958 ],
-                                          "clamp" : false,
-                                          "clampPower" : 5,
-                                          "frequency" : [ 1, 1 ],
-                                          "fun" : {
-                                             "@collapsed" : false,
-                                             "@name" : "Cell Distance 2D",
-                                             "@position" : [ 10717, 11993 ],
-                                             "cells" : {
-                                                "@collapsed" : false,
-                                                "@name" : "Voronoi 2D",
-                                                "@position" : [ 10999, 11990 ],
-                                                "frequency" : [ 0.15000000596046448, 0.15000000596046448 ],
-                                                "offset" : [ 355.80987548828125, 103.65824127197266 ],
-                                                "offset-hash" : "l7cVU9Dw9MJJRCQx",
-                                                "type" : "voronoi"
-                                             },
-                                             "frequency" : [ 1, 1 ],
-                                             "type" : "cell_distance"
-                                          },
-                                          "max" : 2,
-                                          "min" : 0.71400004625320435,
-                                          "type" : "remap"
-                                       },
-                                       "multiplier" : 1,
-                                       "power" : 1
-                                    },
-                                    {
-                                       "fun" : {
-                                          "@collapsed" : false,
-                                          "@name" : "Constant 2D",
-                                          "@position" : [ 10435, 12127 ],
                                           "frequency" : [ 1, 1 ],
                                           "offset" : [ 239.49949645996094, 237.23631286621094 ],
                                           "offset-hash" : "TGumO4LZH4gFZdm3",

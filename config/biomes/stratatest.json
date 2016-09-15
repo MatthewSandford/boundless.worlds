@@ -3,7 +3,7 @@
    "@configType" : "BIOME",
    "@name" : "Unnamed CustomBiome",
    "@position" : [ 7450, 8012 ],
-   "@scroll" : [ 8070.96484375, 8643.7802734375, 1.25 ],
+   "@scroll" : [ 8596.77734375, 8623.9072265625, 1.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
@@ -32,7 +32,7 @@
             "@toggle-csurface" : true,
             "@toggle-cthreed" : false,
             "@toggle-data" : true,
-            "@toggle-drop" : false,
+            "@toggle-drop" : true,
             "@toggle-heightmap" : true,
             "@toggle-selector" : false,
             "@toggle-stage" : true,
@@ -46,24 +46,68 @@
             },
             "caveThresholdBias" : {
                "enabled" : true,
-               "value" : 0.019999999552965164
+               "value" : 0
             },
-            "caves" : null,
+            "caves" : {
+               "@collapsed" : false,
+               "@name" : "Sum 3D",
+               "@position" : [ 8447, 8391 ],
+               "frequency" : [ 1, 1, 1 ],
+               "terms" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Worley 3D",
+                        "@position" : [ 8794, 8373 ],
+                        "cellCount" : 8,
+                        "cellScale" : 1.0199999809265137,
+                        "components" : [
+                           {
+                              "k" : 0,
+                              "multiplier" : 1,
+                              "power" : 2
+                           }
+                        ],
+                        "frequency" : [ 2, 0.15400001406669617, 2 ],
+                        "offset" : [ 556.77764892578125, -182.9188232421875, -384.39865112304688 ],
+                        "offset-hash" : "qdRLk43evpzuUqdz",
+                        "type" : "worley"
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 3D",
+                        "@position" : [ 8778, 8664 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "offset" : [ 570.15655517578125, 244.63798522949219, -110.23056793212891 ],
+                        "offset-hash" : "rMSUxDfBDIXz8lRM",
+                        "type" : "constant",
+                        "value" : 0.9790000319480896
+                     },
+                     "multiplier" : 1,
+                     "power" : 1
+                  }
+               ],
+               "type" : "sum"
+            },
             "caves_decorations" : null,
             "caves_substrate" : null,
             "distortion" : null,
             "distortionStrength" : {
-               "enabled" : true,
-               "value" : 120
+               "enabled" : false,
+               "value" : 0
             },
             "drop" : null,
             "dropMaxDepth" : {
-               "enabled" : false,
-               "value" : 0
+               "enabled" : true,
+               "value" : 25
             },
             "dropMaxGradient" : {
-               "enabled" : false,
-               "value" : 0
+               "enabled" : true,
+               "value" : 5
             },
             "dropMaxNoGravel" : {
                "enabled" : false,
@@ -215,7 +259,7 @@
                   "@toggle-csurface" : true,
                   "@toggle-cthreed" : false,
                   "@toggle-data" : true,
-                  "@toggle-drop" : false,
+                  "@toggle-drop" : true,
                   "@toggle-heightmap" : true,
                   "@toggle-selector" : false,
                   "@toggle-stage" : true,
@@ -229,24 +273,68 @@
                   },
                   "caveThresholdBias" : {
                      "enabled" : true,
-                     "value" : 0.019999999552965164
+                     "value" : 0
                   },
-                  "caves" : null,
+                  "caves" : {
+                     "@collapsed" : false,
+                     "@name" : "Sum 3D",
+                     "@position" : [ 8447, 8391 ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "terms" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Worley 3D",
+                              "@position" : [ 8794, 8373 ],
+                              "cellCount" : 8,
+                              "cellScale" : 1.0199999809265137,
+                              "components" : [
+                                 {
+                                    "k" : 0,
+                                    "multiplier" : 1,
+                                    "power" : 2
+                                 }
+                              ],
+                              "frequency" : [ 2, 0.15400001406669617, 2 ],
+                              "offset" : [ 556.77764892578125, -182.9188232421875, -384.39865112304688 ],
+                              "offset-hash" : "qdRLk43evpzuUqdz",
+                              "type" : "worley"
+                           },
+                           "multiplier" : 1,
+                           "power" : 1
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 3D",
+                              "@position" : [ 8778, 8664 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "offset" : [ 570.15655517578125, 244.63798522949219, -110.23056793212891 ],
+                              "offset-hash" : "rMSUxDfBDIXz8lRM",
+                              "type" : "constant",
+                              "value" : 0.9790000319480896
+                           },
+                           "multiplier" : 1,
+                           "power" : 1
+                        }
+                     ],
+                     "type" : "sum"
+                  },
                   "caves_decorations" : null,
                   "caves_substrate" : null,
                   "distortion" : null,
                   "distortionStrength" : {
-                     "enabled" : true,
-                     "value" : 120
+                     "enabled" : false,
+                     "value" : 0
                   },
                   "drop" : null,
                   "dropMaxDepth" : {
-                     "enabled" : false,
-                     "value" : 0
+                     "enabled" : true,
+                     "value" : 25
                   },
                   "dropMaxGradient" : {
-                     "enabled" : false,
-                     "value" : 0
+                     "enabled" : true,
+                     "value" : 5
                   },
                   "dropMaxNoGravel" : {
                      "enabled" : false,
