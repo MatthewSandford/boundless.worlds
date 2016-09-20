@@ -3,9 +3,9 @@
    "@configType" : "WORLD",
    "@name" : "Unnamed World",
    "@position" : [ 7531, 8118 ],
-   "@scroll" : [ 7791.96142578125, 7981.224609375, -0.25 ],
+   "@scroll" : [ 7795.07861328125, 8663.5517578125, -0.5 ],
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "generator" : {
       "@collapsed" : false,
       "@name" : "Generator",
@@ -21,24 +21,6 @@
             "@name" : "TieredRainforest",
             "@position" : [ 8516, 8237 ],
             "links" : [
-               {
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "weight"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.50499999523162842
-               },
                {
                   "linkPath" : [
                      {
@@ -68,6 +50,24 @@
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
                   "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.50499999523162842
                }
             ],
             "reference" : "biomes/TieredRainforest.json",
@@ -111,29 +111,19 @@
                      },
                      {
                         "index" : -1,
-                        "name" : "power"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.24000000953674316
-               },
-               {
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
+                        "name" : "cells"
                      },
                      {
                         "index" : -1,
-                        "name" : "fun"
+                        "name" : "frequency"
                      },
                      {
                         "index" : -1,
-                        "name" : "weight"
+                        "name" : "@xz"
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.44600000977516174
+                  "sliderValue" : 0.80000001192092896
                },
                {
                   "linkPath" : [
@@ -183,7 +173,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.25
+                  "sliderValue" : 0.37700000405311584
                },
                {
                   "linkPath" : [
@@ -217,23 +207,33 @@
                      },
                      {
                         "index" : -1,
-                        "name" : "cells"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "frequency"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "@xz"
+                        "name" : "power"
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.45000001788139343
+                  "sliderValue" : 0.20600001513957977
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.44600000977516174
                }
             ],
             "reference" : "biomes/RiceFields.json",
-            "tick" : 0,
+            "tick" : 2,
             "type" : "reference"
          },
          {
@@ -453,7 +453,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.020000001415610313
+                  "sliderValue" : 0.036000002175569534
                },
                {
                   "linkPath" : [
@@ -487,7 +487,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0
+                  "sliderValue" : 0.0020000000949949026
                }
             ],
             "reference" : "biomes/Plains.json",
@@ -577,7 +577,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : -0.60000002384185791
+                  "sliderValue" : -0.62000000476837158
                },
                {
                   "linkPath" : [
@@ -623,7 +623,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.10000000149011612
+                  "sliderValue" : 0.18400001525878906
                },
                {
                   "linkPath" : [
@@ -805,7 +805,7 @@
                }
             ],
             "reference" : "biomes/DesertSpires.json",
-            "tick" : 0,
+            "tick" : 1,
             "type" : "reference"
          },
          {
@@ -813,24 +813,6 @@
             "@name" : "Oasis",
             "@position" : [ 8516, 9186 ],
             "links" : [
-               {
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "weight"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.39200001955032349
-               },
                {
                   "linkPath" : [
                      {
@@ -867,7 +849,25 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0
+                  "sliderValue" : 0.16900001466274261
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.39200001955032349
                }
             ],
             "reference" : "biomes/Oasis.json",
@@ -997,7 +997,7 @@
          {
             "@collapsed" : false,
             "@name" : "Shrubland",
-            "@position" : [ 8516, 9421 ],
+            "@position" : [ 8516, 9418 ],
             "links" : [
                {
                   "linkPath" : [
@@ -1025,7 +1025,7 @@
          {
             "@collapsed" : false,
             "@name" : "FlatDesert",
-            "@position" : [ 8516, 9504 ],
+            "@position" : [ 8512, 9487 ],
             "links" : [
                {
                   "linkPath" : [
@@ -1053,7 +1053,7 @@
          {
             "@collapsed" : false,
             "@name" : "RaisedPlateau",
-            "@position" : [ 8516, 9587 ],
+            "@position" : [ 8512, 9568 ],
             "links" : [
                {
                   "linkPath" : [
@@ -1067,39 +1067,27 @@
                      },
                      {
                         "index" : -1,
-                        "name" : "weight"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.5
-               }
-            ],
-            "reference" : "biomes/RaisedPlateau.json",
-            "tick" : 0,
-            "type" : "reference"
-         },
-         {
-            "@collapsed" : false,
-            "@name" : "PancakeMountains",
-            "@position" : [ 8516, 9670 ],
-            "links" : [
-               {
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
+                        "name" : "part"
                      },
                      {
                         "index" : -1,
-                        "name" : "fun"
+                        "name" : "heightmap"
                      },
                      {
                         "index" : -1,
-                        "name" : "weight"
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.5
+                  "sliderValue" : 0.29100000858306885
                },
                {
                   "linkPath" : [
@@ -1129,7 +1117,65 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 1.9860000610351563
+                  "sliderValue" : 0.78100001811981201
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
+               }
+            ],
+            "reference" : "biomes/RaisedPlateau.json",
+            "tick" : 0,
+            "type" : "reference"
+         },
+         {
+            "@collapsed" : false,
+            "@name" : "PancakeMountains",
+            "@position" : [ 8516, 9683 ],
+            "links" : [
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 2
                },
                {
                   "linkPath" : [
@@ -1163,7 +1209,7 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.40000000596046448
+                  "sliderValue" : 0.34200000762939453
                },
                {
                   "linkPath" : [
@@ -1193,11 +1239,29 @@
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
-                  "sliderValue" : 0.33000001311302185
+                  "sliderValue" : 0.10100000351667404
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 0.5
                }
             ],
             "reference" : "biomes/PancakeMountains.json",
-            "tick" : 0,
+            "tick" : 1,
             "type" : "reference"
          },
          {
@@ -1245,6 +1309,48 @@
                      },
                      {
                         "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "parts"
+                     },
+                     {
+                        "index" : 1,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "sliderValue" : 1
+               },
+               {
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
                         "name" : "weight"
                      }
                   ],
@@ -1259,7 +1365,7 @@
          {
             "@collapsed" : false,
             "@name" : "Twined Hills",
-            "@position" : [ 8516, 9988 ],
+            "@position" : [ 8516, 9992 ],
             "links" : [
                {
                   "linkPath" : [
@@ -1449,7 +1555,7 @@
                }
             ],
             "reference" : "biomes/AncientEvent.json",
-            "tick" : 1,
+            "tick" : 2,
             "type" : "reference"
          }
       ],
@@ -1686,7 +1792,7 @@
       },
       "lowerSea" : {
          "level" : 16,
-         "liquidType" : "WATER"
+         "liquidType" : "LAVA"
       },
       "sea" : {
          "level" : 64,
@@ -1697,18 +1803,18 @@
    "sharedConfig" : {
       "blockColors" : {
          "ASH_DEFAULT_BASE" : 1,
-         "CRYSTAL_GLEAM_BASE" : 12,
+         "CRYSTAL_GLEAM_BASE" : 6,
          "FLORA_FLOWER_1" : 2,
          "FLORA_FLOWER_2" : 4,
          "FLORA_FLOWER_3" : 3,
          "FLORA_FLOWER_4" : 1,
-         "FLORA_PLANT_FIBROUS" : 1,
+         "FLORA_PLANT_FIBROUS" : 2,
          "FLORA_PLANT_INKY" : 1,
          "GRASS_BARBED_BASE" : 8,
          "GRASS_GNARLED_BASE" : 7,
          "GRASS_VERDANT_BASE" : 9,
          "GRAVEL_DEFAULT_BASE" : 16,
-         "GROWTH_DEFAULT_BASE" : 1,
+         "GROWTH_DEFAULT_BASE" : 18,
          "MOULD_DEFAULT_BASE" : 1,
          "MUD_DEFAULT_BASE" : 1,
          "ROCK_IGNEOUS_BASE" : 4,
@@ -1721,11 +1827,11 @@
          "SPONGE_DEFAULT_BASE" : 1,
          "TANGLE_DEFAULT_BASE" : 1,
          "THORNS_DEFAULT_BASE" : 1,
-         "WOOD_ANCIENT_TRUNK" : 10,
+         "WOOD_ANCIENT_TRUNK" : 1,
          "WOOD_EXOTIC_LEAVES" : 15,
          "WOOD_LUSH_LEAVES" : 13,
-         "WOOD_LUSTROUS_TRUNK" : 1,
-         "WOOD_TWISTED_TRUNK" : 11,
+         "WOOD_LUSTROUS_TRUNK" : 11,
+         "WOOD_TWISTED_TRUNK" : 2,
          "WOOD_WAXY_LEAVES" : 15
       },
       "resourceCategory" : "home_planet",

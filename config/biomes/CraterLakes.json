@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "CraterLake",
    "@position" : [ 7368, 8082 ],
-   "@scroll" : [ 8322.8388671875, 8220.6865234375, 0.25 ],
+   "@scroll" : [ 7760.75390625, 8322.1806640625, 0 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -854,8 +854,8 @@
                      "constraintType" : [
                         "SAND_DEFAULT_BASE",
                         "GRAVEL_DEFAULT_BASE",
-                        "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                        "GRASS_VERDANT_BASE/SOIL_CLAY_BASE"
+                        "SOIL_PEATY_BASE",
+                        "SOIL_CLAY_BASE"
                      ],
                      "density" : -0.55000001192092896,
                      "depth" : 8,
@@ -890,8 +890,8 @@
                                     "fun" : {
                                        "@collapsed" : false,
                                        "@name" : "Ditches",
-                                       "@position" : [ 10567, 10819 ],
-                                       "frequency" : [ 0.44500002264976501, 0.44500002264976501 ],
+                                       "@position" : [ 10570, 10815 ],
+                                       "frequency" : [ 0.66700005531311035, 0.66700005531311035 ],
                                        "links" : [
                                           {
                                              "linkPath" : [
@@ -963,7 +963,7 @@
                                                 }
                                              ],
                                              "linkType" : "LT:CUSTOM_SLIDER",
-                                             "sliderValue" : 3.5399999618530273
+                                             "sliderValue" : 4.8499999046325684
                                           },
                                           {
                                              "linkPath" : [
@@ -1164,33 +1164,6 @@
       },
       "links" : [
          {
-            "blockConstraint" : 3274820576,
-            "blockDefault" : "",
-            "checkDefault" : false,
-            "linkPath" : [
-               {
-                  "index" : -1,
-                  "name" : "biome"
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "weight"
-               }
-            ],
-            "linkType" : "LT:CUSTOM_SLIDER",
-            "name" : "Biome Weight",
-            "shortPath" : "CraterLake.weight",
-            "sliderCheck" : false,
-            "sliderDefault" : 0.5,
-            "sliderMax" : 1,
-            "sliderMin" : 0,
-            "sliderStep" : 0.0010000000474974513
-         },
-         {
             "blockConstraint" : 2197573216,
             "blockDefault" : "",
             "checkDefault" : false,
@@ -1292,6 +1265,33 @@
             "sliderMax" : 20,
             "sliderMin" : 3,
             "sliderStep" : 0.0099999997764825821
+         },
+         {
+            "blockConstraint" : 3274820576,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "weight"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Biome Weight",
+            "shortPath" : "CraterLake.weight",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.5,
+            "sliderMax" : 1,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
          }
       ]
    },
@@ -1355,7 +1355,7 @@
          "@position" : [ 7368, 8082 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -2202,8 +2202,8 @@
                            "constraintType" : [
                               "SAND_DEFAULT_BASE",
                               "GRAVEL_DEFAULT_BASE",
-                              "GRASS_BARBED_BASE/SOIL_PEATY_BASE",
-                              "GRASS_VERDANT_BASE/SOIL_CLAY_BASE"
+                              "SOIL_PEATY_BASE",
+                              "SOIL_CLAY_BASE"
                            ],
                            "density" : -0.55000001192092896,
                            "depth" : 8,
@@ -2238,8 +2238,8 @@
                                           "fun" : {
                                              "@collapsed" : false,
                                              "@name" : "Ditches",
-                                             "@position" : [ 10567, 10819 ],
-                                             "frequency" : [ 0.44500002264976501, 0.44500002264976501 ],
+                                             "@position" : [ 10570, 10815 ],
+                                             "frequency" : [ 0.66700005531311035, 0.66700005531311035 ],
                                              "links" : [
                                                 {
                                                    "linkPath" : [
@@ -2311,7 +2311,7 @@
                                                       }
                                                    ],
                                                    "linkType" : "LT:CUSTOM_SLIDER",
-                                                   "sliderValue" : 3.5399999618530273
+                                                   "sliderValue" : 4.8499999046325684
                                                 },
                                                 {
                                                    "linkPath" : [
@@ -2512,33 +2512,6 @@
             },
             "links" : [
                {
-                  "blockConstraint" : 3274820576,
-                  "blockDefault" : "",
-                  "checkDefault" : false,
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "weight"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "name" : "Biome Weight",
-                  "shortPath" : "CraterLake.weight",
-                  "sliderCheck" : false,
-                  "sliderDefault" : 0.5,
-                  "sliderMax" : 1,
-                  "sliderMin" : 0,
-                  "sliderStep" : 0.0010000000474974513
-               },
-               {
                   "blockConstraint" : 2197573216,
                   "blockDefault" : "",
                   "checkDefault" : false,
@@ -2640,6 +2613,33 @@
                   "sliderMax" : 20,
                   "sliderMin" : 3,
                   "sliderStep" : 0.0099999997764825821
+               },
+               {
+                  "blockConstraint" : 3274820576,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "weight"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Biome Weight",
+                  "shortPath" : "CraterLake.weight",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.5,
+                  "sliderMax" : 1,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
                }
             ]
          },

@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "RiceFields",
    "@position" : [ 7583, 8274 ],
-   "@scroll" : [ 8416.341796875, 8840.5244140625, 0 ],
+   "@scroll" : [ 10622.1572265625, 7297.388671875, 0.75 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -15,11 +15,11 @@
          "@position" : [ 8034, 8611 ],
          "altitude" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.71000003814697266
          },
          "humidity" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.69700002670288086
          },
          "nameStyle" : "Tessera",
          "part" : {
@@ -1004,15 +1004,129 @@
          },
          "temperature" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.65100002288818359
          },
          "vegetation" : {
             "enabled" : true,
-            "value" : 0.5
+            "value" : 0.77900004386901855
          },
          "weight" : 0.5
       },
       "links" : [
+         {
+            "blockConstraint" : 3353788144,
+            "blockDefault" : "",
+            "checkDefault" : true,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "cells"
+               },
+               {
+                  "index" : -1,
+                  "name" : "frequency"
+               },
+               {
+                  "index" : -1,
+                  "name" : "@xz"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Teir Frequency",
+            "shortPath" : "Voronoi 2D.frequency.@xz",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.45000001788139343,
+            "sliderMax" : 0.80000001192092896,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
+         },
+         {
+            "blockConstraint" : 3353788144,
+            "blockDefault" : "",
+            "checkDefault" : false,
+            "linkPath" : [
+               {
+                  "index" : -1,
+                  "name" : "biome"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "part"
+               },
+               {
+                  "index" : -1,
+                  "name" : "heightmap"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "fun"
+               },
+               {
+                  "index" : -1,
+                  "name" : "terms"
+               },
+               {
+                  "index" : 0,
+                  "name" : ""
+               },
+               {
+                  "index" : -1,
+                  "name" : "multiplier"
+               }
+            ],
+            "linkType" : "LT:CUSTOM_SLIDER",
+            "name" : "Mountain Height",
+            "shortPath" : "Sum 2D.multiplier",
+            "sliderCheck" : false,
+            "sliderDefault" : 0.25,
+            "sliderMax" : 0.5,
+            "sliderMin" : 0,
+            "sliderStep" : 0.0010000000474974513
+         },
          {
             "blockConstraint" : 3353788144,
             "blockDefault" : "",
@@ -1086,120 +1200,6 @@
             "sliderMax" : 1,
             "sliderMin" : 0,
             "sliderStep" : 0.0010000000474974513
-         },
-         {
-            "blockConstraint" : 3353788144,
-            "blockDefault" : "",
-            "checkDefault" : false,
-            "linkPath" : [
-               {
-                  "index" : -1,
-                  "name" : "biome"
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "part"
-               },
-               {
-                  "index" : -1,
-                  "name" : "heightmap"
-               },
-               {
-                  "index" : -1,
-                  "name" : "terms"
-               },
-               {
-                  "index" : 0,
-                  "name" : ""
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "terms"
-               },
-               {
-                  "index" : 0,
-                  "name" : ""
-               },
-               {
-                  "index" : -1,
-                  "name" : "multiplier"
-               }
-            ],
-            "linkType" : "LT:CUSTOM_SLIDER",
-            "name" : "Mountain Height",
-            "shortPath" : "Sum 2D.multiplier",
-            "sliderCheck" : false,
-            "sliderDefault" : 0.25,
-            "sliderMax" : 0.5,
-            "sliderMin" : 0,
-            "sliderStep" : 0.0010000000474974513
-         },
-         {
-            "blockConstraint" : 3353788144,
-            "blockDefault" : "",
-            "checkDefault" : true,
-            "linkPath" : [
-               {
-                  "index" : -1,
-                  "name" : "biome"
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "part"
-               },
-               {
-                  "index" : -1,
-                  "name" : "heightmap"
-               },
-               {
-                  "index" : -1,
-                  "name" : "terms"
-               },
-               {
-                  "index" : 0,
-                  "name" : ""
-               },
-               {
-                  "index" : -1,
-                  "name" : "fun"
-               },
-               {
-                  "index" : -1,
-                  "name" : "cells"
-               },
-               {
-                  "index" : -1,
-                  "name" : "frequency"
-               },
-               {
-                  "index" : -1,
-                  "name" : "@xz"
-               }
-            ],
-            "linkType" : "LT:CUSTOM_SLIDER",
-            "name" : "Teir Frequency",
-            "shortPath" : "Voronoi 2D.frequency.@xz",
-            "sliderCheck" : false,
-            "sliderDefault" : 0.45000001788139343,
-            "sliderMax" : 0.80000001192092896,
-            "sliderMin" : 0,
-            "sliderStep" : 0.0010000000474974513
          }
       ]
    },
@@ -1263,7 +1263,7 @@
          "@position" : [ 7583, 8274 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -1271,11 +1271,11 @@
                "@position" : [ 8034, 8611 ],
                "altitude" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.71000003814697266
                },
                "humidity" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.69700002670288086
                },
                "nameStyle" : "Tessera",
                "part" : {
@@ -2260,15 +2260,129 @@
                },
                "temperature" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.65100002288818359
                },
                "vegetation" : {
                   "enabled" : true,
-                  "value" : 0.5
+                  "value" : 0.77900004386901855
                },
                "weight" : 0.5
             },
             "links" : [
+               {
+                  "blockConstraint" : 3353788144,
+                  "blockDefault" : "",
+                  "checkDefault" : true,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "cells"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "frequency"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "@xz"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Teir Frequency",
+                  "shortPath" : "Voronoi 2D.frequency.@xz",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.45000001788139343,
+                  "sliderMax" : 0.80000001192092896,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
+               },
+               {
+                  "blockConstraint" : 3353788144,
+                  "blockDefault" : "",
+                  "checkDefault" : false,
+                  "linkPath" : [
+                     {
+                        "index" : -1,
+                        "name" : "biome"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "part"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "heightmap"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "fun"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "terms"
+                     },
+                     {
+                        "index" : 0,
+                        "name" : ""
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "multiplier"
+                     }
+                  ],
+                  "linkType" : "LT:CUSTOM_SLIDER",
+                  "name" : "Mountain Height",
+                  "shortPath" : "Sum 2D.multiplier",
+                  "sliderCheck" : false,
+                  "sliderDefault" : 0.25,
+                  "sliderMax" : 0.5,
+                  "sliderMin" : 0,
+                  "sliderStep" : 0.0010000000474974513
+               },
                {
                   "blockConstraint" : 3353788144,
                   "blockDefault" : "",
@@ -2340,120 +2454,6 @@
                   "sliderCheck" : false,
                   "sliderDefault" : 0.5,
                   "sliderMax" : 1,
-                  "sliderMin" : 0,
-                  "sliderStep" : 0.0010000000474974513
-               },
-               {
-                  "blockConstraint" : 3353788144,
-                  "blockDefault" : "",
-                  "checkDefault" : false,
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "part"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "heightmap"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "terms"
-                     },
-                     {
-                        "index" : 0,
-                        "name" : ""
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "terms"
-                     },
-                     {
-                        "index" : 0,
-                        "name" : ""
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "multiplier"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "name" : "Mountain Height",
-                  "shortPath" : "Sum 2D.multiplier",
-                  "sliderCheck" : false,
-                  "sliderDefault" : 0.25,
-                  "sliderMax" : 0.5,
-                  "sliderMin" : 0,
-                  "sliderStep" : 0.0010000000474974513
-               },
-               {
-                  "blockConstraint" : 3353788144,
-                  "blockDefault" : "",
-                  "checkDefault" : true,
-                  "linkPath" : [
-                     {
-                        "index" : -1,
-                        "name" : "biome"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "part"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "heightmap"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "terms"
-                     },
-                     {
-                        "index" : 0,
-                        "name" : ""
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "fun"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "cells"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "frequency"
-                     },
-                     {
-                        "index" : -1,
-                        "name" : "@xz"
-                     }
-                  ],
-                  "linkType" : "LT:CUSTOM_SLIDER",
-                  "name" : "Teir Frequency",
-                  "shortPath" : "Voronoi 2D.frequency.@xz",
-                  "sliderCheck" : false,
-                  "sliderDefault" : 0.45000001788139343,
-                  "sliderMax" : 0.80000001192092896,
                   "sliderMin" : 0,
                   "sliderStep" : 0.0010000000474974513
                }
