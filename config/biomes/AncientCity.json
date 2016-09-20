@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "AncientCity",
    "@position" : [ 7498, 8118 ],
-   "@scroll" : [ 7902.455078125, 8075.025390625, -0.5 ],
+   "@scroll" : [ 8480.8310546875, 8666.2607421875, -0.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -285,83 +285,56 @@
             "shrink" : null,
             "strata" : {
                "@collapsed" : false,
-               "@name" : "Standard Strata",
-               "@position" : [ 8951, 8064 ],
-               "strata" : [
+               "@name" : "Join Strata",
+               "@position" : [ 8946, 8289 ],
+               "components" : [
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 22,
-                     "blockType" : "ROCK_SEDIMENTARY_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 0,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9256, 8328 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ -115.55962371826172, -123.49730682373047 ],
-                        "offset-hash" : "EQWVMq9yDNF3caAm",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 64
+                     "@collapsed" : false,
+                     "@name" : "Fill1",
+                     "@position" : [ 9242, 8223 ],
+                     "links" : [],
+                     "reference" : "strata/Fill1.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 14,
-                     "blockType" : "ROCK_IGNEOUS_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 0,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9256, 8434 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ -191.720458984375, -260.75927734375 ],
-                        "offset-hash" : "RqcVKonyDWJJoyYC",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 64
+                     "@collapsed" : false,
+                     "@name" : "Fill2",
+                     "@position" : [ 9242, 8283 ],
+                     "links" : [],
+                     "reference" : "strata/Fill2.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 32,
-                     "blockType" : "GRAVEL_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 0,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9256, 8540 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ -285.26437377929688, 334.79910278320313 ],
-                        "offset-hash" : "kqCHuFg648sbERgO",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 64
+                     "@collapsed" : false,
+                     "@name" : "Fill3",
+                     "@position" : [ 9242, 8343 ],
+                     "links" : [],
+                     "reference" : "strata/Fill3.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 19,
-                     "blockType" : "SAND_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 0,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9256, 8646 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ 10.565346717834473, -370.21688842773438 ],
-                        "offset-hash" : "CU6fuHH6ntX6s5wk",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 64
+                     "@collapsed" : false,
+                     "@name" : "Fill4",
+                     "@position" : [ 9242, 8403 ],
+                     "links" : [],
+                     "reference" : "strata/Fill4.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill5",
+                     "@position" : [ 9242, 8463 ],
+                     "links" : [],
+                     "reference" : "strata/Fill5.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   }
                ],
-               "type" : "standard"
+               "type" : "join"
             },
             "surface_decorations" : {
                "@collapsed" : false,
@@ -553,11 +526,15 @@
                {
                   "index" : -1,
                   "name" : "heightmapMaxY"
+               },
+               {
+                  "index" : -1,
+                  "name" : "value"
                }
             ],
             "linkType" : "LT:CUSTOM_SLIDER",
             "name" : "Structure Height",
-            "shortPath" : "Ancient City.maxY",
+            "shortPath" : "Ancient City.maxY.value",
             "sliderCheck" : false,
             "sliderDefault" : 101,
             "sliderMax" : 120,
@@ -747,7 +724,7 @@
          "@position" : [ 7498, 8118 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -1025,83 +1002,56 @@
                   "shrink" : null,
                   "strata" : {
                      "@collapsed" : false,
-                     "@name" : "Standard Strata",
-                     "@position" : [ 8951, 8064 ],
-                     "strata" : [
+                     "@name" : "Join Strata",
+                     "@position" : [ 8946, 8289 ],
+                     "components" : [
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 22,
-                           "blockType" : "ROCK_SEDIMENTARY_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 0,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9256, 8328 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ -115.55962371826172, -123.49730682373047 ],
-                              "offset-hash" : "EQWVMq9yDNF3caAm",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 64
+                           "@collapsed" : false,
+                           "@name" : "Fill1",
+                           "@position" : [ 9242, 8223 ],
+                           "links" : [],
+                           "reference" : "strata/Fill1.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 14,
-                           "blockType" : "ROCK_IGNEOUS_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 0,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9256, 8434 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ -191.720458984375, -260.75927734375 ],
-                              "offset-hash" : "RqcVKonyDWJJoyYC",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 64
+                           "@collapsed" : false,
+                           "@name" : "Fill2",
+                           "@position" : [ 9242, 8283 ],
+                           "links" : [],
+                           "reference" : "strata/Fill2.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 32,
-                           "blockType" : "GRAVEL_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 0,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9256, 8540 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ -285.26437377929688, 334.79910278320313 ],
-                              "offset-hash" : "kqCHuFg648sbERgO",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 64
+                           "@collapsed" : false,
+                           "@name" : "Fill3",
+                           "@position" : [ 9242, 8343 ],
+                           "links" : [],
+                           "reference" : "strata/Fill3.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 19,
-                           "blockType" : "SAND_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 0,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9256, 8646 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ 10.565346717834473, -370.21688842773438 ],
-                              "offset-hash" : "CU6fuHH6ntX6s5wk",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 64
+                           "@collapsed" : false,
+                           "@name" : "Fill4",
+                           "@position" : [ 9242, 8403 ],
+                           "links" : [],
+                           "reference" : "strata/Fill4.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill5",
+                           "@position" : [ 9242, 8463 ],
+                           "links" : [],
+                           "reference" : "strata/Fill5.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         }
                      ],
-                     "type" : "standard"
+                     "type" : "join"
                   },
                   "surface_decorations" : {
                      "@collapsed" : false,
@@ -1293,11 +1243,15 @@
                      {
                         "index" : -1,
                         "name" : "heightmapMaxY"
+                     },
+                     {
+                        "index" : -1,
+                        "name" : "value"
                      }
                   ],
                   "linkType" : "LT:CUSTOM_SLIDER",
                   "name" : "Structure Height",
-                  "shortPath" : "Ancient City.maxY",
+                  "shortPath" : "Ancient City.maxY.value",
                   "sliderCheck" : false,
                   "sliderDefault" : 101,
                   "sliderMax" : 120,

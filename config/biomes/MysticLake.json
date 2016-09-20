@@ -3,16 +3,16 @@
    "@configType" : "BIOME",
    "@name" : "MysticLake",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 9121.302734375, 8399.634765625, 0.25 ],
+   "@scroll" : [ 9310.2392578125, 8966.8955078125, 1.25 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
          "@name" : "MysticLake",
-         "@position" : [ 8296, 8454 ],
+         "@position" : [ 8330, 8463 ],
          "altitude" : {
             "enabled" : true,
             "value" : 0.24900001287460327
@@ -25,7 +25,7 @@
          "part" : {
             "@collapsed" : false,
             "@name" : "MysticLake",
-            "@position" : [ 8656, 8183 ],
+            "@position" : [ 8725, 8192 ],
             "@selector-open" : false,
             "@toggle-caves" : false,
             "@toggle-ccaves" : false,
@@ -72,12 +72,12 @@
             "heightmap" : {
                "@collapsed" : false,
                "@name" : "Constant 2D",
-               "@position" : [ 9031, 7828 ],
+               "@position" : [ 9120, 7687 ],
                "frequency" : [ 1, 1 ],
                "offset" : [ 372.49713134765625, -277.43466186523438 ],
                "offset-hash" : "3l1YE3UDq1foEM1P",
                "type" : "constant",
-               "value" : -0.64300000667572021
+               "value" : -0.40800002217292786
             },
             "heightmapMaxY" : {
                "enabled" : true,
@@ -89,12 +89,64 @@
             },
             "parts" : [],
             "shrink" : null,
-            "strata" : null,
+            "strata" : {
+               "@collapsed" : false,
+               "@name" : "Join Strata",
+               "@position" : [ 9120, 8183 ],
+               "components" : [
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill1",
+                     "@position" : [ 9416, 8117 ],
+                     "links" : [],
+                     "reference" : "strata/Fill1.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill2",
+                     "@position" : [ 9416, 8177 ],
+                     "links" : [],
+                     "reference" : "strata/Fill2.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill3",
+                     "@position" : [ 9416, 8237 ],
+                     "links" : [],
+                     "reference" : "strata/Fill3.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill4",
+                     "@position" : [ 9416, 8297 ],
+                     "links" : [],
+                     "reference" : "strata/Fill4.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
+                  {
+                     "@collapsed" : false,
+                     "@name" : "Fill5",
+                     "@position" : [ 9416, 8357 ],
+                     "links" : [],
+                     "reference" : "strata/Fill5.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  }
+               ],
+               "type" : "join"
+            },
             "surface_decorations" : null,
             "surface_substrate" : {
                "@collapsed" : false,
                "@name" : "Standard Substrate",
-               "@position" : [ 9031, 8258 ],
+               "@position" : [ 9120, 8417 ],
                "strates" : [
                   {
                      "averageDepth" : 6,
@@ -122,7 +174,7 @@
             "threeD" : {
                "@collapsed" : false,
                "@name" : "Worley 3D",
-               "@position" : [ 9031, 7957 ],
+               "@position" : [ 9120, 7816 ],
                "cellCount" : 8,
                "cellScale" : 9.130000114440918,
                "components" : [
@@ -160,7 +212,7 @@
             "threed_decorations" : {
                "@collapsed" : false,
                "@name" : "Standard Decorations",
-               "@position" : [ 9031, 8802 ],
+               "@position" : [ 9120, 8961 ],
                "@toggle-ceiling" : false,
                "@toggle-floor" : true,
                "ceiling" : [],
@@ -173,7 +225,7 @@
                      "instance" : {
                         "@collapsed" : false,
                         "@name" : "Ingrained Crystal (deprecated)",
-                        "@position" : [ 9330, 8876 ],
+                        "@position" : [ 9419, 9035 ],
                         "ceiling" : true,
                         "maxScale" : 1,
                         "minScale" : 1,
@@ -188,7 +240,7 @@
                      "noise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 9330, 9111 ],
+                        "@position" : [ 9419, 9270 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ -146.78569030761719, -117.65384674072266 ],
                         "offset-hash" : "IZMDCWGhzixIfxuX",
@@ -198,7 +250,7 @@
                      "sizeNoise" : {
                         "@collapsed" : false,
                         "@name" : "Perlin 2D",
-                        "@position" : [ 9330, 9005 ],
+                        "@position" : [ 9419, 9164 ],
                         "frequency" : [ 1, 1 ],
                         "offset" : [ 288.023193359375, -166.13491821289063 ],
                         "offset-hash" : "8DyYsdiMltB6ZK9s",
@@ -213,7 +265,7 @@
             "threed_substrate" : {
                "@collapsed" : false,
                "@name" : "Standard Substrate",
-               "@position" : [ 9031, 8530 ],
+               "@position" : [ 9120, 8689 ],
                "strates" : [
                   {
                      "averageDepth" : 32,
@@ -286,7 +338,7 @@
       "biomeSize" : 24,
       "lowerSea" : {
          "level" : 16,
-         "liquidType" : "WATER"
+         "liquidType" : "LAVA"
       },
       "sea" : {
          "level" : 64,
@@ -333,7 +385,7 @@
    "test" : {
       "@collapsed" : false,
       "@name" : "Reference Biome",
-      "@position" : [ 8296, 9176 ],
+      "@position" : [ 8330, 9448 ],
       "embedded" : {
          "@collapsed" : false,
          "@configType" : "BIOME",
@@ -341,12 +393,12 @@
          "@position" : [ 7932, 8160 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
                "@name" : "MysticLake",
-               "@position" : [ 8296, 8454 ],
+               "@position" : [ 8330, 8463 ],
                "altitude" : {
                   "enabled" : true,
                   "value" : 0.24900001287460327
@@ -359,7 +411,7 @@
                "part" : {
                   "@collapsed" : false,
                   "@name" : "MysticLake",
-                  "@position" : [ 8656, 8183 ],
+                  "@position" : [ 8725, 8192 ],
                   "@selector-open" : false,
                   "@toggle-caves" : false,
                   "@toggle-ccaves" : false,
@@ -406,12 +458,12 @@
                   "heightmap" : {
                      "@collapsed" : false,
                      "@name" : "Constant 2D",
-                     "@position" : [ 9031, 7828 ],
+                     "@position" : [ 9120, 7687 ],
                      "frequency" : [ 1, 1 ],
                      "offset" : [ 372.49713134765625, -277.43466186523438 ],
                      "offset-hash" : "3l1YE3UDq1foEM1P",
                      "type" : "constant",
-                     "value" : -0.64300000667572021
+                     "value" : -0.40800002217292786
                   },
                   "heightmapMaxY" : {
                      "enabled" : true,
@@ -423,12 +475,64 @@
                   },
                   "parts" : [],
                   "shrink" : null,
-                  "strata" : null,
+                  "strata" : {
+                     "@collapsed" : false,
+                     "@name" : "Join Strata",
+                     "@position" : [ 9120, 8183 ],
+                     "components" : [
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill1",
+                           "@position" : [ 9416, 8117 ],
+                           "links" : [],
+                           "reference" : "strata/Fill1.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill2",
+                           "@position" : [ 9416, 8177 ],
+                           "links" : [],
+                           "reference" : "strata/Fill2.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill3",
+                           "@position" : [ 9416, 8237 ],
+                           "links" : [],
+                           "reference" : "strata/Fill3.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill4",
+                           "@position" : [ 9416, 8297 ],
+                           "links" : [],
+                           "reference" : "strata/Fill4.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        },
+                        {
+                           "@collapsed" : false,
+                           "@name" : "Fill5",
+                           "@position" : [ 9416, 8357 ],
+                           "links" : [],
+                           "reference" : "strata/Fill5.json",
+                           "tick" : 0,
+                           "type" : "reference"
+                        }
+                     ],
+                     "type" : "join"
+                  },
                   "surface_decorations" : null,
                   "surface_substrate" : {
                      "@collapsed" : false,
                      "@name" : "Standard Substrate",
-                     "@position" : [ 9031, 8258 ],
+                     "@position" : [ 9120, 8417 ],
                      "strates" : [
                         {
                            "averageDepth" : 6,
@@ -456,7 +560,7 @@
                   "threeD" : {
                      "@collapsed" : false,
                      "@name" : "Worley 3D",
-                     "@position" : [ 9031, 7957 ],
+                     "@position" : [ 9120, 7816 ],
                      "cellCount" : 8,
                      "cellScale" : 9.130000114440918,
                      "components" : [
@@ -494,7 +598,7 @@
                   "threed_decorations" : {
                      "@collapsed" : false,
                      "@name" : "Standard Decorations",
-                     "@position" : [ 9031, 8802 ],
+                     "@position" : [ 9120, 8961 ],
                      "@toggle-ceiling" : false,
                      "@toggle-floor" : true,
                      "ceiling" : [],
@@ -507,7 +611,7 @@
                            "instance" : {
                               "@collapsed" : false,
                               "@name" : "Ingrained Crystal (deprecated)",
-                              "@position" : [ 9330, 8876 ],
+                              "@position" : [ 9419, 9035 ],
                               "ceiling" : true,
                               "maxScale" : 1,
                               "minScale" : 1,
@@ -522,7 +626,7 @@
                            "noise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 9330, 9111 ],
+                              "@position" : [ 9419, 9270 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ -146.78569030761719, -117.65384674072266 ],
                               "offset-hash" : "IZMDCWGhzixIfxuX",
@@ -532,7 +636,7 @@
                            "sizeNoise" : {
                               "@collapsed" : false,
                               "@name" : "Perlin 2D",
-                              "@position" : [ 9330, 9005 ],
+                              "@position" : [ 9419, 9164 ],
                               "frequency" : [ 1, 1 ],
                               "offset" : [ 288.023193359375, -166.13491821289063 ],
                               "offset-hash" : "8DyYsdiMltB6ZK9s",
@@ -547,7 +651,7 @@
                   "threed_substrate" : {
                      "@collapsed" : false,
                      "@name" : "Standard Substrate",
-                     "@position" : [ 9031, 8530 ],
+                     "@position" : [ 9120, 8689 ],
                      "strates" : [
                         {
                            "averageDepth" : 32,
@@ -620,7 +724,7 @@
             "biomeSize" : 24,
             "lowerSea" : {
                "level" : 16,
-               "liquidType" : "WATER"
+               "liquidType" : "LAVA"
             },
             "sea" : {
                "level" : 64,
@@ -667,7 +771,7 @@
          "test" : {
             "@collapsed" : false,
             "@name" : "Reference Biome",
-            "@position" : [ 8296, 9176 ],
+            "@position" : [ 8330, 9448 ],
             "type" : "reference"
          }
       },

@@ -3,16 +3,16 @@
    "@configType" : "BIOME",
    "@name" : "Unnamed CustomBiome",
    "@position" : [ 7450, 8012 ],
-   "@scroll" : [ 8596.77734375, 8623.9072265625, 1.25 ],
+   "@scroll" : [ 8518.5791015625, 8420.591796875, 0 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
          "@name" : "Unnamed Biome",
-         "@position" : [ 7776, 8315 ],
+         "@position" : [ 7788, 8306 ],
          "altitude" : {
             "enabled" : true,
             "value" : 0.5
@@ -25,9 +25,9 @@
          "part" : {
             "@collapsed" : false,
             "@name" : "Unnamed Biome Part",
-            "@position" : [ 8098, 8070 ],
+            "@position" : [ 8123, 7982 ],
             "@selector-open" : false,
-            "@toggle-caves" : true,
+            "@toggle-caves" : false,
             "@toggle-ccaves" : true,
             "@toggle-csurface" : true,
             "@toggle-cthreed" : false,
@@ -36,7 +36,7 @@
             "@toggle-heightmap" : true,
             "@toggle-selector" : false,
             "@toggle-stage" : true,
-            "@toggle-threed" : false,
+            "@toggle-threed" : true,
             "@toggle-visualise" : true,
             "@x-name" : "x",
             "@y-name" : "y",
@@ -48,57 +48,61 @@
                "enabled" : true,
                "value" : 0
             },
-            "caves" : {
-               "@collapsed" : false,
-               "@name" : "Sum 3D",
-               "@position" : [ 8447, 8391 ],
-               "frequency" : [ 1, 1, 1 ],
-               "terms" : [
-                  {
-                     "fun" : {
-                        "@collapsed" : false,
-                        "@name" : "Worley 3D",
-                        "@position" : [ 8794, 8373 ],
-                        "cellCount" : 8,
-                        "cellScale" : 1.0199999809265137,
-                        "components" : [
-                           {
-                              "k" : 0,
-                              "multiplier" : 1,
-                              "power" : 2
-                           }
-                        ],
-                        "frequency" : [ 2, 0.15400001406669617, 2 ],
-                        "offset" : [ 556.77764892578125, -182.9188232421875, -384.39865112304688 ],
-                        "offset-hash" : "qdRLk43evpzuUqdz",
-                        "type" : "worley"
-                     },
-                     "multiplier" : 1,
-                     "power" : 1
-                  },
-                  {
-                     "fun" : {
-                        "@collapsed" : false,
-                        "@name" : "Constant 3D",
-                        "@position" : [ 8778, 8664 ],
-                        "frequency" : [ 1, 1, 1 ],
-                        "offset" : [ 570.15655517578125, 244.63798522949219, -110.23056793212891 ],
-                        "offset-hash" : "rMSUxDfBDIXz8lRM",
-                        "type" : "constant",
-                        "value" : 0.9790000319480896
-                     },
-                     "multiplier" : 1,
-                     "power" : 1
-                  }
-               ],
-               "type" : "sum"
-            },
+            "caves" : null,
             "caves_decorations" : null,
             "caves_substrate" : null,
-            "distortion" : null,
+            "distortion" : {
+               "@collapsed" : false,
+               "@name" : "Distortion - Standard",
+               "@position" : [ 8442, 8048 ],
+               "frequency" : [ 1, 1, 1 ],
+               "links" : [
+                  {
+                     "linkPath" : [
+                        {
+                           "index" : -1,
+                           "name" : "noise3d"
+                        },
+                        {
+                           "index" : -1,
+                           "name" : "fun"
+                        },
+                        {
+                           "index" : -1,
+                           "name" : "min"
+                        }
+                     ],
+                     "linkType" : "LT:CUSTOM_SLIDER",
+                     "sliderValue" : -1
+                  },
+                  {
+                     "linkPath" : [
+                        {
+                           "index" : -1,
+                           "name" : "noise3d"
+                        },
+                        {
+                           "index" : -1,
+                           "name" : "fun"
+                        },
+                        {
+                           "index" : -1,
+                           "name" : "max"
+                        }
+                     ],
+                     "linkType" : "LT:CUSTOM_SLIDER",
+                     "sliderValue" : 1
+                  }
+               ],
+               "offset" : [ 707.463623046875, -161.67935180664063, -61.305919647216797 ],
+               "offset-hash" : "SeHwlIoEksseake0",
+               "reference" : "noise3d/DistortionStandard.json",
+               "tick" : 0,
+               "type" : "reference"
+            },
             "distortionStrength" : {
-               "enabled" : false,
-               "value" : 0
+               "enabled" : true,
+               "value" : 78
             },
             "drop" : null,
             "dropMaxDepth" : {
@@ -116,12 +120,12 @@
             "heightmap" : {
                "@collapsed" : false,
                "@name" : "Constant 2D",
-               "@position" : [ 8456, 8224 ],
+               "@position" : [ 8421, 8245 ],
                "frequency" : [ 1, 1 ],
                "offset" : [ 88.1666259765625, -273.65335083007813 ],
                "offset-hash" : "RB5tiNiGIFbGiWqt",
                "type" : "constant",
-               "value" : 0.98900002241134644
+               "value" : -0.50200003385543823
             },
             "heightmapMaxY" : {
                "enabled" : false,
@@ -136,14 +140,74 @@
             "strata" : null,
             "surface_decorations" : null,
             "surface_substrate" : null,
-            "threeD" : null,
+            "threeD" : {
+               "@collapsed" : false,
+               "@name" : "Layered 3D",
+               "@position" : [ 8434, 8390 ],
+               "components" : [
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "2D to fixed-y 3D",
+                        "@position" : [ 8729, 8424 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "fun" : {
+                           "@collapsed" : false,
+                           "@name" : "Sum 2D",
+                           "@position" : [ 9018, 8384 ],
+                           "frequency" : [ 1, 1 ],
+                           "terms" : [
+                              {
+                                 "fun" : {
+                                    "@collapsed" : false,
+                                    "@name" : "Cell Distance 2D",
+                                    "@position" : [ 9300, 8436 ],
+                                    "cells" : {
+                                       "@collapsed" : false,
+                                       "@name" : "Grid 2D",
+                                       "@position" : [ 9582, 8433 ],
+                                       "frequency" : [ 0.1210000067949295, 0.1210000067949295 ],
+                                       "offset" : [ -325.26742553710938, 277.67974853515625 ],
+                                       "offset-hash" : "GwBo0H6CRuKunMym",
+                                       "type" : "grid"
+                                    },
+                                    "frequency" : [ 1, 1 ],
+                                    "type" : "cell_distance"
+                                 },
+                                 "multiplier" : -1,
+                                 "power" : 1
+                              }
+                           ],
+                           "type" : "sum"
+                        },
+                        "type" : "elevate2d"
+                     },
+                     "y" : 131.43400573730469
+                  },
+                  {
+                     "fun" : {
+                        "@collapsed" : false,
+                        "@name" : "Constant 3D",
+                        "@position" : [ 8730, 8559 ],
+                        "frequency" : [ 1, 1, 1 ],
+                        "offset" : [ 1031.4677734375, -193.44816589355469, -28.839595794677734 ],
+                        "offset-hash" : "mQrswVLTtyfu0GRq",
+                        "type" : "constant",
+                        "value" : 1
+                     },
+                     "y" : 131.43400573730469
+                  }
+               ],
+               "frequency" : [ 1, 1, 1 ],
+               "type" : "layered"
+            },
             "threeDMaxY" : {
-               "enabled" : false,
-               "value" : 256
+               "enabled" : true,
+               "value" : 148
             },
             "threeDMinY" : {
-               "enabled" : false,
-               "value" : 0
+               "enabled" : true,
+               "value" : 90
             },
             "threeDSurfaceMaxY" : {
                "enabled" : false,
@@ -154,8 +218,8 @@
                "value" : 0
             },
             "threeDThresholdBias" : {
-               "enabled" : false,
-               "value" : -1
+               "enabled" : true,
+               "value" : 0.029999999329447746
             },
             "threed_decorations" : null,
             "threed_substrate" : null,
@@ -226,7 +290,7 @@
    "test" : {
       "@collapsed" : false,
       "@name" : "Reference Biome",
-      "@position" : [ 7776, 8752 ],
+      "@position" : [ 7788, 8840 ],
       "embedded" : {
          "@collapsed" : false,
          "@configType" : "BIOME",
@@ -234,12 +298,12 @@
          "@position" : [ 7450, 8012 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
                "@name" : "Unnamed Biome",
-               "@position" : [ 7776, 8315 ],
+               "@position" : [ 7788, 8306 ],
                "altitude" : {
                   "enabled" : true,
                   "value" : 0.5
@@ -252,9 +316,9 @@
                "part" : {
                   "@collapsed" : false,
                   "@name" : "Unnamed Biome Part",
-                  "@position" : [ 8098, 8070 ],
+                  "@position" : [ 8123, 7982 ],
                   "@selector-open" : false,
-                  "@toggle-caves" : true,
+                  "@toggle-caves" : false,
                   "@toggle-ccaves" : true,
                   "@toggle-csurface" : true,
                   "@toggle-cthreed" : false,
@@ -263,7 +327,7 @@
                   "@toggle-heightmap" : true,
                   "@toggle-selector" : false,
                   "@toggle-stage" : true,
-                  "@toggle-threed" : false,
+                  "@toggle-threed" : true,
                   "@toggle-visualise" : true,
                   "@x-name" : "x",
                   "@y-name" : "y",
@@ -275,57 +339,61 @@
                      "enabled" : true,
                      "value" : 0
                   },
-                  "caves" : {
-                     "@collapsed" : false,
-                     "@name" : "Sum 3D",
-                     "@position" : [ 8447, 8391 ],
-                     "frequency" : [ 1, 1, 1 ],
-                     "terms" : [
-                        {
-                           "fun" : {
-                              "@collapsed" : false,
-                              "@name" : "Worley 3D",
-                              "@position" : [ 8794, 8373 ],
-                              "cellCount" : 8,
-                              "cellScale" : 1.0199999809265137,
-                              "components" : [
-                                 {
-                                    "k" : 0,
-                                    "multiplier" : 1,
-                                    "power" : 2
-                                 }
-                              ],
-                              "frequency" : [ 2, 0.15400001406669617, 2 ],
-                              "offset" : [ 556.77764892578125, -182.9188232421875, -384.39865112304688 ],
-                              "offset-hash" : "qdRLk43evpzuUqdz",
-                              "type" : "worley"
-                           },
-                           "multiplier" : 1,
-                           "power" : 1
-                        },
-                        {
-                           "fun" : {
-                              "@collapsed" : false,
-                              "@name" : "Constant 3D",
-                              "@position" : [ 8778, 8664 ],
-                              "frequency" : [ 1, 1, 1 ],
-                              "offset" : [ 570.15655517578125, 244.63798522949219, -110.23056793212891 ],
-                              "offset-hash" : "rMSUxDfBDIXz8lRM",
-                              "type" : "constant",
-                              "value" : 0.9790000319480896
-                           },
-                           "multiplier" : 1,
-                           "power" : 1
-                        }
-                     ],
-                     "type" : "sum"
-                  },
+                  "caves" : null,
                   "caves_decorations" : null,
                   "caves_substrate" : null,
-                  "distortion" : null,
+                  "distortion" : {
+                     "@collapsed" : false,
+                     "@name" : "Distortion - Standard",
+                     "@position" : [ 8442, 8048 ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "links" : [
+                        {
+                           "linkPath" : [
+                              {
+                                 "index" : -1,
+                                 "name" : "noise3d"
+                              },
+                              {
+                                 "index" : -1,
+                                 "name" : "fun"
+                              },
+                              {
+                                 "index" : -1,
+                                 "name" : "min"
+                              }
+                           ],
+                           "linkType" : "LT:CUSTOM_SLIDER",
+                           "sliderValue" : -1
+                        },
+                        {
+                           "linkPath" : [
+                              {
+                                 "index" : -1,
+                                 "name" : "noise3d"
+                              },
+                              {
+                                 "index" : -1,
+                                 "name" : "fun"
+                              },
+                              {
+                                 "index" : -1,
+                                 "name" : "max"
+                              }
+                           ],
+                           "linkType" : "LT:CUSTOM_SLIDER",
+                           "sliderValue" : 1
+                        }
+                     ],
+                     "offset" : [ 707.463623046875, -161.67935180664063, -61.305919647216797 ],
+                     "offset-hash" : "SeHwlIoEksseake0",
+                     "reference" : "noise3d/DistortionStandard.json",
+                     "tick" : 0,
+                     "type" : "reference"
+                  },
                   "distortionStrength" : {
-                     "enabled" : false,
-                     "value" : 0
+                     "enabled" : true,
+                     "value" : 78
                   },
                   "drop" : null,
                   "dropMaxDepth" : {
@@ -343,12 +411,12 @@
                   "heightmap" : {
                      "@collapsed" : false,
                      "@name" : "Constant 2D",
-                     "@position" : [ 8456, 8224 ],
+                     "@position" : [ 8421, 8245 ],
                      "frequency" : [ 1, 1 ],
                      "offset" : [ 88.1666259765625, -273.65335083007813 ],
                      "offset-hash" : "RB5tiNiGIFbGiWqt",
                      "type" : "constant",
-                     "value" : 0.98900002241134644
+                     "value" : -0.50200003385543823
                   },
                   "heightmapMaxY" : {
                      "enabled" : false,
@@ -363,14 +431,74 @@
                   "strata" : null,
                   "surface_decorations" : null,
                   "surface_substrate" : null,
-                  "threeD" : null,
+                  "threeD" : {
+                     "@collapsed" : false,
+                     "@name" : "Layered 3D",
+                     "@position" : [ 8434, 8390 ],
+                     "components" : [
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "2D to fixed-y 3D",
+                              "@position" : [ 8729, 8424 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "fun" : {
+                                 "@collapsed" : false,
+                                 "@name" : "Sum 2D",
+                                 "@position" : [ 9018, 8384 ],
+                                 "frequency" : [ 1, 1 ],
+                                 "terms" : [
+                                    {
+                                       "fun" : {
+                                          "@collapsed" : false,
+                                          "@name" : "Cell Distance 2D",
+                                          "@position" : [ 9300, 8436 ],
+                                          "cells" : {
+                                             "@collapsed" : false,
+                                             "@name" : "Grid 2D",
+                                             "@position" : [ 9582, 8433 ],
+                                             "frequency" : [ 0.1210000067949295, 0.1210000067949295 ],
+                                             "offset" : [ -325.26742553710938, 277.67974853515625 ],
+                                             "offset-hash" : "GwBo0H6CRuKunMym",
+                                             "type" : "grid"
+                                          },
+                                          "frequency" : [ 1, 1 ],
+                                          "type" : "cell_distance"
+                                       },
+                                       "multiplier" : -1,
+                                       "power" : 1
+                                    }
+                                 ],
+                                 "type" : "sum"
+                              },
+                              "type" : "elevate2d"
+                           },
+                           "y" : 131.43400573730469
+                        },
+                        {
+                           "fun" : {
+                              "@collapsed" : false,
+                              "@name" : "Constant 3D",
+                              "@position" : [ 8730, 8559 ],
+                              "frequency" : [ 1, 1, 1 ],
+                              "offset" : [ 1031.4677734375, -193.44816589355469, -28.839595794677734 ],
+                              "offset-hash" : "mQrswVLTtyfu0GRq",
+                              "type" : "constant",
+                              "value" : 1
+                           },
+                           "y" : 131.43400573730469
+                        }
+                     ],
+                     "frequency" : [ 1, 1, 1 ],
+                     "type" : "layered"
+                  },
                   "threeDMaxY" : {
-                     "enabled" : false,
-                     "value" : 256
+                     "enabled" : true,
+                     "value" : 148
                   },
                   "threeDMinY" : {
-                     "enabled" : false,
-                     "value" : 0
+                     "enabled" : true,
+                     "value" : 90
                   },
                   "threeDSurfaceMaxY" : {
                      "enabled" : false,
@@ -381,8 +509,8 @@
                      "value" : 0
                   },
                   "threeDThresholdBias" : {
-                     "enabled" : false,
-                     "value" : -1
+                     "enabled" : true,
+                     "value" : 0.029999999329447746
                   },
                   "threed_decorations" : null,
                   "threed_substrate" : null,
@@ -453,7 +581,7 @@
          "test" : {
             "@collapsed" : false,
             "@name" : "Reference Biome",
-            "@position" : [ 7776, 8752 ],
+            "@position" : [ 7788, 8840 ],
             "type" : "reference"
          }
       },

@@ -3,11 +3,11 @@
    "@configType" : "BIOME",
    "@name" : "Icebergs",
    "@position" : [ 7932, 8160 ],
-   "@scroll" : [ 8634.62109375, 8298.314453125, 1.25 ],
+   "@scroll" : [ 9436.748046875, 9061.361328125, 0.5 ],
    "@toggle-test" : false,
    "@toggle-world" : true,
    "@unlinked" : [],
-   "@version" : 10,
+   "@version" : 11,
    "biome" : {
       "fun" : {
          "@collapsed" : false,
@@ -369,87 +369,95 @@
             "shrink" : null,
             "strata" : {
                "@collapsed" : false,
-               "@name" : "Standard Strata",
-               "@position" : [ 9409, 8370 ],
-               "strata" : [
+               "@name" : "Join Strata",
+               "@position" : [ 9351, 9031 ],
+               "components" : [
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 62,
-                     "blockType" : "ICE_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : null,
-                     "yNoiseScale" : 0
+                     "@collapsed" : false,
+                     "@name" : "Fill1",
+                     "@position" : [ 9647, 8965 ],
+                     "links" : [],
+                     "reference" : "strata/Fill1.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 72,
-                     "blockType" : "ICE_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : null,
-                     "yNoiseScale" : 0
+                     "@collapsed" : false,
+                     "@name" : "Fill3",
+                     "@position" : [ 9647, 9085 ],
+                     "links" : [],
+                     "reference" : "strata/Fill3.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 102,
-                     "blockType" : "ICE_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [],
-                     "yNoise" : null,
-                     "yNoiseScale" : 0
+                     "@collapsed" : false,
+                     "@name" : "Fill4",
+                     "@position" : [ 9647, 9145 ],
+                     "links" : [],
+                     "reference" : "strata/Fill4.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 32,
-                     "averageY" : 126,
-                     "blockType" : "ICE_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : null,
-                     "yNoiseScale" : 8
+                     "@collapsed" : false,
+                     "@name" : "Fill5",
+                     "@position" : [ 9647, 9205 ],
+                     "links" : [],
+                     "reference" : "strata/Fill5.json",
+                     "tick" : 0,
+                     "type" : "reference"
                   },
                   {
-                     "averageDepth" : 6,
-                     "averageY" : 0,
-                     "blockType" : "GRAVEL_DEFAULT_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9698, 8948 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ -326.82992553710938, -49.098911285400391 ],
-                        "offset-hash" : "aRDeIzowjROGLsQ0",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 16
-                  },
-                  {
-                     "averageDepth" : 6,
-                     "averageY" : 0,
-                     "blockType" : "ROCK_SEDIMENTARY_BASE",
-                     "depthNoise" : null,
-                     "depthNoiseScale" : 3,
-                     "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                     "yNoise" : {
-                        "@collapsed" : false,
-                        "@name" : "Perlin 2D",
-                        "@position" : [ 9698, 9054 ],
-                        "frequency" : [ 2, 2 ],
-                        "offset" : [ -241.33058166503906, 126.72364807128906 ],
-                        "offset-hash" : "ZLmX1Q5if0fjnWUZ",
-                        "type" : "perlin"
-                     },
-                     "yNoiseScale" : 16
+                     "@collapsed" : false,
+                     "@name" : "Standard Strata",
+                     "@position" : [ 9409, 8370 ],
+                     "strata" : [
+                        {
+                           "averageDepth" : 32,
+                           "averageY" : 62,
+                           "blockType" : "ICE_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : null,
+                           "yNoiseScale" : 0
+                        },
+                        {
+                           "averageDepth" : 32,
+                           "averageY" : 72,
+                           "blockType" : "ICE_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : null,
+                           "yNoiseScale" : 0
+                        },
+                        {
+                           "averageDepth" : 32,
+                           "averageY" : 102,
+                           "blockType" : "ICE_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [],
+                           "yNoise" : null,
+                           "yNoiseScale" : 0
+                        },
+                        {
+                           "averageDepth" : 32,
+                           "averageY" : 126,
+                           "blockType" : "ICE_DEFAULT_BASE",
+                           "depthNoise" : null,
+                           "depthNoiseScale" : 3,
+                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                           "yNoise" : null,
+                           "yNoiseScale" : 8
+                        }
+                     ],
+                     "type" : "standard"
                   }
                ],
-               "type" : "standard"
+               "type" : "join"
             },
             "surface_decorations" : null,
             "surface_substrate" : {
@@ -626,7 +634,7 @@
          "@position" : [ 7932, 8160 ],
          "@toggle-test" : false,
          "@toggle-world" : true,
-         "@version" : 10,
+         "@version" : 11,
          "biome" : {
             "fun" : {
                "@collapsed" : false,
@@ -988,87 +996,95 @@
                   "shrink" : null,
                   "strata" : {
                      "@collapsed" : false,
-                     "@name" : "Standard Strata",
-                     "@position" : [ 9409, 8370 ],
-                     "strata" : [
+                     "@name" : "Join Strata",
+                     "@position" : [ 9351, 9031 ],
+                     "components" : [
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 62,
-                           "blockType" : "ICE_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : null,
-                           "yNoiseScale" : 0
+                           "@collapsed" : false,
+                           "@name" : "Fill1",
+                           "@position" : [ 9647, 8965 ],
+                           "links" : [],
+                           "reference" : "strata/Fill1.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 72,
-                           "blockType" : "ICE_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : null,
-                           "yNoiseScale" : 0
+                           "@collapsed" : false,
+                           "@name" : "Fill3",
+                           "@position" : [ 9647, 9085 ],
+                           "links" : [],
+                           "reference" : "strata/Fill3.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 102,
-                           "blockType" : "ICE_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [],
-                           "yNoise" : null,
-                           "yNoiseScale" : 0
+                           "@collapsed" : false,
+                           "@name" : "Fill4",
+                           "@position" : [ 9647, 9145 ],
+                           "links" : [],
+                           "reference" : "strata/Fill4.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 32,
-                           "averageY" : 126,
-                           "blockType" : "ICE_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : null,
-                           "yNoiseScale" : 8
+                           "@collapsed" : false,
+                           "@name" : "Fill5",
+                           "@position" : [ 9647, 9205 ],
+                           "links" : [],
+                           "reference" : "strata/Fill5.json",
+                           "tick" : 0,
+                           "type" : "reference"
                         },
                         {
-                           "averageDepth" : 6,
-                           "averageY" : 0,
-                           "blockType" : "GRAVEL_DEFAULT_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9698, 8948 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ -326.82992553710938, -49.098911285400391 ],
-                              "offset-hash" : "aRDeIzowjROGLsQ0",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 16
-                        },
-                        {
-                           "averageDepth" : 6,
-                           "averageY" : 0,
-                           "blockType" : "ROCK_SEDIMENTARY_BASE",
-                           "depthNoise" : null,
-                           "depthNoiseScale" : 3,
-                           "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
-                           "yNoise" : {
-                              "@collapsed" : false,
-                              "@name" : "Perlin 2D",
-                              "@position" : [ 9698, 9054 ],
-                              "frequency" : [ 2, 2 ],
-                              "offset" : [ -241.33058166503906, 126.72364807128906 ],
-                              "offset-hash" : "ZLmX1Q5if0fjnWUZ",
-                              "type" : "perlin"
-                           },
-                           "yNoiseScale" : 16
+                           "@collapsed" : false,
+                           "@name" : "Standard Strata",
+                           "@position" : [ 9409, 8370 ],
+                           "strata" : [
+                              {
+                                 "averageDepth" : 32,
+                                 "averageY" : 62,
+                                 "blockType" : "ICE_DEFAULT_BASE",
+                                 "depthNoise" : null,
+                                 "depthNoiseScale" : 3,
+                                 "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                                 "yNoise" : null,
+                                 "yNoiseScale" : 0
+                              },
+                              {
+                                 "averageDepth" : 32,
+                                 "averageY" : 72,
+                                 "blockType" : "ICE_DEFAULT_BASE",
+                                 "depthNoise" : null,
+                                 "depthNoiseScale" : 3,
+                                 "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                                 "yNoise" : null,
+                                 "yNoiseScale" : 0
+                              },
+                              {
+                                 "averageDepth" : 32,
+                                 "averageY" : 102,
+                                 "blockType" : "ICE_DEFAULT_BASE",
+                                 "depthNoise" : null,
+                                 "depthNoiseScale" : 3,
+                                 "replaceTypes" : [],
+                                 "yNoise" : null,
+                                 "yNoiseScale" : 0
+                              },
+                              {
+                                 "averageDepth" : 32,
+                                 "averageY" : 126,
+                                 "blockType" : "ICE_DEFAULT_BASE",
+                                 "depthNoise" : null,
+                                 "depthNoiseScale" : 3,
+                                 "replaceTypes" : [ "ROCK_METAMORPHIC_BASE" ],
+                                 "yNoise" : null,
+                                 "yNoiseScale" : 8
+                              }
+                           ],
+                           "type" : "standard"
                         }
                      ],
-                     "type" : "standard"
+                     "type" : "join"
                   },
                   "surface_decorations" : null,
                   "surface_substrate" : {
